@@ -9,33 +9,39 @@
           "name": "Cursor",
           "use": "AI-first code editor for building and refactoring whole apps",
           "pricing": "Freemium",
-          "url": "https://cursor.com"
+          "url": "https://cursor.com",
+          "why": "A code editor with AI built in. You type what you want changed and it edits your project for you."
         },
         {
           "name": "Claude Code",
           "use": "Terminal-based agent for multi-file changes in real repos",
           "pricing": "Paid",
-          "url": "https://claude.com/product/claude-code"
+          "url": "https://claude.com/product/claude-code",
+          "why": "Give it a task in plain English and it reads your whole project and makes the changes itself."
         },
         {
           "name": "GitHub Copilot",
           "use": "Inline completions and agent mode inside VS Code and GitHub",
           "pricing": "Freemium",
-          "url": "https://github.com/features/copilot"
+          "url": "https://github.com/features/copilot",
+          "why": "Suggests the next lines of code as you type, so it's a gentle way to start using AI for coding."
         },
         {
           "name": "Windsurf",
           "use": "Agentic IDE with a built-in coding assistant",
           "pricing": "Freemium",
-          "url": "https://windsurf.com"
+          "url": "https://windsurf.com",
+          "why": "An AI code editor that can take on bigger multi-step jobs across your project with little hand-holding."
         },
         {
           "name": "OpenAI Codex",
           "use": "Delegating coding tasks to a cloud or CLI agent",
           "pricing": "Freemium",
-          "url": "https://chatgpt.com/codex"
+          "url": "https://chatgpt.com/codex",
+          "why": "ChatGPT's coding agent. Hand it a job and it works through it in the background."
         }
-      ]
+      ],
+      "beginner": "An AI helper that writes and fixes code with you, like a programmer sitting next to you who never gets tired."
     },
     {
       "id": "app-builders",
@@ -46,27 +52,32 @@
           "name": "Lovable",
           "use": "Prompt-to-full-stack web app with Supabase integration",
           "pricing": "Freemium",
-          "url": "https://lovable.dev"
+          "url": "https://lovable.dev",
+          "why": "Easiest place to start: describe your app and it builds a working version you can click around in minutes."
         },
         {
           "name": "Bolt.new",
           "use": "In-browser prompt-to-app builds you can run and deploy",
           "pricing": "Freemium",
-          "url": "https://bolt.new"
+          "url": "https://bolt.new",
+          "why": "Type an idea and get a working website or app right in your browser, nothing to install."
         },
         {
           "name": "v0",
           "use": "Generating React/Next.js UI and apps from prompts",
           "pricing": "Freemium",
-          "url": "https://v0.app"
+          "url": "https://v0.app",
+          "why": "Great for good-looking websites and pages. Describe the look and it builds it for you."
         },
         {
           "name": "Replit",
           "use": "Cloud IDE with an agent that builds and hosts apps",
           "pricing": "Freemium",
-          "url": "https://replit.com"
+          "url": "https://replit.com",
+          "why": "Build, run and publish an app all in one place in your browser, with an AI helper that does the coding."
         }
-      ]
+      ],
+      "beginner": "Describe what you want in plain English and these build a working app or website for you, no coding needed to start."
     },
     {
       "id": "hosting",
@@ -77,33 +88,39 @@
           "name": "Vercel",
           "use": "Deploying Next.js and frontend apps from Git",
           "pricing": "Freemium",
-          "url": "https://vercel.com"
+          "url": "https://vercel.com",
+          "why": "One click to put your website online with a real link, and it's free for small sites."
         },
         {
           "name": "Netlify",
           "use": "Static sites and Jamstack apps with simple deploys",
           "pricing": "Freemium",
-          "url": "https://www.netlify.com"
+          "url": "https://www.netlify.com",
+          "why": "Drag and drop your site to get it live on the internet. Simple and free to start."
         },
         {
           "name": "Cloudflare Pages",
           "use": "Fast global static hosting plus Workers for edge logic",
           "pricing": "Freemium",
-          "url": "https://www.cloudflare.com/products/pages/"
+          "url": "https://www.cloudflare.com/products/pages/",
+          "why": "Free, fast hosting for websites, backed by one of the biggest internet companies."
         },
         {
           "name": "Railway",
           "use": "Deploying backends, workers, and databases with little config",
           "pricing": "Freemium",
-          "url": "https://railway.com"
+          "url": "https://railway.com",
+          "why": "Puts apps that need a server or database online without you managing any computers."
         },
         {
           "name": "Render",
           "use": "Hosting web services, cron jobs, and Postgres",
           "pricing": "Freemium",
-          "url": "https://render.com"
+          "url": "https://render.com",
+          "why": "A simple place to run your app and its database online, with a free tier to try it."
         }
-      ]
+      ],
+      "beginner": "Where your website or app lives on the internet so anyone can visit it with a link."
     },
     {
       "id": "auth",
@@ -114,27 +131,32 @@
           "name": "Clerk",
           "use": "Drop-in sign-in UI and user management for React/Next.js",
           "pricing": "Freemium",
-          "url": "https://clerk.com"
+          "url": "https://clerk.com",
+          "why": "Adds polished sign-up and log-in screens to your app in minutes."
         },
         {
           "name": "Supabase Auth",
           "use": "Auth bundled with your Supabase Postgres database",
           "pricing": "Freemium",
-          "url": "https://supabase.com/auth"
+          "url": "https://supabase.com/auth",
+          "why": "Free log-ins that come bundled with Supabase, so your accounts and data live in one place."
         },
         {
           "name": "Auth0",
           "use": "Enterprise-grade auth, SSO, and identity",
           "pricing": "Freemium",
-          "url": "https://auth0.com"
+          "url": "https://auth0.com",
+          "why": "Battle-tested log-in system that big companies trust when security really matters."
         },
         {
           "name": "Firebase Authentication",
           "use": "Simple auth for mobile and web apps on Google's stack",
           "pricing": "Freemium",
-          "url": "https://firebase.google.com/products/auth"
+          "url": "https://firebase.google.com/products/auth",
+          "why": "Google's free log-in system, with easy 'Sign in with Google' and phone login."
         }
-      ]
+      ],
+      "beginner": "Handles sign-up, log-in and passwords so your users can have accounts without you building it from scratch."
     },
     {
       "id": "databases",
@@ -145,33 +167,39 @@
           "name": "Supabase",
           "use": "Postgres, auth, storage, and realtime in one backend",
           "pricing": "Freemium",
-          "url": "https://supabase.com"
+          "url": "https://supabase.com",
+          "why": "Stores your app's data plus log-ins and file uploads, all in one free-to-start package."
         },
         {
           "name": "Firebase",
           "use": "Realtime NoSQL backend for quick mobile/web apps",
           "pricing": "Freemium",
-          "url": "https://firebase.google.com"
+          "url": "https://firebase.google.com",
+          "why": "Google's all-in-one backend for saving data, great for phone apps and realtime updates."
         },
         {
           "name": "Neon",
           "use": "Serverless Postgres with branching",
           "pricing": "Freemium",
-          "url": "https://neon.com"
+          "url": "https://neon.com",
+          "why": "A simple online database that's free to start and only charges when it's actually being used."
         },
         {
           "name": "Convex",
           "use": "Reactive TypeScript backend with built-in database",
           "pricing": "Freemium",
-          "url": "https://www.convex.dev"
+          "url": "https://www.convex.dev",
+          "why": "A backend where your app's data updates live on screen, without setting up servers."
         },
         {
           "name": "PlanetScale",
           "use": "Scalable managed MySQL/Postgres",
           "pricing": "Paid",
-          "url": "https://planetscale.com"
+          "url": "https://planetscale.com",
+          "why": "A heavy-duty database for when your app gets lots of users and needs to stay fast."
         }
-      ]
+      ],
+      "beginner": "The place your app saves its information, like customers, orders or jobs, so nothing gets lost."
     },
     {
       "id": "design-to-code",
@@ -182,27 +210,32 @@
           "name": "Figma Make",
           "use": "Turning prompts and Figma designs into working prototypes",
           "pricing": "Freemium",
-          "url": "https://www.figma.com/make/"
+          "url": "https://www.figma.com/make/",
+          "why": "Sketch or describe a screen and it turns it into a working prototype you can click."
         },
         {
           "name": "Builder.io",
           "use": "Converting Figma designs into framework code",
           "pricing": "Freemium",
-          "url": "https://www.builder.io"
+          "url": "https://www.builder.io",
+          "why": "Turns designs into real web pages and lets you edit the site visually, like a page builder."
         },
         {
           "name": "Locofy",
           "use": "Figma/Penpot to React, Next.js, and mobile code",
           "pricing": "Freemium",
-          "url": "https://www.locofy.ai"
+          "url": "https://www.locofy.ai",
+          "why": "Converts your Figma designs into real app or website code."
         },
         {
           "name": "Anima",
           "use": "Exporting Figma designs to React/HTML code",
           "pricing": "Freemium",
-          "url": "https://www.animaapp.com"
+          "url": "https://www.animaapp.com",
+          "why": "Takes a design from Figma and turns it into a working website."
         }
-      ]
+      ],
+      "beginner": "Turns a picture or mockup of how your app should look into a real, clickable screen."
     },
     {
       "id": "testing",
@@ -213,27 +246,32 @@
           "name": "Playwright",
           "use": "Reliable end-to-end browser tests (open source)",
           "pricing": "Free",
-          "url": "https://playwright.dev"
+          "url": "https://playwright.dev",
+          "why": "Free tool that clicks through your site like a real person to catch anything that breaks."
         },
         {
           "name": "Cypress",
           "use": "Developer-friendly E2E and component testing",
           "pricing": "Freemium",
-          "url": "https://www.cypress.io"
+          "url": "https://www.cypress.io",
+          "why": "Lets you watch automated tests click through your app so you can see exactly where bugs happen."
         },
         {
           "name": "Sentry",
           "use": "Catching errors and crashes in production",
           "pricing": "Freemium",
-          "url": "https://sentry.io"
+          "url": "https://sentry.io",
+          "why": "Emails you when your live app crashes and shows exactly what went wrong."
         },
         {
           "name": "CodeRabbit",
           "use": "AI code review on pull requests",
           "pricing": "Freemium",
-          "url": "https://www.coderabbit.ai"
+          "url": "https://www.coderabbit.ai",
+          "why": "An AI reviewer that reads your code changes and points out bugs before they go live."
         }
-      ]
+      ],
+      "beginner": "Tools that check your app for bugs and broken buttons before your customers find them."
     },
     {
       "id": "llm-apis",
@@ -244,33 +282,39 @@
           "name": "OpenAI API",
           "use": "General-purpose GPT models for chat, tools, and vision",
           "pricing": "Paid",
-          "url": "https://platform.openai.com"
+          "url": "https://platform.openai.com",
+          "why": "The ChatGPT brain you can plug into your own app or chatbot."
         },
         {
           "name": "Anthropic API",
           "use": "Claude models, strong at coding and long context",
           "pricing": "Paid",
-          "url": "https://claude.com/platform/api"
+          "url": "https://claude.com/platform/api",
+          "why": "Claude's brain for your own app. Great at writing, reasoning and long documents."
         },
         {
           "name": "Google Gemini API",
           "use": "Gemini models with large context and multimodal input",
           "pricing": "Freemium",
-          "url": "https://ai.google.dev"
+          "url": "https://ai.google.dev",
+          "why": "Google's AI with a generous free tier, good for chatbots and reading images or PDFs."
         },
         {
           "name": "xAI API",
           "use": "Grok models via an OpenAI-compatible API",
           "pricing": "Paid",
-          "url": "https://x.ai/api"
+          "url": "https://x.ai/api",
+          "why": "Grok's AI for your own app, with up-to-date knowledge and a big memory for long chats."
         },
         {
           "name": "OpenRouter",
           "use": "One API key to route across many model providers",
           "pricing": "Freemium",
-          "url": "https://openrouter.ai"
+          "url": "https://openrouter.ai",
+          "why": "One account to try many different AI models and pick the best price for your chatbot."
         }
-      ]
+      ],
+      "beginner": "The AI 'brains' you plug into your own app to make it chat, write, answer questions or read documents."
     }
   ],
   "releases": [

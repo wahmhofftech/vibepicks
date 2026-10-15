@@ -13,3 +13,15 @@ h2{margin-top:48px}.grid{display:grid;grid-template-columns:repeat(auto-fill,min
 #q{flex:1;min-width:200px}.news{background:linear-gradient(135deg,#1a1440,#131722);border:1px solid #2d2560;border-radius:16px;padding:28px;margin-top:48px;text-align:center}
 .news form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}.note{color:#fbbf6a;font-size:.8rem}
 .release{border-left:3px solid #7c5cff;padding-left:14px;margin:14px 0}.sample{opacity:.6}footer{text-align:center;color:#5d6578;padding:30px;border-top:1px solid #1d2230}
+
+.reco{max-width:680px;margin:28px auto 0;text-align:left;background:#131722;border:1px solid #2d2560;border-radius:16px;padding:20px}
+.reco-label{display:block;font-weight:700;font-size:1.25rem;margin-bottom:10px;color:#fff}
+.reco textarea{width:100%;background:#0b0d12;border:1px solid #2a3145;color:#e6e8ee;padding:12px 14px;border-radius:10px;font:inherit;font-size:1rem;resize:vertical}
+.reco textarea:focus,.reco .btn:focus{outline:2px solid #a78bfa;outline-offset:2px}
+.reco-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}.reco-hint{font-size:.8rem;margin:10px 0 0}
+.reco-res{max-width:760px;margin:0 auto;text-align:left}.reco-h{margin-top:28px;font-size:1.3rem}
+.reco-cat{margin:14px 0}.reco-cat:hover{transform:none}.reco-cath{display:flex;gap:10px;align-items:center}
+.reco-tool{display:flex;gap:12px;padding:10px 0;border-top:1px solid #1f2535}.reco-tool .rank{font-size:1.1rem;min-width:28px}
+.reco-nl{text-align:center;margin-top:18px}
+@media(max-width:600px){.hero{padding:40px 0 24px}.reco{padding:16px}.nav nav a{margin-left:12px}}
+.linkbtn{background:none;border:0;color:#8ab4ff;font:inherit;cursor:pointer;padding:0;text-decoration:underline}
