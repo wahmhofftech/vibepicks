@@ -1,0 +1,306 @@
+{
+ "categories": [
+  {
+   "id": "coding-agents",
+   "name": "Coding Agents & AI IDEs",
+   "icon": "\ud83e\udd16",
+   "tools": [
+    {
+     "name": "Cursor",
+     "use": "AI-first code editor for building and refactoring whole apps",
+     "pricing": "Freemium",
+     "url": "https://cursor.com"
+    },
+    {
+     "name": "Claude Code",
+     "use": "Terminal-based agent for multi-file changes in real repos",
+     "pricing": "Paid",
+     "url": "https://www.anthropic.com/claude-code"
+    },
+    {
+     "name": "GitHub Copilot",
+     "use": "Inline completions and agent mode inside VS Code and GitHub",
+     "pricing": "Freemium",
+     "url": "https://github.com/features/copilot"
+    },
+    {
+     "name": "Windsurf",
+     "use": "Agentic IDE with a built-in coding assistant",
+     "pricing": "Freemium",
+     "url": "https://windsurf.com"
+    },
+    {
+     "name": "OpenAI Codex",
+     "use": "Delegating coding tasks to a cloud or CLI agent",
+     "pricing": "Paid",
+     "url": "https://openai.com/codex"
+    }
+   ]
+  },
+  {
+   "id": "app-builders",
+   "name": "App Builders",
+   "icon": "\u26a1",
+   "tools": [
+    {
+     "name": "Lovable",
+     "use": "Prompt-to-full-stack web app with Supabase integration",
+     "pricing": "Freemium",
+     "url": "https://lovable.dev"
+    },
+    {
+     "name": "Bolt.new",
+     "use": "In-browser prompt-to-app builds you can run and deploy",
+     "pricing": "Freemium",
+     "url": "https://bolt.new"
+    },
+    {
+     "name": "v0",
+     "use": "Generating React/Next.js UI and apps from prompts",
+     "pricing": "Freemium",
+     "url": "https://v0.dev"
+    },
+    {
+     "name": "Replit",
+     "use": "Cloud IDE with an agent that builds and hosts apps",
+     "pricing": "Freemium",
+     "url": "https://replit.com"
+    }
+   ]
+  },
+  {
+   "id": "hosting",
+   "name": "Deploy & Hosting",
+   "icon": "\ud83d\ude80",
+   "tools": [
+    {
+     "name": "Vercel",
+     "use": "Deploying Next.js and frontend apps from Git",
+     "pricing": "Freemium",
+     "url": "https://vercel.com"
+    },
+    {
+     "name": "Netlify",
+     "use": "Static sites and Jamstack apps with simple deploys",
+     "pricing": "Freemium",
+     "url": "https://www.netlify.com"
+    },
+    {
+     "name": "Cloudflare Pages",
+     "use": "Fast global static hosting plus Workers for edge logic",
+     "pricing": "Freemium",
+     "url": "https://pages.cloudflare.com"
+    },
+    {
+     "name": "Railway",
+     "use": "Deploying backends, workers, and databases with little config",
+     "pricing": "Paid",
+     "url": "https://railway.com"
+    },
+    {
+     "name": "Render",
+     "use": "Hosting web services, cron jobs, and Postgres",
+     "pricing": "Freemium",
+     "url": "https://render.com"
+    }
+   ]
+  },
+  {
+   "id": "auth",
+   "name": "Auth",
+   "icon": "\ud83d\udd10",
+   "tools": [
+    {
+     "name": "Clerk",
+     "use": "Drop-in sign-in UI and user management for React/Next.js",
+     "pricing": "Freemium",
+     "url": "https://clerk.com"
+    },
+    {
+     "name": "Supabase Auth",
+     "use": "Auth bundled with your Supabase Postgres database",
+     "pricing": "Freemium",
+     "url": "https://supabase.com/auth"
+    },
+    {
+     "name": "Auth0",
+     "use": "Enterprise-grade auth, SSO, and identity",
+     "pricing": "Freemium",
+     "url": "https://auth0.com"
+    },
+    {
+     "name": "Firebase Authentication",
+     "use": "Simple auth for mobile and web apps on Google's stack",
+     "pricing": "Freemium",
+     "url": "https://firebase.google.com/products/auth"
+    }
+   ]
+  },
+  {
+   "id": "databases",
+   "name": "Databases & Backend",
+   "icon": "\ud83d\uddc4\ufe0f",
+   "tools": [
+    {
+     "name": "Supabase",
+     "use": "Postgres, auth, storage, and realtime in one backend",
+     "pricing": "Freemium",
+     "url": "https://supabase.com"
+    },
+    {
+     "name": "Firebase",
+     "use": "Realtime NoSQL backend for quick mobile/web apps",
+     "pricing": "Freemium",
+     "url": "https://firebase.google.com"
+    },
+    {
+     "name": "Neon",
+     "use": "Serverless Postgres with branching",
+     "pricing": "Freemium",
+     "url": "https://neon.tech"
+    },
+    {
+     "name": "Convex",
+     "use": "Reactive TypeScript backend with built-in database",
+     "pricing": "Freemium",
+     "url": "https://www.convex.dev"
+    },
+    {
+     "name": "PlanetScale",
+     "use": "Scalable managed MySQL/Postgres",
+     "pricing": "Paid",
+     "url": "https://planetscale.com"
+    }
+   ]
+  },
+  {
+   "id": "design-to-code",
+   "name": "Design-to-Code",
+   "icon": "\ud83c\udfa8",
+   "tools": [
+    {
+     "name": "Figma Make",
+     "use": "Turning prompts and Figma designs into working prototypes",
+     "pricing": "Freemium",
+     "url": "https://www.figma.com/make/"
+    },
+    {
+     "name": "Builder.io",
+     "use": "Converting Figma designs into framework code",
+     "pricing": "Freemium",
+     "url": "https://www.builder.io"
+    },
+    {
+     "name": "Locofy",
+     "use": "Figma/Penpot to React, Next.js, and mobile code",
+     "pricing": "Freemium",
+     "url": "https://www.locofy.ai"
+    },
+    {
+     "name": "Anima",
+     "use": "Exporting Figma designs to React/HTML code",
+     "pricing": "Freemium",
+     "url": "https://www.animaapp.com"
+    }
+   ]
+  },
+  {
+   "id": "testing",
+   "name": "Testing & QA",
+   "icon": "\ud83e\uddea",
+   "tools": [
+    {
+     "name": "Playwright",
+     "use": "Reliable end-to-end browser tests (open source)",
+     "pricing": "Free",
+     "url": "https://playwright.dev"
+    },
+    {
+     "name": "Cypress",
+     "use": "Developer-friendly E2E and component testing",
+     "pricing": "Freemium",
+     "url": "https://www.cypress.io"
+    },
+    {
+     "name": "Sentry",
+     "use": "Catching errors and crashes in production",
+     "pricing": "Freemium",
+     "url": "https://sentry.io"
+    },
+    {
+     "name": "CodeRabbit",
+     "use": "AI code review on pull requests",
+     "pricing": "Freemium",
+     "url": "https://www.coderabbit.ai"
+    }
+   ]
+  },
+  {
+   "id": "llm-apis",
+   "name": "LLM APIs",
+   "icon": "\ud83e\udde0",
+   "tools": [
+    {
+     "name": "OpenAI API",
+     "use": "General-purpose GPT models for chat, tools, and vision",
+     "pricing": "Paid",
+     "url": "https://platform.openai.com"
+    },
+    {
+     "name": "Anthropic API",
+     "use": "Claude models, strong at coding and long context",
+     "pricing": "Paid",
+     "url": "https://www.anthropic.com/api"
+    },
+    {
+     "name": "Google Gemini API",
+     "use": "Gemini models with large context and multimodal input",
+     "pricing": "Freemium",
+     "url": "https://ai.google.dev"
+    },
+    {
+     "name": "xAI API",
+     "use": "Grok models via an OpenAI-compatible API",
+     "pricing": "Paid",
+     "url": "https://x.ai/api"
+    },
+    {
+     "name": "OpenRouter",
+     "use": "One API key to route across many model providers",
+     "pricing": "Paid",
+     "url": "https://openrouter.ai"
+    }
+   ]
+  }
+ ],
+ "releases": [
+  {
+   "date": "2026-10-15",
+   "tool": "Muse Spark Open (Meta)",
+   "title": "Open-weight version of Muse Spark for self-hosted agentic coding, 1M context",
+   "category": "llm-apis",
+   "source": "https://dev.meta.ai/resources/blog/build-with-muse-spark-open"
+  },
+  {
+   "date": "2026-10-13",
+   "tool": "Gemini 4 Argon (Google)",
+   "title": "Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio",
+   "category": "llm-apis",
+   "source": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/"
+  },
+  {
+   "date": "2026-10-13",
+   "tool": "GitHub Copilot",
+   "title": "Gemini 4 Argon now generally available in Copilot (Pro+, Max, Business, Enterprise)",
+   "category": "coding-agents",
+   "source": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/"
+  },
+  {
+   "date": "2026-10-12",
+   "tool": "Muse Wonder (Meta)",
+   "title": "New model on Muse Code and Meta Model API at $4/$20 per million tokens",
+   "category": "llm-apis",
+   "source": "https://dev.meta.ai/resources/blog/build-with-muse-wonder"
+  }
+ ]
+}

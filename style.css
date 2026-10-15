@@ -1,0 +1,15 @@
+*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#e6e8ee;font-family:Inter,system-ui,sans-serif;line-height:1.5}
+a{color:#8ab4ff;text-decoration:none}.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid #1d2230;position:sticky;top:0;background:#0b0d12ee;backdrop-filter:blur(8px);flex-wrap:wrap;gap:8px}
+.logo{font-weight:800;font-size:1.3rem;color:#fff}.logo span{color:#7c5cff}.nav nav a{margin-left:18px;color:#c3c8d4}
+main{max-width:1100px;margin:auto;padding:0 5vw 60px}.hero{padding:70px 0 40px;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 14px;background:linear-gradient(90deg,#fff,#a78bfa);-webkit-background-clip:text;color:transparent}
+.hero p{color:#9aa3b5;font-size:1.15rem}.btn{display:inline-block;background:#7c5cff;color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;border:0;cursor:pointer}
+h2{margin-top:48px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:#131722;border:1px solid #1f2535;border-radius:14px;padding:18px;transition:.2s}.card:hover{border-color:#7c5cff;transform:translateY(-2px)}
+.card h3{margin:6px 0}.muted{color:#8b93a7;font-size:.92rem}.tag{font-size:.75rem;padding:2px 8px;border-radius:99px;background:#22283a;color:#b9c1d6}
+.tag.Free{background:#123d2a;color:#6ee7a8}.tag.Freemium{background:#1f2f52;color:#8ab4ff}.tag.Paid{background:#3d2a12;color:#fbbf6a}
+.tool{display:flex;gap:14px;align-items:flex-start}.rank{font-size:1.4rem;font-weight:800;color:#7c5cff;min-width:34px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}input,select{background:#131722;border:1px solid #2a3145;color:#e6e8ee;padding:11px 14px;border-radius:10px;font-size:1rem}
+#q{flex:1;min-width:200px}.news{background:linear-gradient(135deg,#1a1440,#131722);border:1px solid #2d2560;border-radius:16px;padding:28px;margin-top:48px;text-align:center}
+.news form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}.note{color:#fbbf6a;font-size:.8rem}
+.release{border-left:3px solid #7c5cff;padding-left:14px;margin:14px 0}.sample{opacity:.6}footer{text-align:center;color:#5d6578;padding:30px;border-top:1px solid #1d2230}
