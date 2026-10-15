@@ -19,9 +19,9 @@ for c in d['categories']:
 rel=''.join(f'<div class="release {"sample" if r.get("sample") else ""}"><span class="tag">{r["date"]}</span> <b>{E(r["tool"])}</b> — {E(r["title"])} <a href="{r["source"]}">source</a></div>' for r in d['releases'])
 os.makedirs('releases',exist_ok=True)
 open('releases/index.html','w').write(page('releases','New AI Tool Releases for Builders — VibePicks','Verified AI tool and model launches that matter to people shipping apps.','<h1>New releases</h1>'+rel,{"@context":"https://schema.org","@type":"CollectionPage","name":"New AI tool releases"}))
-PK=[("Featured Listing","$99","/month","A labeled Sponsored card for your tool on the homepage and directory.","https://buy.stripe.com/test_bJe8wQafc4VM9Pm5wQ83C00"),
-("Newsletter Sponsor","$149","/issue","One sponsored block in a VibePicks newsletter issue, labeled Sponsored.","https://buy.stripe.com/test_3cI7sM7303RI4v2aRa83C01"),
-("Category Top Spot","$249","/month","A pinned slot above the rankings on one category page, clearly labeled Sponsored.","https://buy.stripe.com/test_8x28wQ5YW1JA6Da1gA83C02")]
+PK=[("Featured Listing","$99","/month","A labeled Sponsored card for your tool on the homepage and directory.","https://buy.stripe.com/fZu3cwewe97x1tL10D3VC00"),
+("Newsletter Sponsor","$149","/issue","One sponsored block in a VibePicks newsletter issue, labeled Sponsored.","https://buy.stripe.com/00w00kbk2abB3BT6kX3VC01"),
+("Category Top Spot","$249","/month","A pinned slot above the rankings on one category page, clearly labeled Sponsored.","https://buy.stripe.com/3cI6oIbk23Nd8WddNp3VC02")]
 cards=''.join(f'<div class="card"><h3>{n}</h3><div style="font-size:1.8rem;font-weight:700">{pr}<span class="muted" style="font-size:1rem">{u}</span></div><p class="muted">{dsc}</p><a class="btn" href="{l}" rel="noopener">Buy {n}</a></div>' for n,pr,u,dsc,l in PK)
 sbody=('<div id="thanks" class="card" style="display:none"><b>Thanks! Payment received.</b> We will email you within one business day to set up your placement.</div>'
 '<section class="hero" style="padding-bottom:10px"><h1>Sponsor VibePicks</h1><p>Reach vibe coders and builders choosing their AI stack.</p></section>'
