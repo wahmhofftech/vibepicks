@@ -3,22 +3,22 @@
 
 ## Coding Agents & AI IDEs (https://vibepicks.ai/coding-agents/)
 1. [Cursor](https://cursor.com): AI-first code editor for building and refactoring whole apps (Freemium)
-2. [Claude Code](https://www.anthropic.com/claude-code): Terminal-based agent for multi-file changes in real repos (Paid)
+2. [Claude Code](https://claude.com/product/claude-code): Terminal-based agent for multi-file changes in real repos (Paid)
 3. [GitHub Copilot](https://github.com/features/copilot): Inline completions and agent mode inside VS Code and GitHub (Freemium)
 4. [Windsurf](https://windsurf.com): Agentic IDE with a built-in coding assistant (Freemium)
-5. [OpenAI Codex](https://openai.com/codex): Delegating coding tasks to a cloud or CLI agent (Paid)
+5. [OpenAI Codex](https://chatgpt.com/codex): Delegating coding tasks to a cloud or CLI agent (Freemium)
 
 ## App Builders (https://vibepicks.ai/app-builders/)
 1. [Lovable](https://lovable.dev): Prompt-to-full-stack web app with Supabase integration (Freemium)
 2. [Bolt.new](https://bolt.new): In-browser prompt-to-app builds you can run and deploy (Freemium)
-3. [v0](https://v0.dev): Generating React/Next.js UI and apps from prompts (Freemium)
+3. [v0](https://v0.app): Generating React/Next.js UI and apps from prompts (Freemium)
 4. [Replit](https://replit.com): Cloud IDE with an agent that builds and hosts apps (Freemium)
 
 ## Deploy & Hosting (https://vibepicks.ai/hosting/)
 1. [Vercel](https://vercel.com): Deploying Next.js and frontend apps from Git (Freemium)
 2. [Netlify](https://www.netlify.com): Static sites and Jamstack apps with simple deploys (Freemium)
-3. [Cloudflare Pages](https://pages.cloudflare.com): Fast global static hosting plus Workers for edge logic (Freemium)
-4. [Railway](https://railway.com): Deploying backends, workers, and databases with little config (Paid)
+3. [Cloudflare Pages](https://www.cloudflare.com/products/pages/): Fast global static hosting plus Workers for edge logic (Freemium)
+4. [Railway](https://railway.com): Deploying backends, workers, and databases with little config (Freemium)
 5. [Render](https://render.com): Hosting web services, cron jobs, and Postgres (Freemium)
 
 ## Auth (https://vibepicks.ai/auth/)
@@ -30,7 +30,7 @@
 ## Databases & Backend (https://vibepicks.ai/databases/)
 1. [Supabase](https://supabase.com): Postgres, auth, storage, and realtime in one backend (Freemium)
 2. [Firebase](https://firebase.google.com): Realtime NoSQL backend for quick mobile/web apps (Freemium)
-3. [Neon](https://neon.tech): Serverless Postgres with branching (Freemium)
+3. [Neon](https://neon.com): Serverless Postgres with branching (Freemium)
 4. [Convex](https://www.convex.dev): Reactive TypeScript backend with built-in database (Freemium)
 5. [PlanetScale](https://planetscale.com): Scalable managed MySQL/Postgres (Paid)
 
@@ -48,10 +48,10 @@
 
 ## LLM APIs (https://vibepicks.ai/llm-apis/)
 1. [OpenAI API](https://platform.openai.com): General-purpose GPT models for chat, tools, and vision (Paid)
-2. [Anthropic API](https://www.anthropic.com/api): Claude models, strong at coding and long context (Paid)
+2. [Anthropic API](https://claude.com/platform/api): Claude models, strong at coding and long context (Paid)
 3. [Google Gemini API](https://ai.google.dev): Gemini models with large context and multimodal input (Freemium)
 4. [xAI API](https://x.ai/api): Grok models via an OpenAI-compatible API (Paid)
-5. [OpenRouter](https://openrouter.ai): One API key to route across many model providers (Paid)
+5. [OpenRouter](https://openrouter.ai): One API key to route across many model providers (Freemium)
 
 ## Recent releases
 - 2026-10-15: Muse Spark Open (Meta) — Open-weight version of Muse Spark for self-hosted agentic coding, 1M context (https://dev.meta.ai/resources/blog/build-with-muse-spark-open)
