@@ -60,6 +60,11 @@
 4. [Recraft](https://www.recraft.ai): Logos, icons, vector art and brand sets (Freemium)
 5. [Midjourney](https://www.midjourney.com): High-quality illustrations and artistic images (Paid)
 
+## AI Audio & Voice (https://vibepicks.ai/ai-audio/)
+1. [Suno](https://suno.com): Songs, jingles and background music from a text description (Freemium)
+2. [ElevenLabs](https://elevenlabs.io): Realistic AI voiceovers, narration, sound effects and music (Freemium)
+3. [Descript](https://www.descript.com): Edit podcasts and videos by editing the transcript (Freemium)
+
 ## Recent releases
 - 2026-10-15: Muse Spark Open (Meta) — Open-weight version of Muse Spark for self-hosted agentic coding, 1M context (https://dev.meta.ai/resources/blog/build-with-muse-spark-open)
 - 2026-10-13: Gemini 4 Argon (Google) — Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio (https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/)

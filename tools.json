@@ -358,6 +358,35 @@
           "why": "Produces some of the most beautiful, artistic images around. No free plan, so try a free option first."
         }
       ]
+    },
+    {
+      "id": "ai-audio",
+      "name": "AI Audio & Voice",
+      "icon": "🎧",
+      "beginner": "Tools that make sound for you. Type a description or a script and they create music, jingles, realistic voiceovers, or clean up and transcribe your recordings. Great for podcasts, YouTube and stream intros.",
+      "tools": [
+        {
+          "name": "Suno",
+          "use": "Songs, jingles and background music from a text description",
+          "pricing": "Freemium",
+          "url": "https://suno.com",
+          "why": "Describe the song you want, like \"upbeat 10-second podcast intro jingle\", and it makes it with music and even vocals. Free to try; downloading and commercial use need the $10/mo plan."
+        },
+        {
+          "name": "ElevenLabs",
+          "use": "Realistic AI voiceovers, narration, sound effects and music",
+          "pricing": "Freemium",
+          "url": "https://elevenlabs.io",
+          "why": "Paste your script and it reads it out in a natural human-sounding voice. Also makes sound effects. Free monthly credits, paid from $6/mo."
+        },
+        {
+          "name": "Descript",
+          "use": "Edit podcasts and videos by editing the transcript",
+          "pricing": "Freemium",
+          "url": "https://www.descript.com",
+          "why": "Turns your recording into text, and you edit the audio just like a document: delete a word and it's gone from the recording. Free plan includes 60 minutes a month."
+        }
+      ]
     }
   ],
   "releases": [
