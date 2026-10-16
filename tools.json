@@ -437,6 +437,179 @@
           "why": "Learn and test PLC programs (ladder logic, structured text) for free without buying an industrial controller. It can run on a regular PC or a Raspberry Pi."
         }
       ]
+    },
+    {
+      "id": "ai-video",
+      "name": "AI Video & Clips",
+      "icon": "🎬",
+      "beginner": "Tools for short videos: TikToks, Reels, YouTube Shorts and stream highlights. They cut long videos into clips, add captions automatically and help you edit without learning pro software.",
+      "tools": [
+        {
+          "name": "CapCut",
+          "use": "Edit shorts and reels with auto captions",
+          "pricing": "Freemium",
+          "url": "https://www.capcut.com",
+          "why": "A free, easy video editor made for TikTok-style videos. Auto captions, templates and simple cuts are on the free plan; some effects need Pro."
+        },
+        {
+          "name": "Opus Clip",
+          "use": "Turn a long video or stream into short clips",
+          "pricing": "Freemium",
+          "url": "https://www.opus.pro",
+          "why": "Upload a long video or paste a YouTube link and AI picks the best moments, crops them vertical and adds captions. Free plan gives 60 minutes of video a month, with a watermark."
+        },
+        {
+          "name": "Descript",
+          "use": "Edit video by editing the transcript",
+          "pricing": "Freemium",
+          "url": "https://www.descript.com",
+          "why": "Your video becomes a text document. Delete words in the text and they're cut from the video. Good for talking videos and podcasts."
+        },
+        {
+          "name": "Runway",
+          "use": "Generate short AI video clips from text or images",
+          "pricing": "Freemium",
+          "url": "https://runwayml.com",
+          "why": "Makes brand-new video clips from a description or a picture. Free plan is a one-time 125 credits, enough to try a few clips."
+        }
+      ]
+    },
+    {
+      "id": "automations",
+      "name": "Automations & Agents",
+      "icon": "⚙️",
+      "beginner": "Tools that connect your apps so boring tasks happen on their own, like sending new form signups to a spreadsheet or emailing you when an order comes in. No coding needed.",
+      "tools": [
+        {
+          "name": "Zapier",
+          "use": "Connect apps with simple if-this-then-that steps",
+          "pricing": "Freemium",
+          "url": "https://zapier.com",
+          "why": "The easiest place to start: pick a trigger and an action and it just runs. Free plan covers 100 tasks a month with two-step automations."
+        },
+        {
+          "name": "Make",
+          "use": "Visual drag-and-drop automations",
+          "pricing": "Freemium",
+          "url": "https://www.make.com",
+          "why": "Draw your automation as a flowchart. More free room than Zapier (1,000 credits a month), a little more to learn."
+        },
+        {
+          "name": "n8n",
+          "use": "Powerful automations and AI agents you can host yourself",
+          "pricing": "Freemium",
+          "url": "https://n8n.io",
+          "why": "Very flexible and free if you run it on your own computer or server. The hosted version is a 14-day trial, then paid. Best once you're comfortable."
+        }
+      ]
+    },
+    {
+      "id": "websites",
+      "name": "Websites & Stores",
+      "icon": "🛍️",
+      "beginner": "For a simple business website or online shop, like a bakery, a portfolio or selling your crafts. These build the site for you from templates or a prompt, and you edit by dragging things around. No coding, and no need for a full custom app.",
+      "tools": [
+        {
+          "name": "Wix",
+          "use": "AI-built business websites with drag-and-drop editing",
+          "pricing": "Freemium",
+          "url": "https://www.wix.com",
+          "why": "Describe your business and its AI builds a starter site you can then drag and edit. Free plan works but shows Wix ads and a wixsite.com address."
+        },
+        {
+          "name": "Shopify",
+          "use": "Online store to sell products",
+          "pricing": "Paid",
+          "url": "https://www.shopify.com",
+          "why": "The standard for selling things online: products, checkout, shipping and payments in one place. Short free trial, then usually $1 a month for 3 months before regular pricing."
+        },
+        {
+          "name": "Framer",
+          "use": "Good-looking sites and landing pages with AI layouts",
+          "pricing": "Freemium",
+          "url": "https://www.framer.com",
+          "why": "Great for a sharp-looking landing page or portfolio. AI can draft the layout for you. Free plan uses a Framer address and badge."
+        },
+        {
+          "name": "Squarespace",
+          "use": "Polished templates for a simple business site or shop",
+          "pricing": "Paid",
+          "url": "https://www.squarespace.com",
+          "why": "Clean, professional templates that are hard to make look bad. No free plan, but there's a 14-day free trial."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing & Marketing",
+      "icon": "✍️",
+      "beginner": "Tools for the words around your project: social posts, emails, newsletters, product descriptions and ads. Tell them what you sell and who it's for, then edit the draft so it sounds like you.",
+      "tools": [
+        {
+          "name": "ChatGPT",
+          "use": "Draft posts, emails and product descriptions",
+          "pricing": "Freemium",
+          "url": "https://chatgpt.com",
+          "why": "Tell it what you're selling and who it's for and it writes a first draft in seconds. Ask for a few versions and pick the one that sounds most like you."
+        },
+        {
+          "name": "Claude",
+          "use": "Natural-sounding writing and rewrites",
+          "pricing": "Freemium",
+          "url": "https://claude.ai",
+          "why": "Good at writing that doesn't sound like a robot, and at rewriting your own draft to be clearer. Free plan has daily limits."
+        },
+        {
+          "name": "Grammarly",
+          "use": "Fix spelling, grammar and tone as you type",
+          "pricing": "Freemium",
+          "url": "https://www.grammarly.com",
+          "why": "Checks your writing everywhere you type, in email, social posts and docs. The free plan catches spelling and grammar mistakes."
+        }
+      ]
+    },
+    {
+      "id": "cad-machining",
+      "name": "CAD & Machining",
+      "icon": "🛠️",
+      "beginner": "Tools for designing real parts and making them on a 3D printer, CNC mill or lathe. Honest note: most CAD and CAM is not AI yet. A few tools now let you describe a part in words, and AI chat can help explain G-code, but always check toolpaths and simulate before you cut metal.",
+      "tools": [
+        {
+          "name": "Fusion",
+          "use": "CAD and CAM in one, from design to toolpaths",
+          "pricing": "Freemium",
+          "url": "https://www.autodesk.com/products/fusion-360/personal",
+          "why": "Design the part and make the toolpaths in the same program. Free for personal, non-commercial use (under $1,000 a year), with limits like 10 active designs and 3-axis CAM. Its AI Assistant is still a preview, and generative design needs a paid plan."
+        },
+        {
+          "name": "Onshape",
+          "use": "Browser-based CAD that runs on any computer",
+          "pricing": "Freemium",
+          "url": "https://www.onshape.com",
+          "why": "Full 3D CAD in your web browser, no install. Free plan, but your designs are public. Includes an AI Advisor that answers how-to questions."
+        },
+        {
+          "name": "Zoo Text-to-CAD",
+          "use": "Describe a part in words and get a 3D model",
+          "pricing": "Freemium",
+          "url": "https://zoo.dev/text-to-cad",
+          "why": "Type something like \"a flange with 4 bolt holes\" and it makes an editable CAD model you can export as STEP. Works best on simple parts. Free plan includes $10 of AI use a month."
+        },
+        {
+          "name": "Tinkercad",
+          "use": "Very simple 3D designs for printing",
+          "pricing": "Free",
+          "url": "https://www.tinkercad.com",
+          "why": "Autodesk's free beginner tool. Not AI, but the easiest way to make a 3D-printable part in an afternoon."
+        },
+        {
+          "name": "ChatGPT",
+          "use": "Explain and draft G-code, feeds and speeds",
+          "pricing": "Freemium",
+          "url": "https://chatgpt.com",
+          "why": "Good for learning what G-code lines do or drafting a simple program from your dimensions and tool. It can get things wrong, so always simulate and dry-run above the part before cutting."
+        }
+      ]
     }
   ],
   "releases": [

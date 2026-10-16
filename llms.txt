@@ -73,6 +73,35 @@
 5. [Flux](https://www.flux.ai): AI-assisted circuit and PCB design (Paid)
 6. [OpenPLC](https://autonomylogic.com): Free, open-source PLC you can program with ladder logic (Free)
 
+## AI Video & Clips (https://vibepicks.ai/ai-video/)
+1. [CapCut](https://www.capcut.com): Edit shorts and reels with auto captions (Freemium)
+2. [Opus Clip](https://www.opus.pro): Turn a long video or stream into short clips (Freemium)
+3. [Descript](https://www.descript.com): Edit video by editing the transcript (Freemium)
+4. [Runway](https://runwayml.com): Generate short AI video clips from text or images (Freemium)
+
+## Automations & Agents (https://vibepicks.ai/automations/)
+1. [Zapier](https://zapier.com): Connect apps with simple if-this-then-that steps (Freemium)
+2. [Make](https://www.make.com): Visual drag-and-drop automations (Freemium)
+3. [n8n](https://n8n.io): Powerful automations and AI agents you can host yourself (Freemium)
+
+## Websites & Stores (https://vibepicks.ai/websites/)
+1. [Wix](https://www.wix.com): AI-built business websites with drag-and-drop editing (Freemium)
+2. [Shopify](https://www.shopify.com): Online store to sell products (Paid)
+3. [Framer](https://www.framer.com): Good-looking sites and landing pages with AI layouts (Freemium)
+4. [Squarespace](https://www.squarespace.com): Polished templates for a simple business site or shop (Paid)
+
+## Writing & Marketing (https://vibepicks.ai/writing/)
+1. [ChatGPT](https://chatgpt.com): Draft posts, emails and product descriptions (Freemium)
+2. [Claude](https://claude.ai): Natural-sounding writing and rewrites (Freemium)
+3. [Grammarly](https://www.grammarly.com): Fix spelling, grammar and tone as you type (Freemium)
+
+## CAD & Machining (https://vibepicks.ai/cad-machining/)
+1. [Fusion](https://www.autodesk.com/products/fusion-360/personal): CAD and CAM in one, from design to toolpaths (Freemium)
+2. [Onshape](https://www.onshape.com): Browser-based CAD that runs on any computer (Freemium)
+3. [Zoo Text-to-CAD](https://zoo.dev/text-to-cad): Describe a part in words and get a 3D model (Freemium)
+4. [Tinkercad](https://www.tinkercad.com): Very simple 3D designs for printing (Free)
+5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
+
 ## Recent releases
 - 2026-10-15: Muse Spark Open (Meta) — Open-weight version of Muse Spark for self-hosted agentic coding, 1M context (https://dev.meta.ai/resources/blog/build-with-muse-spark-open)
 - 2026-10-13: Gemini 4 Argon (Google) — Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio (https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/)
