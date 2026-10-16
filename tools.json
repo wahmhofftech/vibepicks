@@ -315,6 +315,49 @@
         }
       ],
       "beginner": "The AI 'brains' you plug into your own app to make it chat, write, answer questions or read documents."
+    },
+    {
+      "id": "ai-images",
+      "name": "AI Images & Art",
+      "icon": "🎨",
+      "beginner": "Tools that make pictures from a sentence you type. Describe what you want, like \"a cute cartoon cat emote waving\", and they draw it in seconds. Great for emotes, stickers, logos, thumbnails, avatars and art for games.",
+      "tools": [
+        {
+          "name": "Ideogram",
+          "use": "Logos, stickers, posters and images with readable text",
+          "pricing": "Freemium",
+          "url": "https://ideogram.ai",
+          "why": "The best at putting real, readable words inside a picture, so it's great for logos, thumbnails and channel art. Free credits every week."
+        },
+        {
+          "name": "Leonardo",
+          "use": "Emotes, game assets, characters and stylized art",
+          "pricing": "Freemium",
+          "url": "https://leonardo.ai",
+          "why": "Lots of ready-made art styles for cartoons, game items and characters, which makes it easy to get a consistent look for a set of emotes. Free tokens every day."
+        },
+        {
+          "name": "ChatGPT Images",
+          "use": "Quick images and edits by chatting",
+          "pricing": "Freemium",
+          "url": "https://chatgpt.com/images",
+          "why": "Just describe the picture in plain English and ask for changes like \"make it smaller and add a blue outline\". Easiest place to start."
+        },
+        {
+          "name": "Recraft",
+          "use": "Logos, icons, vector art and brand sets",
+          "pricing": "Freemium",
+          "url": "https://www.recraft.ai",
+          "why": "Makes clean logos and icons that stay sharp at any size, so they look good as tiny emotes and on big banners alike."
+        },
+        {
+          "name": "Midjourney",
+          "use": "High-quality illustrations and artistic images",
+          "pricing": "Paid",
+          "url": "https://www.midjourney.com",
+          "why": "Produces some of the most beautiful, artistic images around. No free plan, so try a free option first."
+        }
+      ]
     }
   ],
   "releases": [
