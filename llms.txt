@@ -71,6 +71,7 @@
 3. [Tinkercad](https://www.tinkercad.com): Beginner circuits and 3D-printable designs (Free)
 4. [ChatGPT](https://chatgpt.com): Explain wiring, write firmware and troubleshoot step by step (Freemium)
 5. [Flux](https://www.flux.ai): AI-assisted circuit and PCB design (Paid)
+6. [OpenPLC](https://autonomylogic.com): Free, open-source PLC you can program with ladder logic (Free)
 
 ## Recent releases
 - 2026-10-15: Muse Spark Open (Meta) — Open-weight version of Muse Spark for self-hosted agentic coding, 1M context (https://dev.meta.ai/resources/blog/build-with-muse-spark-open)
