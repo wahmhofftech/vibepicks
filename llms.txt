@@ -5,7 +5,7 @@
 1. [Cursor](https://cursor.com): AI-first code editor for building and refactoring whole apps (Freemium)
 2. [Claude Code](https://claude.com/product/claude-code): Terminal-based agent for multi-file changes in real repos (Paid)
 3. [GitHub Copilot](https://github.com/features/copilot): Inline completions and agent mode inside VS Code and GitHub (Freemium)
-4. [Windsurf](https://windsurf.com): Agentic IDE with a built-in coding assistant (Freemium)
+4. [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Agentic IDE for running and managing local and cloud coding agents (Freemium)
 5. [OpenAI Codex](https://chatgpt.com/codex): Delegating coding tasks to a cloud or CLI agent (Freemium)
 
 ## App Builders (https://vibepicks.ai/app-builders/)
@@ -37,7 +37,7 @@
 ## Design-to-Code (https://vibepicks.ai/design-to-code/)
 1. [Figma Make](https://www.figma.com/make/): Turning prompts and Figma designs into working prototypes (Freemium)
 2. [Builder.io](https://www.builder.io): Converting Figma designs into framework code (Freemium)
-3. [Locofy](https://www.locofy.ai): Figma/Penpot to React, Next.js, and mobile code (Freemium)
+3. [Locofy](https://www.locofy.ai): Figma/Penpot to React, Next.js, and mobile code (Paid)
 4. [Anima](https://www.animaapp.com): Exporting Figma designs to React/HTML code (Freemium)
 
 ## Testing & QA (https://vibepicks.ai/testing/)
@@ -77,7 +77,7 @@
 1. [CapCut](https://www.capcut.com): Edit shorts and reels with auto captions (Freemium)
 2. [Opus Clip](https://www.opus.pro): Turn a long video or stream into short clips (Freemium)
 3. [Descript](https://www.descript.com): Edit video by editing the transcript (Freemium)
-4. [Runway](https://runwayml.com): Generate short AI video clips from text or images (Freemium)
+4. [Runway](https://runway.com): Generate short AI video clips from text or images (Freemium)
 
 ## Automations & Agents (https://vibepicks.ai/automations/)
 1. [Zapier](https://zapier.com): Connect apps with simple if-this-then-that steps (Freemium)
@@ -98,11 +98,18 @@
 ## CAD & Machining (https://vibepicks.ai/cad-machining/)
 1. [Fusion](https://www.autodesk.com/products/fusion-360/personal): CAD and CAM in one, from design to toolpaths (Freemium)
 2. [Onshape](https://www.onshape.com): Browser-based CAD that runs on any computer (Freemium)
-3. [Zoo Text-to-CAD](https://zoo.dev/text-to-cad): Describe a part in words and get a 3D model (Freemium)
+3. [Zoo Zookeeper](https://zoo.dev/zookeeper): Describe a part in words and get an editable 3D CAD model (Freemium)
 4. [Tinkercad](https://www.tinkercad.com): Very simple 3D designs for printing (Free)
 5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
 
 ## Recent releases
+- 2026-10-15: Claude API (Anthropic) — Fast mode for Claude Opus 5.5 is out of research preview: up to 2.5x faster output, no waitlist or beta header, $8/$40 per million tokens (https://platform.claude.com/docs/en/release-notes/overview)
+- 2026-10-15: Neon — Neon Realtime in public beta: subscribe to any read-only SQL query and your app updates live, with React hooks and a coding-agent skill; free during beta (https://neon.com/blog/neon-now-has-realtime)
+- 2026-10-15: Figma — Code layers enter open beta (code-backed prototypes on the canvas, all plans), plus Specs for Markdown context you can hand to coding agents via Figma MCP (https://www.figma.com/blog/build-by-design/)
+- 2026-10-15: Nemotron 3.5 (NVIDIA) — Open 120B Nemotron 3.5 Super VL (text, image, video; up to 1M context) and Bolt 74B-A9B, a local agent model that fits in 24GB; on Hugging Face and OpenRouter (https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/)
+- 2026-10-15: FLUX 3 Image Klein (Black Forest Labs) — Open-weights 5.6B image model with native 4K and up to 10 reference images; runs on consumer GPUs, API from $0.009 per 1K image (https://bfl.ai/blog/flux-3-image-klein)
+- 2026-10-15: Krea 3 — New image editing model: most edits under 8 seconds at native 2K, keeps products and characters consistent; $0.06 per 2K image, also on fal, Replicate and OpenRouter (https://www.krea.ai/blog/introducing-krea-3)
+- 2026-10-15: Attie (Bluesky) — Bluesky's Attie now lets anyone describe and build small shareable sites, games, quizzes and polls with no code, with Bluesky sign-in built in (https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/)
 - 2026-10-15: Muse Spark Open (Meta) — Open-weight version of Muse Spark for self-hosted agentic coding, 1M context (https://dev.meta.ai/resources/blog/build-with-muse-spark-open)
 - 2026-10-13: Gemini 4 Argon (Google) — Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio (https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/)
 - 2026-10-13: GitHub Copilot — Gemini 4 Argon now generally available in Copilot (Pro+, Max, Business, Enterprise) (https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/)
