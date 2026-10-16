@@ -387,6 +387,49 @@
           "why": "Turns your recording into text, and you edit the audio just like a document: delete a word and it's gone from the recording. Free plan includes 60 minutes a month."
         }
       ]
+    },
+    {
+      "id": "ai-hardware",
+      "name": "AI for Hardware & Electronics",
+      "icon": "🔌",
+      "beginner": "Tools for projects you can touch: Arduino, ESP32 and Raspberry Pi boards, sensors, wiring, robots, 3D printing and smart-home gadgets. They help you write the code for your board, test your wiring safely on screen before you plug anything in, and even design your own circuit boards.",
+      "tools": [
+        {
+          "name": "Arduino Cloud",
+          "use": "Write, upload and control Arduino/ESP32 projects with a built-in AI assistant",
+          "pricing": "Freemium",
+          "url": "https://cloud.arduino.cc",
+          "why": "Arduino's own online editor has an AI helper that writes and fixes the code for your board, and lets you control wireless (Wi-Fi) projects from your phone. Free plan includes 30 AI requests a month."
+        },
+        {
+          "name": "Wokwi",
+          "use": "Simulate Arduino, ESP32 and Raspberry Pi Pico projects in your browser",
+          "pricing": "Freemium",
+          "url": "https://wokwi.com",
+          "why": "Build and test your circuit on screen with virtual boards, sensors and LEDs, including Wi-Fi on the ESP32, so you can't fry real parts while learning. Free for public projects."
+        },
+        {
+          "name": "Tinkercad",
+          "use": "Beginner circuits and 3D-printable designs",
+          "pricing": "Free",
+          "url": "https://www.tinkercad.com",
+          "why": "Autodesk's free, super-friendly tool for designing parts to 3D print and wiring up practice circuits with a virtual Arduino."
+        },
+        {
+          "name": "ChatGPT",
+          "use": "Explain wiring, write firmware and troubleshoot step by step",
+          "pricing": "Freemium",
+          "url": "https://chatgpt.com",
+          "why": "Describe your parts and what you want them to do and it explains the wiring and writes the board code. You can even send it a photo of your setup when something isn't working."
+        },
+        {
+          "name": "Flux",
+          "use": "AI-assisted circuit and PCB design",
+          "pricing": "Paid",
+          "url": "https://www.flux.ai",
+          "why": "An AI helper for designing your own custom circuit board, from parts list to a board you can order. Paid after a 14-day free trial (free for students)."
+        }
+      ]
     }
   ],
   "releases": [
