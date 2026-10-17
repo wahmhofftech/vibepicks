@@ -8,7 +8,7 @@ def page(path,title,desc,body,ld):
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
 <header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header><main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></footer></body></html>'''
-def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t["url"]}" rel="noopener">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span></div></div>'
+def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t.get("aff") or t["url"]}" rel="{"sponsored noopener" if t.get("aff") else "noopener"}">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span>{" <span class=\"tag\">Affiliate link</span>" if t.get("aff") else ""}</div></div>'
 urls=['/','/releases/']
 for c in d['categories']:
   title=f'Best {c["name"]} for Vibe Coders (2026) — VibePicks'
@@ -27,7 +27,7 @@ sbody=('<div id="thanks" class="card" style="display:none"><b>Thanks! Payment re
 '<section class="hero" style="padding-bottom:10px"><h1>Sponsor VibePicks</h1><p>Reach vibe coders and builders choosing their AI stack.</p></section>'
 '<div class="grid">'+cards+'</div>'
 '<h2>Honest audience note</h2><p>VibePicks is a new site and the newsletter is just starting, so our audience is small and growing. That is why these are early-bird prices. Early sponsors keep their rate as we grow.</p>'
-'<h2>Our rules</h2><ul><li>Every sponsored spot is clearly labeled <b>Sponsored</b>.</li><li>Sponsorship never changes editorial rankings. Rankings are our own picks.</li><li>We may decline tools that are not a fit for builders.</li></ul>'
+'<h2>Our rules</h2><ul><li>Every sponsored spot is clearly labeled <b>Sponsored</b>.</li><li>Some tool links are affiliate links, labeled <b>Affiliate link</b>. We may earn a commission if you sign up, at no extra cost to you. Affiliate deals never change rankings.</li><li>Sponsorship never changes editorial rankings. Rankings are our own picks.</li><li>We may decline tools that are not a fit for builders.</li></ul>'
 '<p>Questions or custom deals: <a href="mailto:news@vibepicks.ai">news@vibepicks.ai</a></p>'
 '<script>if(location.search.includes("thanks=1"))document.getElementById("thanks").style.display="block"</script>')
 os.makedirs('sponsor',exist_ok=True)

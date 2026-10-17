@@ -521,7 +521,8 @@
           "use": "Online store to sell products",
           "pricing": "Paid",
           "url": "https://www.shopify.com",
-          "why": "The standard for selling things online: products, checkout, shipping and payments in one place. Short free trial, then usually $1 a month for 3 months before regular pricing."
+          "why": "The standard for selling things online: products, checkout, shipping and payments in one place. Short free trial, then usually $1 a month for 3 months before regular pricing.",
+          "aff": "https://shopify.pxf.io/c/7989845/2784851/13624"
         },
         {
           "name": "Framer",
