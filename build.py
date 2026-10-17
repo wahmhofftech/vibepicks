@@ -1,13 +1,14 @@
 # Regenerates static SEO pages, sitemap, llms.txt from tools.json. Run: python3 build.py
 import json,html,os
 S="https://vibepicks.ai"; d=json.load(open('tools.json')); E=html.escape
+def catbar(cur=''): return '<nav class="catbar" aria-label="Browse categories"><span class="catbar-l">Browse categories</span>'+''.join(f'<a class="chip{" on" if c["id"]==cur else ""}" href="/{c["id"]}/"'+(' aria-current="page"' if c["id"]==cur else '')+f'>{c["icon"]} {E(c["name"])}</a>' for c in d['categories'])+'</nav>'+('<script>document.querySelector(".catbar .on").scrollIntoView({inline:"center",block:"nearest"})</script>' if cur in [c['id'] for c in d['categories']] else '')
 def page(path,title,desc,body,ld):
   os.makedirs(path or '.',exist_ok=True); url=f"{S}/{path+'/' if path else ''}"
   return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
-<header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header><main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></footer></body></html>'''
+<header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header>{catbar(path)}<main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></footer></body></html>'''
 def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t.get("aff") or t["url"]}" rel="{"sponsored noopener" if t.get("aff") else "noopener"}">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span>{" <span class=\"tag\">Affiliate link</span>" if t.get("aff") else ""}</div></div>'
 urls=['/','/releases/']
 for c in d['categories']:
@@ -53,3 +54,9 @@ for c in d['categories']:
 F+=['## Verified releases (newest first)',f'Page: {S}/releases/','']+[f'- {r["date"]} | {r["tool"]} ({CN.get(r["category"],r["category"])}): {r["title"]}. Source: {r["source"]}' for r in d['releases']]
 F+=['','## Contact','Newsletter and sponsorship: news@vibepicks.ai',f'Sponsor packages: {S}/sponsor/']
 open('llms-full.txt','w').write('\n'.join(F)+'\n')
+
+import re
+h=open('index.html').read()
+blk='<!--catbar-->'+catbar()+'<!--/catbar-->'
+h=re.sub(r'<!--catbar-->.*?<!--/catbar-->',lambda m:blk,h,flags=re.S) if '<!--catbar-->' in h else h.replace('</header>','</header>'+blk,1)
+open('index.html','w').write(h)
