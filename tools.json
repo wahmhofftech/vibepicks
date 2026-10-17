@@ -614,6 +614,62 @@
   ],
   "releases": [
     {
+      "date": "2026-10-17",
+      "tool": "DeepSeek API",
+      "title": "DeepSeek-V4.1-Flash-1017 now powers the deepseek-flash API model (open weights on Hugging Face), and DeepSeek's Search and Fetch web APIs are open to all developers at $0.75 per 1,000 calls",
+      "category": "llm-apis",
+      "source": "https://api-docs.deepseek.com/news/news261017"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Beam (Reflection)",
+      "title": "Beam, a 501B-parameter (23B active) open-weight model for coding and agents, is out under Apache 2.0 with the open-source Mirror CLI; free to start on Reflection's API and also on OpenRouter, Vercel, Ollama and other partners",
+      "category": "llm-apis",
+      "source": "https://reflection.ai/blog/beam-is-available"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Cursor",
+      "title": "Cloud agents can now build interactive canvases (dashboards, reports) you share with a link; Environments API in beta; cloud environments now hold up to 300 repos and large ones load 5x faster",
+      "category": "coding-agents",
+      "source": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Junie Local (JetBrains)",
+      "title": "JetBrains' free on-device coding agent runs on NVIDIA RTX Spark at launch, and Windows support is now stable on RTX cards with 24 GB+ VRAM: no token bill, and your code never leaves the machine",
+      "category": "coding-agents",
+      "source": "https://blog.jetbrains.com/junie/2026/10/junie-local-rtx-spark/"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Google AI Studio",
+      "title": "Google AI Pro subscribers can now build apps with Gemini 4 Argon in AI Studio Build and the playground",
+      "category": "app-builders",
+      "source": "https://x.com/GoogleAIStudio/status/2111240722426802258"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "HeyGen",
+      "title": "HeyGen Video 1, its video generation model, is now available in the HeyGen MCP server, so you can ask your AI agent for a video and get it back in seconds",
+      "category": "ai-video",
+      "source": "https://x.com/HeyGenDev/status/2111151435778039811"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Clerk",
+      "title": "New Agents section in your Clerk app config with setup for adding auth to your MCP server, plus a ready-made agent prompt for building a new MCP server",
+      "category": "auth",
+      "source": "https://x.com/clerk/status/2111193502587752702"
+    },
+    {
+      "date": "2026-10-15",
+      "tool": "Claude Code",
+      "title": "Code Review is generally available on Claude Team and Enterprise: automatic reviews on new GitHub pull requests, about 3x faster than the preview (6-10 minutes), with Quick, Standard or Deep review levels per repo",
+      "category": "testing",
+      "source": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+    },
+    {
       "date": "2026-10-15",
       "tool": "Claude API (Anthropic)",
       "title": "Fast mode for Claude Opus 5.5 is out of research preview: up to 2.5x faster output, no waitlist or beta header, $8/$40 per million tokens",

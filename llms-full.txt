@@ -1,0 +1,497 @@
+# VibePicks (full directory)
+> Every VibePicks ranking, tool, plain-English reason, pricing label and verified release in one file. Short index: https://vibepicks.ai/llms.txt
+
+Site: https://vibepicks.ai/
+Last updated: 2026-10-17
+About: VibePicks ranks AI tools for vibe coders, builders and non-coders by use case. #1 is our top pick in each category.
+Pricing labels: Free = no paid tier needed; Freemium = usable free plan plus paid upgrades; Paid = paid plan or trial that converts to paid.
+Rankings are editorial picks and are never sold. Sponsored placements are always labeled Sponsored.
+
+## Coding Agents & AI IDEs
+Page: https://vibepicks.ai/coding-agents/
+
+### #1 Cursor
+- Website: https://cursor.com
+- Pricing: Freemium
+- Use it for: AI-first code editor for building and refactoring whole apps
+- In plain English: A code editor with AI built in. You type what you want changed and it edits your project for you.
+
+### #2 Claude Code
+- Website: https://claude.com/product/claude-code
+- Pricing: Paid
+- Use it for: Terminal-based agent for multi-file changes in real repos
+- In plain English: Give it a task in plain English and it reads your whole project and makes the changes itself.
+
+### #3 GitHub Copilot
+- Website: https://github.com/features/copilot
+- Pricing: Freemium
+- Use it for: Inline completions and agent mode inside VS Code and GitHub
+- In plain English: Suggests the next lines of code as you type, so it's a gentle way to start using AI for coding.
+
+### #4 Devin Desktop (formerly Windsurf)
+- Website: https://devin.ai/desktop
+- Pricing: Freemium
+- Use it for: Agentic IDE for running and managing local and cloud coding agents
+- In plain English: An AI code editor that can take on bigger multi-step jobs across your project with little hand-holding.
+
+### #5 OpenAI Codex
+- Website: https://chatgpt.com/codex
+- Pricing: Freemium
+- Use it for: Delegating coding tasks to a cloud or CLI agent
+- In plain English: ChatGPT's coding agent. Hand it a job and it works through it in the background.
+
+## App Builders
+Page: https://vibepicks.ai/app-builders/
+
+### #1 Lovable
+- Website: https://lovable.dev
+- Pricing: Freemium
+- Use it for: Prompt-to-full-stack web app with Supabase integration
+- In plain English: Easiest place to start: describe your app and it builds a working version you can click around in minutes.
+
+### #2 Bolt.new
+- Website: https://bolt.new
+- Pricing: Freemium
+- Use it for: In-browser prompt-to-app builds you can run and deploy
+- In plain English: Type an idea and get a working website or app right in your browser, nothing to install.
+
+### #3 v0
+- Website: https://v0.app
+- Pricing: Freemium
+- Use it for: Generating React/Next.js UI and apps from prompts
+- In plain English: Great for good-looking websites and pages. Describe the look and it builds it for you.
+
+### #4 Replit
+- Website: https://replit.com
+- Pricing: Freemium
+- Use it for: Cloud IDE with an agent that builds and hosts apps
+- In plain English: Build, run and publish an app all in one place in your browser, with an AI helper that does the coding.
+
+## Deploy & Hosting
+Page: https://vibepicks.ai/hosting/
+
+### #1 Vercel
+- Website: https://vercel.com
+- Pricing: Freemium
+- Use it for: Deploying Next.js and frontend apps from Git
+- In plain English: One click to put your website online with a real link, and it's free for small sites.
+
+### #2 Netlify
+- Website: https://www.netlify.com
+- Pricing: Freemium
+- Use it for: Static sites and Jamstack apps with simple deploys
+- In plain English: Drag and drop your site to get it live on the internet. Simple and free to start.
+
+### #3 Cloudflare Pages
+- Website: https://www.cloudflare.com/products/pages/
+- Pricing: Freemium
+- Use it for: Fast global static hosting plus Workers for edge logic
+- In plain English: Free, fast hosting for websites, backed by one of the biggest internet companies.
+
+### #4 Railway
+- Website: https://railway.com
+- Pricing: Freemium
+- Use it for: Deploying backends, workers, and databases with little config
+- In plain English: Puts apps that need a server or database online without you managing any computers.
+
+### #5 Render
+- Website: https://render.com
+- Pricing: Freemium
+- Use it for: Hosting web services, cron jobs, and Postgres
+- In plain English: A simple place to run your app and its database online, with a free tier to try it.
+
+## Auth
+Page: https://vibepicks.ai/auth/
+
+### #1 Clerk
+- Website: https://clerk.com
+- Pricing: Freemium
+- Use it for: Drop-in sign-in UI and user management for React/Next.js
+- In plain English: Adds polished sign-up and log-in screens to your app in minutes.
+
+### #2 Supabase Auth
+- Website: https://supabase.com/auth
+- Pricing: Freemium
+- Use it for: Auth bundled with your Supabase Postgres database
+- In plain English: Free log-ins that come bundled with Supabase, so your accounts and data live in one place.
+
+### #3 Auth0
+- Website: https://auth0.com
+- Pricing: Freemium
+- Use it for: Enterprise-grade auth, SSO, and identity
+- In plain English: Battle-tested log-in system that big companies trust when security really matters.
+
+### #4 Firebase Authentication
+- Website: https://firebase.google.com/products/auth
+- Pricing: Freemium
+- Use it for: Simple auth for mobile and web apps on Google's stack
+- In plain English: Google's free log-in system, with easy 'Sign in with Google' and phone login.
+
+## Databases & Backend
+Page: https://vibepicks.ai/databases/
+
+### #1 Supabase
+- Website: https://supabase.com
+- Pricing: Freemium
+- Use it for: Postgres, auth, storage, and realtime in one backend
+- In plain English: Stores your app's data plus log-ins and file uploads, all in one free-to-start package.
+
+### #2 Firebase
+- Website: https://firebase.google.com
+- Pricing: Freemium
+- Use it for: Realtime NoSQL backend for quick mobile/web apps
+- In plain English: Google's all-in-one backend for saving data, great for phone apps and realtime updates.
+
+### #3 Neon
+- Website: https://neon.com
+- Pricing: Freemium
+- Use it for: Serverless Postgres with branching
+- In plain English: A simple online database that's free to start and only charges when it's actually being used.
+
+### #4 Convex
+- Website: https://www.convex.dev
+- Pricing: Freemium
+- Use it for: Reactive TypeScript backend with built-in database
+- In plain English: A backend where your app's data updates live on screen, without setting up servers.
+
+### #5 PlanetScale
+- Website: https://planetscale.com
+- Pricing: Paid
+- Use it for: Scalable managed MySQL/Postgres
+- In plain English: A heavy-duty database for when your app gets lots of users and needs to stay fast.
+
+## Design-to-Code
+Page: https://vibepicks.ai/design-to-code/
+
+### #1 Figma Make
+- Website: https://www.figma.com/make/
+- Pricing: Freemium
+- Use it for: Turning prompts and Figma designs into working prototypes
+- In plain English: Sketch or describe a screen and it turns it into a working prototype you can click.
+
+### #2 Builder.io
+- Website: https://www.builder.io
+- Pricing: Freemium
+- Use it for: Converting Figma designs into framework code
+- In plain English: Turns designs into real web pages and lets you edit the site visually, like a page builder.
+
+### #3 Locofy
+- Website: https://www.locofy.ai
+- Pricing: Paid
+- Use it for: Figma/Penpot to React, Next.js, and mobile code
+- In plain English: Converts your Figma designs into real app or website code.
+
+### #4 Anima
+- Website: https://www.animaapp.com
+- Pricing: Freemium
+- Use it for: Exporting Figma designs to React/HTML code
+- In plain English: Takes a design from Figma and turns it into a working website.
+
+## Testing & QA
+Page: https://vibepicks.ai/testing/
+
+### #1 Playwright
+- Website: https://playwright.dev
+- Pricing: Free
+- Use it for: Reliable end-to-end browser tests (open source)
+- In plain English: Free tool that clicks through your site like a real person to catch anything that breaks.
+
+### #2 Cypress
+- Website: https://www.cypress.io
+- Pricing: Freemium
+- Use it for: Developer-friendly E2E and component testing
+- In plain English: Lets you watch automated tests click through your app so you can see exactly where bugs happen.
+
+### #3 Sentry
+- Website: https://sentry.io
+- Pricing: Freemium
+- Use it for: Catching errors and crashes in production
+- In plain English: Emails you when your live app crashes and shows exactly what went wrong.
+
+### #4 CodeRabbit
+- Website: https://www.coderabbit.ai
+- Pricing: Freemium
+- Use it for: AI code review on pull requests
+- In plain English: An AI reviewer that reads your code changes and points out bugs before they go live.
+
+## LLM APIs
+Page: https://vibepicks.ai/llm-apis/
+
+### #1 OpenAI API
+- Website: https://platform.openai.com
+- Pricing: Paid
+- Use it for: General-purpose GPT models for chat, tools, and vision
+- In plain English: The ChatGPT brain you can plug into your own app or chatbot.
+
+### #2 Anthropic API
+- Website: https://claude.com/platform/api
+- Pricing: Paid
+- Use it for: Claude models, strong at coding and long context
+- In plain English: Claude's brain for your own app. Great at writing, reasoning and long documents.
+
+### #3 Google Gemini API
+- Website: https://ai.google.dev
+- Pricing: Freemium
+- Use it for: Gemini models with large context and multimodal input
+- In plain English: Google's AI with a generous free tier, good for chatbots and reading images or PDFs.
+
+### #4 xAI API
+- Website: https://x.ai/api
+- Pricing: Paid
+- Use it for: Grok models via an OpenAI-compatible API
+- In plain English: Grok's AI for your own app, with up-to-date knowledge and a big memory for long chats.
+
+### #5 OpenRouter
+- Website: https://openrouter.ai
+- Pricing: Freemium
+- Use it for: One API key to route across many model providers
+- In plain English: One account to try many different AI models and pick the best price for your chatbot.
+
+## AI Images & Art
+Page: https://vibepicks.ai/ai-images/
+
+### #1 Ideogram
+- Website: https://ideogram.ai
+- Pricing: Freemium
+- Use it for: Logos, stickers, posters and images with readable text
+- In plain English: The best at putting real, readable words inside a picture, so it's great for logos, thumbnails and channel art. Free credits every week.
+
+### #2 Leonardo
+- Website: https://leonardo.ai
+- Pricing: Freemium
+- Use it for: Emotes, game assets, characters and stylized art
+- In plain English: Lots of ready-made art styles for cartoons, game items and characters, which makes it easy to get a consistent look for a set of emotes. Free tokens every day.
+
+### #3 ChatGPT Images
+- Website: https://chatgpt.com/images
+- Pricing: Freemium
+- Use it for: Quick images and edits by chatting
+- In plain English: Just describe the picture in plain English and ask for changes like "make it smaller and add a blue outline". Easiest place to start.
+
+### #4 Recraft
+- Website: https://www.recraft.ai
+- Pricing: Freemium
+- Use it for: Logos, icons, vector art and brand sets
+- In plain English: Makes clean logos and icons that stay sharp at any size, so they look good as tiny emotes and on big banners alike.
+
+### #5 Midjourney
+- Website: https://www.midjourney.com
+- Pricing: Paid
+- Use it for: High-quality illustrations and artistic images
+- In plain English: Produces some of the most beautiful, artistic images around. No free plan, so try a free option first.
+
+## AI Audio & Voice
+Page: https://vibepicks.ai/ai-audio/
+
+### #1 Suno
+- Website: https://suno.com
+- Pricing: Freemium
+- Use it for: Songs, jingles and background music from a text description
+- In plain English: Describe the song you want, like "upbeat 10-second podcast intro jingle", and it makes it with music and even vocals. Free to try; downloading and commercial use need the $10/mo plan.
+
+### #2 ElevenLabs
+- Website: https://elevenlabs.io
+- Pricing: Freemium
+- Use it for: Realistic AI voiceovers, narration, sound effects and music
+- In plain English: Paste your script and it reads it out in a natural human-sounding voice. Also makes sound effects. Free monthly credits, paid from $6/mo.
+
+### #3 Descript
+- Website: https://www.descript.com
+- Pricing: Freemium
+- Use it for: Edit podcasts and videos by editing the transcript
+- In plain English: Turns your recording into text, and you edit the audio just like a document: delete a word and it's gone from the recording. Free plan includes 60 minutes a month.
+
+## AI for Hardware & Electronics
+Page: https://vibepicks.ai/ai-hardware/
+
+### #1 Arduino Cloud
+- Website: https://cloud.arduino.cc
+- Pricing: Freemium
+- Use it for: Write, upload and control Arduino/ESP32 projects with a built-in AI assistant
+- In plain English: Arduino's own online editor has an AI helper that writes and fixes the code for your board, and lets you control wireless (Wi-Fi) projects from your phone. Free plan includes 30 AI requests a month.
+
+### #2 Wokwi
+- Website: https://wokwi.com
+- Pricing: Freemium
+- Use it for: Simulate Arduino, ESP32 and Raspberry Pi Pico projects in your browser
+- In plain English: Build and test your circuit on screen with virtual boards, sensors and LEDs, including Wi-Fi on the ESP32, so you can't fry real parts while learning. Free for public projects.
+
+### #3 Tinkercad
+- Website: https://www.tinkercad.com
+- Pricing: Free
+- Use it for: Beginner circuits and 3D-printable designs
+- In plain English: Autodesk's free, super-friendly tool for designing parts to 3D print and wiring up practice circuits with a virtual Arduino.
+
+### #4 ChatGPT
+- Website: https://chatgpt.com
+- Pricing: Freemium
+- Use it for: Explain wiring, write firmware and troubleshoot step by step
+- In plain English: Describe your parts and what you want them to do and it explains the wiring and writes the board code. You can even send it a photo of your setup when something isn't working.
+
+### #5 Flux
+- Website: https://www.flux.ai
+- Pricing: Paid
+- Use it for: AI-assisted circuit and PCB design
+- In plain English: An AI helper for designing your own custom circuit board, from parts list to a board you can order. Paid after a 14-day free trial (free for students).
+
+### #6 OpenPLC
+- Website: https://autonomylogic.com
+- Pricing: Free
+- Use it for: Free, open-source PLC you can program with ladder logic
+- In plain English: Learn and test PLC programs (ladder logic, structured text) for free without buying an industrial controller. It can run on a regular PC or a Raspberry Pi.
+
+## AI Video & Clips
+Page: https://vibepicks.ai/ai-video/
+
+### #1 CapCut
+- Website: https://www.capcut.com
+- Pricing: Freemium
+- Use it for: Edit shorts and reels with auto captions
+- In plain English: A free, easy video editor made for TikTok-style videos. Auto captions, templates and simple cuts are on the free plan; some effects need Pro.
+
+### #2 Opus Clip
+- Website: https://www.opus.pro
+- Pricing: Freemium
+- Use it for: Turn a long video or stream into short clips
+- In plain English: Upload a long video or paste a YouTube link and AI picks the best moments, crops them vertical and adds captions. Free plan gives 60 minutes of video a month, with a watermark.
+
+### #3 Descript
+- Website: https://www.descript.com
+- Pricing: Freemium
+- Use it for: Edit video by editing the transcript
+- In plain English: Your video becomes a text document. Delete words in the text and they're cut from the video. Good for talking videos and podcasts.
+
+### #4 Runway
+- Website: https://runway.com
+- Pricing: Freemium
+- Use it for: Generate short AI video clips from text or images
+- In plain English: Makes brand-new video clips from a description or a picture. Free plan is a one-time 125 credits, enough to try a few clips.
+
+## Automations & Agents
+Page: https://vibepicks.ai/automations/
+
+### #1 Zapier
+- Website: https://zapier.com
+- Pricing: Freemium
+- Use it for: Connect apps with simple if-this-then-that steps
+- In plain English: The easiest place to start: pick a trigger and an action and it just runs. Free plan covers 100 tasks a month with two-step automations.
+
+### #2 Make
+- Website: https://www.make.com
+- Pricing: Freemium
+- Use it for: Visual drag-and-drop automations
+- In plain English: Draw your automation as a flowchart. More free room than Zapier (1,000 credits a month), a little more to learn.
+
+### #3 n8n
+- Website: https://n8n.io
+- Pricing: Freemium
+- Use it for: Powerful automations and AI agents you can host yourself
+- In plain English: Very flexible and free if you run it on your own computer or server. The hosted version is a 14-day trial, then paid. Best once you're comfortable.
+
+## Websites & Stores
+Page: https://vibepicks.ai/websites/
+
+### #1 Wix
+- Website: https://www.wix.com
+- Pricing: Freemium
+- Use it for: AI-built business websites with drag-and-drop editing
+- In plain English: Describe your business and its AI builds a starter site you can then drag and edit. Free plan works but shows Wix ads and a wixsite.com address.
+
+### #2 Shopify
+- Website: https://www.shopify.com
+- Pricing: Paid
+- Use it for: Online store to sell products
+- In plain English: The standard for selling things online: products, checkout, shipping and payments in one place. Short free trial, then usually $1 a month for 3 months before regular pricing.
+
+### #3 Framer
+- Website: https://www.framer.com
+- Pricing: Freemium
+- Use it for: Good-looking sites and landing pages with AI layouts
+- In plain English: Great for a sharp-looking landing page or portfolio. AI can draft the layout for you. Free plan uses a Framer address and badge.
+
+### #4 Squarespace
+- Website: https://www.squarespace.com
+- Pricing: Paid
+- Use it for: Polished templates for a simple business site or shop
+- In plain English: Clean, professional templates that are hard to make look bad. No free plan, but there's a 14-day free trial.
+
+## Writing & Marketing
+Page: https://vibepicks.ai/writing/
+
+### #1 ChatGPT
+- Website: https://chatgpt.com
+- Pricing: Freemium
+- Use it for: Draft posts, emails and product descriptions
+- In plain English: Tell it what you're selling and who it's for and it writes a first draft in seconds. Ask for a few versions and pick the one that sounds most like you.
+
+### #2 Claude
+- Website: https://claude.ai
+- Pricing: Freemium
+- Use it for: Natural-sounding writing and rewrites
+- In plain English: Good at writing that doesn't sound like a robot, and at rewriting your own draft to be clearer. Free plan has daily limits.
+
+### #3 Grammarly
+- Website: https://www.grammarly.com
+- Pricing: Freemium
+- Use it for: Fix spelling, grammar and tone as you type
+- In plain English: Checks your writing everywhere you type, in email, social posts and docs. The free plan catches spelling and grammar mistakes.
+
+## CAD & Machining
+Page: https://vibepicks.ai/cad-machining/
+
+### #1 Fusion
+- Website: https://www.autodesk.com/products/fusion-360/personal
+- Pricing: Freemium
+- Use it for: CAD and CAM in one, from design to toolpaths
+- In plain English: Design the part and make the toolpaths in the same program. Free for personal, non-commercial use (under $1,000 a year), with limits like 10 active designs and 3-axis CAM. Its AI Assistant is still a preview, and generative design needs a paid plan.
+
+### #2 Onshape
+- Website: https://www.onshape.com
+- Pricing: Freemium
+- Use it for: Browser-based CAD that runs on any computer
+- In plain English: Full 3D CAD in your web browser, no install. Free plan, but your designs are public. Includes an AI Advisor that answers how-to questions.
+
+### #3 Zoo Zookeeper
+- Website: https://zoo.dev/zookeeper
+- Pricing: Freemium
+- Use it for: Describe a part in words and get an editable 3D CAD model
+- In plain English: Type something like "a flange with 4 bolt holes" and it makes an editable CAD model you can export as STEP. Works best on simple parts. Free plan includes $10 of AI use a month.
+
+### #4 Tinkercad
+- Website: https://www.tinkercad.com
+- Pricing: Free
+- Use it for: Very simple 3D designs for printing
+- In plain English: Autodesk's free beginner tool. Not AI, but the easiest way to make a 3D-printable part in an afternoon.
+
+### #5 ChatGPT
+- Website: https://chatgpt.com
+- Pricing: Freemium
+- Use it for: Explain and draft G-code, feeds and speeds
+- In plain English: Good for learning what G-code lines do or drafting a simple program from your dimensions and tool. It can get things wrong, so always simulate and dry-run above the part before cutting.
+
+## Verified releases (newest first)
+Page: https://vibepicks.ai/releases/
+
+- 2026-10-17 | DeepSeek API (LLM APIs): DeepSeek-V4.1-Flash-1017 now powers the deepseek-flash API model (open weights on Hugging Face), and DeepSeek's Search and Fetch web APIs are open to all developers at $0.75 per 1,000 calls. Source: https://api-docs.deepseek.com/news/news261017
+- 2026-10-16 | Beam (Reflection) (LLM APIs): Beam, a 501B-parameter (23B active) open-weight model for coding and agents, is out under Apache 2.0 with the open-source Mirror CLI; free to start on Reflection's API and also on OpenRouter, Vercel, Ollama and other partners. Source: https://reflection.ai/blog/beam-is-available
+- 2026-10-16 | Cursor (Coding Agents & AI IDEs): Cloud agents can now build interactive canvases (dashboards, reports) you share with a link; Environments API in beta; cloud environments now hold up to 300 repos and large ones load 5x faster. Source: https://cursor.com/changelog/cloud-agent-canvases-and-environments
+- 2026-10-16 | Junie Local (JetBrains) (Coding Agents & AI IDEs): JetBrains' free on-device coding agent runs on NVIDIA RTX Spark at launch, and Windows support is now stable on RTX cards with 24 GB+ VRAM: no token bill, and your code never leaves the machine. Source: https://blog.jetbrains.com/junie/2026/10/junie-local-rtx-spark/
+- 2026-10-16 | Google AI Studio (App Builders): Google AI Pro subscribers can now build apps with Gemini 4 Argon in AI Studio Build and the playground. Source: https://x.com/GoogleAIStudio/status/2111240722426802258
+- 2026-10-16 | HeyGen (AI Video & Clips): HeyGen Video 1, its video generation model, is now available in the HeyGen MCP server, so you can ask your AI agent for a video and get it back in seconds. Source: https://x.com/HeyGenDev/status/2111151435778039811
+- 2026-10-16 | Clerk (Auth): New Agents section in your Clerk app config with setup for adding auth to your MCP server, plus a ready-made agent prompt for building a new MCP server. Source: https://x.com/clerk/status/2111193502587752702
+- 2026-10-15 | Claude Code (Testing & QA): Code Review is generally available on Claude Team and Enterprise: automatic reviews on new GitHub pull requests, about 3x faster than the preview (6-10 minutes), with Quick, Standard or Deep review levels per repo. Source: https://claude.com/resources/articles/code-review-is-now-generally-available
+- 2026-10-15 | Claude API (Anthropic) (LLM APIs): Fast mode for Claude Opus 5.5 is out of research preview: up to 2.5x faster output, no waitlist or beta header, $8/$40 per million tokens. Source: https://platform.claude.com/docs/en/release-notes/overview
+- 2026-10-15 | Neon (Databases & Backend): Neon Realtime in public beta: subscribe to any read-only SQL query and your app updates live, with React hooks and a coding-agent skill; free during beta. Source: https://neon.com/blog/neon-now-has-realtime
+- 2026-10-15 | Figma (Design-to-Code): Code layers enter open beta (code-backed prototypes on the canvas, all plans), plus Specs for Markdown context you can hand to coding agents via Figma MCP. Source: https://www.figma.com/blog/build-by-design/
+- 2026-10-15 | Nemotron 3.5 (NVIDIA) (LLM APIs): Open 120B Nemotron 3.5 Super VL (text, image, video; up to 1M context) and Bolt 74B-A9B, a local agent model that fits in 24GB; on Hugging Face and OpenRouter. Source: https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/
+- 2026-10-15 | FLUX 3 Image Klein (Black Forest Labs) (AI Images & Art): Open-weights 5.6B image model with native 4K and up to 10 reference images; runs on consumer GPUs, API from $0.009 per 1K image. Source: https://bfl.ai/blog/flux-3-image-klein
+- 2026-10-15 | Krea 3 (AI Images & Art): New image editing model: most edits under 8 seconds at native 2K, keeps products and characters consistent; $0.06 per 2K image, also on fal, Replicate and OpenRouter. Source: https://www.krea.ai/blog/introducing-krea-3
+- 2026-10-15 | Attie (Bluesky) (App Builders): Bluesky's Attie now lets anyone describe and build small shareable sites, games, quizzes and polls with no code, with Bluesky sign-in built in. Source: https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/
+- 2026-10-15 | Muse Spark Open (Meta) (LLM APIs): Open-weight version of Muse Spark for self-hosted agentic coding, 1M context. Source: https://dev.meta.ai/resources/blog/build-with-muse-spark-open
+- 2026-10-13 | Gemini 4 Argon (Google) (LLM APIs): Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio. Source: https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/
+- 2026-10-13 | GitHub Copilot (Coding Agents & AI IDEs): Gemini 4 Argon now generally available in Copilot (Pro+, Max, Business, Enterprise). Source: https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/
+- 2026-10-12 | Muse Wonder (Meta) (LLM APIs): New model on Muse Code and Meta Model API at $4/$20 per million tokens. Source: https://dev.meta.ai/resources/blog/build-with-muse-wonder
+
+## Contact
+Newsletter and sponsorship: news@vibepicks.ai
+Sponsor packages: https://vibepicks.ai/sponsor/

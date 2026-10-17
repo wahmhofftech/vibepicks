@@ -7,7 +7,7 @@ def page(path,title,desc,body,ld):
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
-<header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header><main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a></footer></body></html>'''
+<header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header><main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></footer></body></html>'''
 def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t["url"]}" rel="noopener">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span></div></div>'
 urls=['/','/releases/']
 for c in d['categories']:
@@ -35,9 +35,21 @@ open('sponsor/index.html','w').write(page('sponsor','Sponsor VibePicks — Reach
 urls.append('/sponsor/')
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{S}{u}</loc></url>' for u in urls)+'</urlset>\n')
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {S}/sitemap.xml\n')
-L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','']
+L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','']
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]
 L+=['','## Sponsorship',f'Sponsored placements are always labeled and never change editorial rankings. Packages: {S}/sponsor/']
 open('llms.txt','w').write('\n'.join(L)+'\n')
+# llms-full.txt: the whole directory in one plain-text file for AI assistants and answer engines
+CN={c['id']:c['name'] for c in d['categories']}; UPD=max((r['date'] for r in d['releases']),default='')
+F=['# VibePicks (full directory)','> Every VibePicks ranking, tool, plain-English reason, pricing label and verified release in one file. Short index: '+S+'/llms.txt','',
+f'Site: {S}/','Last updated: '+UPD,'About: VibePicks ranks AI tools for vibe coders, builders and non-coders by use case. #1 is our top pick in each category.',
+'Pricing labels: Free = no paid tier needed; Freemium = usable free plan plus paid upgrades; Paid = paid plan or trial that converts to paid.','Rankings are editorial picks and are never sold. Sponsored placements are always labeled Sponsored.','']
+for c in d['categories']:
+  F+=[f'## {c["name"]}',f'Page: {S}/{c["id"]}/','']
+  for i,t in enumerate(c['tools']):
+    F+=[f'### #{i+1} {t["name"]}',f'- Website: {t["url"]}',f'- Pricing: {t["pricing"]}',f'- Use it for: {t["use"]}']+([f'- In plain English: {t["why"]}'] if t.get('why') else [])+['']
+F+=['## Verified releases (newest first)',f'Page: {S}/releases/','']+[f'- {r["date"]} | {r["tool"]} ({CN.get(r["category"],r["category"])}): {r["title"]}. Source: {r["source"]}' for r in d['releases']]
+F+=['','## Contact','Newsletter and sponsorship: news@vibepicks.ai',f'Sponsor packages: {S}/sponsor/']
+open('llms-full.txt','w').write('\n'.join(F)+'\n')
