@@ -456,6 +456,7 @@
           "use": "Turn a long video or stream into short clips",
           "pricing": "Freemium",
           "url": "https://www.opus.pro",
+          "aff": "https://opus.pro/?via=chrish0",
           "why": "Upload a long video or paste a YouTube link and AI picks the best moments, crops them vertical and adds captions. Free plan gives 60 minutes of video a month, with a watermark."
         },
         {

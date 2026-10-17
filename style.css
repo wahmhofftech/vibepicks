@@ -25,3 +25,4 @@ h2{margin-top:48px}.grid{display:grid;grid-template-columns:repeat(auto-fill,min
 .reco-nl{text-align:center;margin-top:18px}
 @media(max-width:600px){.hero{padding:40px 0 24px}.reco{padding:16px}.nav nav a{margin-left:12px}}
 .linkbtn{background:none;border:0;color:#8ab4ff;font:inherit;cursor:pointer;padding:0;text-decoration:underline}
+.rankcat{display:inline-block;font-size:.78rem;font-weight:700;color:#c4b5fd;background:#1e1840;border:1px solid #3b2f7a;border-radius:12px;padding:4px 12px;margin-bottom:6px;line-height:1.4}.rankcat a{color:#fff}.rankcat a:hover{text-decoration:underline}.tool>div:last-child{min-width:0}
