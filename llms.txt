@@ -131,3 +131,6 @@ Full version with every tool, pricing label, plain-English reason and release: h
 
 ## Sponsorship
 Sponsored placements are always labeled and never change editorial rankings. Packages: https://vibepicks.ai/sponsor/
+
+## Build it for me
+Don't want to do it yourself? A one-page website built for you, $299 one time, live in about 48 hours: https://vibepicks.ai/build-it-for-me/
