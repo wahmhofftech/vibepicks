@@ -1,4 +1,5 @@
 # Regenerates static SEO pages, sitemap, llms.txt from tools.json. Run: python3 build.py
+# NOTE: /guide/ (Ready, Fire, Aim. sales page) and its download folder are hand-written, UNLISTED and noindex. Do not add them to urls/sitemap/llms/nav until Chris approves launch.
 import json,html,os
 S="https://vibepicks.ai"; d=json.load(open('tools.json')); E=html.escape
 ICON='<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
