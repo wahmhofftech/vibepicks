@@ -499,5 +499,5 @@ Page: https://vibepicks.ai/releases/
 ## Contact
 Newsletter and sponsorship: news@vibepicks.ai
 Sponsor packages: https://vibepicks.ai/sponsor/
-Website builds: tech@vibepicks.ai
-Build it for me (one-page website, $299): https://vibepicks.ai/build-it-for-me/
+Build requests: tech@vibepicks.ai
+Build it for me (custom AI builds; one-page websites from $299): https://vibepicks.ai/build-it-for-me/
