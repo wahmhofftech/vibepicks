@@ -1,14 +1,17 @@
 # Regenerates static SEO pages, sitemap, llms.txt from tools.json. Run: python3 build.py
 import json,html,os
 S="https://vibepicks.ai"; d=json.load(open('tools.json')); E=html.escape
+ICON='<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
+PAGES={}  # path -> generated html, used for sitemap lastmod
 def catbar(cur=''): return '<nav class="catbar" aria-label="Browse categories"><span class="catbar-l">Browse categories</span>'+''.join(f'<a class="chip{" on" if c["id"]==cur else ""}" href="/{c["id"]}/"'+(' aria-current="page"' if c["id"]==cur else '')+f'>{c["icon"]} {E(c["name"])}</a>' for c in d['categories'])+'</nav>'+('<script>document.querySelector(".catbar .on").scrollIntoView({inline:"center",block:"nearest"})</script>' if cur in [c['id'] for c in d['categories']] else '')
 def page(path,title,desc,body,ld):
   os.makedirs(path or '.',exist_ok=True); url=f"{S}/{path+'/' if path else ''}"
-  return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">
+  h=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">{ICON}
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/style.css"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
 <header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a></nav></header>{catbar(path)}<main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></footer></body></html>'''
+  PAGES[f'/{path}/' if path else '/']=h; return h
 def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t.get("aff") or t["url"]}" rel="{"sponsored noopener" if t.get("aff") else "noopener"}">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span>{" <span class=\"tag\">Affiliate link</span>" if t.get("aff") else ""}</div></div>'
 urls=['/','/releases/']
 for c in d['categories']:
@@ -34,7 +37,6 @@ sbody=('<div id="thanks" class="card" style="display:none"><b>Thanks! Payment re
 os.makedirs('sponsor',exist_ok=True)
 open('sponsor/index.html','w').write(page('sponsor','Sponsor VibePicks — Reach Vibe Coders and Builders','Sponsorship packages for AI and developer tools: featured listings, newsletter sponsorships, and category top spots. Always labeled, never changes rankings.',sbody,{"@context":"https://schema.org","@type":"WebPage","name":"Sponsor VibePicks"}))
 urls.append('/sponsor/')
-open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{S}{u}</loc></url>' for u in urls)+'</urlset>\n')
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {S}/sitemap.xml\n')
 L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','']
 for c in d['categories']:
@@ -59,4 +61,17 @@ import re
 h=open('index.html').read()
 blk='<!--catbar-->'+catbar()+'<!--/catbar-->'
 h=re.sub(r'<!--catbar-->.*?<!--/catbar-->',lambda m:blk,h,flags=re.S) if '<!--catbar-->' in h else h.replace('</header>','</header>'+blk,1)
+h=h if 'rel="icon"' in h else h.replace('<link rel="canonical"',ICON+'<link rel="canonical"',1)
 open('index.html','w').write(h)
+
+# sitemap.xml with <lastmod>: a page's date changes only when its generated content changes (hashes kept in lastmod.json)
+import hashlib,datetime
+from zoneinfo import ZoneInfo
+TODAY=datetime.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+PAGES['/']=h+json.dumps(d,sort_keys=True)  # homepage is rendered client-side from tools.json
+LM=json.load(open('lastmod.json')) if os.path.exists('lastmod.json') else {}
+for u in urls:
+  hx=hashlib.sha256(PAGES[u].encode()).hexdigest()[:16]
+  if LM.get(u,{}).get('h')!=hx: LM[u]={'h':hx,'d':TODAY}
+open('lastmod.json','w').write(json.dumps({u:LM[u] for u in urls},indent=1)+'\n')
+open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{S}{u}</loc><lastmod>{LM[u]["d"]}</lastmod></url>' for u in urls)+'</urlset>\n')

@@ -624,6 +624,34 @@
     },
     {
       "date": "2026-10-16",
+      "tool": "Claude Code",
+      "title": "v2.1.302 turns on fork subagents by default in claude -p, the Agent SDK, the desktop app and VS Code (CLAUDE_CODE_FORK_SUBAGENT=0 turns them off), adds an idle-compaction toggle in /config, and warns that standalone Claude Design (claude.ai/design) closes by December 14, 2026",
+      "category": "coding-agents",
+      "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Amp",
+      "title": "You can now see and control your macOS or Linux runner's desktop from Amp, handy for trying native apps (like iOS apps) that Amp builds for you; turn on Share This Mac's Display or run amp --no-tui --desktop",
+      "category": "coding-agents",
+      "source": "https://ampcode.com/news/runner-desktop"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "Glimpse (Elorian)",
+      "title": "New visual-reasoning model that keeps re-checking images and video while it thinks (it can crop, pull frames and run code); research preview with API access at $0.60/$3 per million tokens, also on OpenRouter",
+      "category": "llm-apis",
+      "source": "https://elorian.ai/blog/introducing-glimpse"
+    },
+    {
+      "date": "2026-10-16",
+      "tool": "ChatGPT",
+      "title": "ChatGPT Slides: build a deck from a chat, files or an outline, edit it with teammates in real time, present from ChatGPT, or export to PowerPoint, PDF or Google Slides; rolling out to Pro, Business and Enterprise users with Space access",
+      "category": "writing",
+      "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    },
+    {
+      "date": "2026-10-16",
       "tool": "Beam (Reflection)",
       "title": "Beam, a 501B-parameter (23B active) open-weight model for coding and agents, is out under Apache 2.0 with the open-source Mirror CLI; free to start on Reflection's API and also on OpenRouter, Vercel, Ollama and other partners",
       "category": "llm-apis",
