@@ -39,6 +39,13 @@
           "pricing": "Freemium",
           "url": "https://chatgpt.com/codex",
           "why": "ChatGPT's coding agent. Hand it a job and it works through it in the background."
+        },
+        {
+          "name": "Grok Build",
+          "use": "Terminal-based coding agent from xAI",
+          "pricing": "Freemium",
+          "url": "https://x.ai/build",
+          "why": "Works like Claude Code: give it a task in plain English and it plans, edits your project and runs commands. Newer than the others here. A little use is free, and the $8/month Plus plan gives more."
         }
       ],
       "beginner": "An AI helper that writes and fixes code with you, like a programmer sitting next to you who never gets tired."
@@ -301,10 +308,10 @@
         },
         {
           "name": "xAI API",
-          "use": "Grok models via an OpenAI-compatible API",
+          "use": "Grok models plus image, video and voice on one API key",
           "pricing": "Paid",
           "url": "https://x.ai/api",
-          "why": "Grok's AI for your own app, with up-to-date knowledge and a big memory for long chats."
+          "why": "Grok's AI for your own app. The same key also makes images, video and voice, and it can search the web and X live. Pay as you go, with a free playground to test before you buy."
         },
         {
           "name": "OpenRouter",
@@ -349,6 +356,13 @@
           "pricing": "Freemium",
           "url": "https://www.recraft.ai",
           "why": "Makes clean logos and icons that stay sharp at any size, so they look good as tiny emotes and on big banners alike."
+        },
+        {
+          "name": "Grok Imagine",
+          "use": "Quick images from a sentence, right inside Grok",
+          "pricing": "Freemium",
+          "url": "https://grok.com/imagine",
+          "why": "Type what you want and it makes pictures in seconds, then you can ask for changes. The free plan includes a limited number of images a day (xAI doesn't say how many)."
         },
         {
           "name": "Midjourney",
@@ -472,6 +486,13 @@
           "pricing": "Freemium",
           "url": "https://runway.com",
           "why": "Makes brand-new video clips from a description or a picture. Free plan is a one-time 125 credits, enough to try a few clips."
+        },
+        {
+          "name": "Grok Imagine",
+          "use": "Short AI video clips with sound from text or a picture",
+          "pricing": "Paid",
+          "url": "https://grok.com/imagine",
+          "why": "Turns a description or a picture into a short clip with sound effects and even talking characters. Video needs the $30/month Premium plan, so try Runway's free credits first."
         }
       ]
     },
@@ -501,6 +522,13 @@
           "pricing": "Freemium",
           "url": "https://n8n.io",
           "why": "Very flexible and free if you run it on your own computer or server. The hosted version is a 14-day trial, then paid. Best once you're comfortable."
+        },
+        {
+          "name": "Grok Bot",
+          "use": "AI teammates that work in your apps and run routines on a schedule",
+          "pricing": "Paid",
+          "url": "https://x.ai/bot",
+          "why": "Instead of building a flowchart, you tell it the job in plain English and it signs into your tools and does it, even on a schedule. VibePicks is built and run with it. It starts at $30/month, and simple fixed tasks are cheaper and more predictable in Zapier or Make."
         }
       ]
     },
@@ -560,6 +588,13 @@
           "pricing": "Freemium",
           "url": "https://claude.ai",
           "why": "Good at writing that doesn't sound like a robot, and at rewriting your own draft to be clearer. Free plan has daily limits."
+        },
+        {
+          "name": "Grok",
+          "use": "Timely social posts and replies",
+          "pricing": "Freemium",
+          "url": "https://grok.com",
+          "why": "A chat assistant like ChatGPT that can read live posts on X and the web, so it's handy for writing about what people are talking about today. The free plan has limited daily use; the $8/month Plus plan gives more."
         },
         {
           "name": "Grammarly",

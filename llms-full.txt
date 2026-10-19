@@ -40,6 +40,12 @@ Page: https://vibepicks.ai/coding-agents/
 - Use it for: Delegating coding tasks to a cloud or CLI agent
 - In plain English: ChatGPT's coding agent. Hand it a job and it works through it in the background.
 
+### #6 Grok Build
+- Website: https://x.ai/build
+- Pricing: Freemium
+- Use it for: Terminal-based coding agent from xAI
+- In plain English: Works like Claude Code: give it a task in plain English and it plans, edits your project and runs commands. Newer than the others here. A little use is free, and the $8/month Plus plan gives more.
+
 ## App Builders
 Page: https://vibepicks.ai/app-builders/
 
@@ -238,8 +244,8 @@ Page: https://vibepicks.ai/llm-apis/
 ### #4 xAI API
 - Website: https://x.ai/api
 - Pricing: Paid
-- Use it for: Grok models via an OpenAI-compatible API
-- In plain English: Grok's AI for your own app, with up-to-date knowledge and a big memory for long chats.
+- Use it for: Grok models plus image, video and voice on one API key
+- In plain English: Grok's AI for your own app. The same key also makes images, video and voice, and it can search the web and X live. Pay as you go, with a free playground to test before you buy.
 
 ### #5 OpenRouter
 - Website: https://openrouter.ai
@@ -274,7 +280,13 @@ Page: https://vibepicks.ai/ai-images/
 - Use it for: Logos, icons, vector art and brand sets
 - In plain English: Makes clean logos and icons that stay sharp at any size, so they look good as tiny emotes and on big banners alike.
 
-### #5 Midjourney
+### #5 Grok Imagine
+- Website: https://grok.com/imagine
+- Pricing: Freemium
+- Use it for: Quick images from a sentence, right inside Grok
+- In plain English: Type what you want and it makes pictures in seconds, then you can ask for changes. The free plan includes a limited number of images a day (xAI doesn't say how many).
+
+### #6 Midjourney
 - Website: https://www.midjourney.com
 - Pricing: Paid
 - Use it for: High-quality illustrations and artistic images
@@ -367,6 +379,12 @@ Page: https://vibepicks.ai/ai-video/
 - Use it for: Generate short AI video clips from text or images
 - In plain English: Makes brand-new video clips from a description or a picture. Free plan is a one-time 125 credits, enough to try a few clips.
 
+### #5 Grok Imagine
+- Website: https://grok.com/imagine
+- Pricing: Paid
+- Use it for: Short AI video clips with sound from text or a picture
+- In plain English: Turns a description or a picture into a short clip with sound effects and even talking characters. Video needs the $30/month Premium plan, so try Runway's free credits first.
+
 ## Automations & Agents
 Page: https://vibepicks.ai/automations/
 
@@ -387,6 +405,12 @@ Page: https://vibepicks.ai/automations/
 - Pricing: Freemium
 - Use it for: Powerful automations and AI agents you can host yourself
 - In plain English: Very flexible and free if you run it on your own computer or server. The hosted version is a 14-day trial, then paid. Best once you're comfortable.
+
+### #4 Grok Bot
+- Website: https://x.ai/bot
+- Pricing: Paid
+- Use it for: AI teammates that work in your apps and run routines on a schedule
+- In plain English: Instead of building a flowchart, you tell it the job in plain English and it signs into your tools and does it, even on a schedule. VibePicks is built and run with it. It starts at $30/month, and simple fixed tasks are cheaper and more predictable in Zapier or Make.
 
 ## Websites & Stores
 Page: https://vibepicks.ai/websites/
@@ -430,7 +454,13 @@ Page: https://vibepicks.ai/writing/
 - Use it for: Natural-sounding writing and rewrites
 - In plain English: Good at writing that doesn't sound like a robot, and at rewriting your own draft to be clearer. Free plan has daily limits.
 
-### #3 Grammarly
+### #3 Grok
+- Website: https://grok.com
+- Pricing: Freemium
+- Use it for: Timely social posts and replies
+- In plain English: A chat assistant like ChatGPT that can read live posts on X and the web, so it's handy for writing about what people are talking about today. The free plan has limited daily use; the $8/month Plus plan gives more.
+
+### #4 Grammarly
 - Website: https://www.grammarly.com
 - Pricing: Freemium
 - Use it for: Fix spelling, grammar and tone as you type

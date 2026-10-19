@@ -9,6 +9,7 @@ Full version with every tool, pricing label, plain-English reason and release: h
 3. [GitHub Copilot](https://github.com/features/copilot): Inline completions and agent mode inside VS Code and GitHub (Freemium)
 4. [Devin Desktop (formerly Windsurf)](https://devin.ai/desktop): Agentic IDE for running and managing local and cloud coding agents (Freemium)
 5. [OpenAI Codex](https://chatgpt.com/codex): Delegating coding tasks to a cloud or CLI agent (Freemium)
+6. [Grok Build](https://x.ai/build): Terminal-based coding agent from xAI (Freemium)
 
 ## App Builders (https://vibepicks.ai/app-builders/)
 1. [Lovable](https://lovable.dev): Prompt-to-full-stack web app with Supabase integration (Freemium)
@@ -52,7 +53,7 @@ Full version with every tool, pricing label, plain-English reason and release: h
 1. [OpenAI API](https://platform.openai.com): General-purpose GPT models for chat, tools, and vision (Paid)
 2. [Anthropic API](https://claude.com/platform/api): Claude models, strong at coding and long context (Paid)
 3. [Google Gemini API](https://ai.google.dev): Gemini models with large context and multimodal input (Freemium)
-4. [xAI API](https://x.ai/api): Grok models via an OpenAI-compatible API (Paid)
+4. [xAI API](https://x.ai/api): Grok models plus image, video and voice on one API key (Paid)
 5. [OpenRouter](https://openrouter.ai): One API key to route across many model providers (Freemium)
 
 ## AI Images & Art (https://vibepicks.ai/ai-images/)
@@ -60,7 +61,8 @@ Full version with every tool, pricing label, plain-English reason and release: h
 2. [Leonardo](https://leonardo.ai): Emotes, game assets, characters and stylized art (Freemium)
 3. [ChatGPT Images](https://chatgpt.com/images): Quick images and edits by chatting (Freemium)
 4. [Recraft](https://www.recraft.ai): Logos, icons, vector art and brand sets (Freemium)
-5. [Midjourney](https://www.midjourney.com): High-quality illustrations and artistic images (Paid)
+5. [Grok Imagine](https://grok.com/imagine): Quick images from a sentence, right inside Grok (Freemium)
+6. [Midjourney](https://www.midjourney.com): High-quality illustrations and artistic images (Paid)
 
 ## AI Audio & Voice (https://vibepicks.ai/ai-audio/)
 1. [Suno](https://suno.com): Songs, jingles and background music from a text description (Freemium)
@@ -80,11 +82,13 @@ Full version with every tool, pricing label, plain-English reason and release: h
 2. [Opus Clip](https://www.opus.pro): Turn a long video or stream into short clips (Freemium)
 3. [Descript](https://www.descript.com): Edit video by editing the transcript (Freemium)
 4. [Runway](https://runway.com): Generate short AI video clips from text or images (Freemium)
+5. [Grok Imagine](https://grok.com/imagine): Short AI video clips with sound from text or a picture (Paid)
 
 ## Automations & Agents (https://vibepicks.ai/automations/)
 1. [Zapier](https://zapier.com): Connect apps with simple if-this-then-that steps (Freemium)
 2. [Make](https://www.make.com): Visual drag-and-drop automations (Freemium)
 3. [n8n](https://n8n.io): Powerful automations and AI agents you can host yourself (Freemium)
+4. [Grok Bot](https://x.ai/bot): AI teammates that work in your apps and run routines on a schedule (Paid)
 
 ## Websites & Stores (https://vibepicks.ai/websites/)
 1. [Wix](https://www.wix.com): AI-built business websites with drag-and-drop editing (Freemium)
@@ -95,7 +99,8 @@ Full version with every tool, pricing label, plain-English reason and release: h
 ## Writing & Marketing (https://vibepicks.ai/writing/)
 1. [ChatGPT](https://chatgpt.com): Draft posts, emails and product descriptions (Freemium)
 2. [Claude](https://claude.ai): Natural-sounding writing and rewrites (Freemium)
-3. [Grammarly](https://www.grammarly.com): Fix spelling, grammar and tone as you type (Freemium)
+3. [Grok](https://grok.com): Timely social posts and replies (Freemium)
+4. [Grammarly](https://www.grammarly.com): Fix spelling, grammar and tone as you type (Freemium)
 
 ## CAD & Machining (https://vibepicks.ai/cad-machining/)
 1. [Fusion](https://www.autodesk.com/products/fusion-360/personal): CAD and CAM in one, from design to toolpaths (Freemium)
