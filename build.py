@@ -17,12 +17,17 @@ def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div>
 DISCT='Cursor and Grok are owned by the same company (SpaceXSI), and VibePicks itself is built with Grok Bot. Rankings are based on merit and are never paid for or influenced by that.'
 DISC=f'<p class="muted disclosure" style="font-size:.82rem;margin:14px 2px">Disclosure: {DISCT}</p>'
 urls=['/','/releases/']
+LMPH='@@LASTMOD@@'  # placeholder for a page's last-changed date; swapped in after lastmod.json is updated, so it doesn't affect the content hash
+CATS=[]
 for c in d['categories']:
   title=f'Best {c["name"]} for Vibe Coders (2026) — VibePicks'
   desc=f'Ranked {c["name"].lower()} for builders shipping apps with AI: '+', '.join(t['name'] for t in c['tools'])+'.'
-  ld={"@context":"https://schema.org","@type":"ItemList","name":f'Best {c["name"]}',"itemListElement":[{"@type":"ListItem","position":i+1,"item":{"@type":"SoftwareApplication","name":t["name"],"url":t["url"],"applicationCategory":"DeveloperApplication","description":t["use"]}} for i,t in enumerate(c['tools'])]}
-  body=f'<section class="hero" style="padding-bottom:10px"><div style="font-size:2.4rem">{c["icon"]}</div><h1>Best {E(c["name"])}</h1><p>Ranked editorial picks for vibe coders and builders.</p></section><div class="grid" style="grid-template-columns:1fr">'+''.join(tl(t,i) for i,t in enumerate(c['tools']))+'</div>'+(DISC if any(any(k in t['name'] for k in ('Grok','Cursor','xAI')) for t in c['tools']) else '')+'<p><a href="/">← All categories</a></p>'
-  open(f'{c["id"]}/index.html' if os.makedirs(c['id'],exist_ok=True) is None else '','w').write(page(c['id'],title,desc,body,ld)); urls.append(f'/{c["id"]}/')
+  # CollectionPage wrapper adds url, dateModified (filled in after the sitemap step) and a breadcrumb, which help search and AI answer engines cite a fresh, specific page
+  cu=f'{S}/{c["id"]}/'
+  il={"@type":"ItemList","name":f'Best {c["name"]}',"numberOfItems":len(c['tools']),"itemListOrder":"https://schema.org/ItemListOrderAscending","itemListElement":[{"@type":"ListItem","position":i+1,"item":{"@type":"SoftwareApplication","name":t["name"],"url":t["url"],"applicationCategory":"DeveloperApplication","description":t["use"]}} for i,t in enumerate(c['tools'])]}
+  ld={"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":desc,"url":cu,"dateModified":LMPH,"isPartOf":{"@type":"WebSite","name":"VibePicks","url":f"{S}/"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VibePicks","item":f"{S}/"},{"@type":"ListItem","position":2,"name":c["name"],"item":cu}]},"mainEntity":il}
+  body=f'<section class="hero" style="padding-bottom:10px"><div style="font-size:2.4rem">{c["icon"]}</div><h1>Best {E(c["name"])}</h1><p>Ranked editorial picks for vibe coders and builders.</p><p class="muted" style="font-size:.85rem">Page last updated <time datetime="{LMPH}">{LMPH}</time></p></section><div class="grid" style="grid-template-columns:1fr">'+''.join(tl(t,i) for i,t in enumerate(c['tools']))+'</div>'+(DISC if any(any(k in t['name'] for k in ('Grok','Cursor','xAI')) for t in c['tools']) else '')+'<p><a href="/">← All categories</a></p>'
+  open(f'{c["id"]}/index.html' if os.makedirs(c['id'],exist_ok=True) is None else '','w').write(page(c['id'],title,desc,body,ld)); urls.append(f'/{c["id"]}/'); CATS.append(c['id'])
 rel=''.join(f'<div class="release {"sample" if r.get("sample") else ""}"><span class="tag">{r["date"]}</span> <b>{E(r["tool"])}</b> — {E(r["title"])} <a href="{r["source"]}">source</a></div>' for r in d['releases'])
 os.makedirs('releases',exist_ok=True)
 open('releases/index.html','w').write(page('releases','New AI Tool Releases for Builders — VibePicks','Verified AI tool and model launches that matter to people shipping apps.','<h1>New releases</h1>'+rel,{"@context":"https://schema.org","@type":"CollectionPage","name":"New AI tool releases","url":f"{S}/releases/","dateModified":max((r["date"] for r in d["releases"]),default=None),"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"item":{"@type":"NewsArticle","headline":f'{r["tool"]}: {r["title"]}',"datePublished":r["date"],"url":r["source"],"about":{"@type":"SoftwareApplication","name":r["tool"]}}} for i,r in enumerate(d["releases"])]}}))
@@ -84,3 +89,6 @@ for u in urls:
   if LM.get(u,{}).get('h')!=hx: LM[u]={'h':hx,'d':TODAY}
 open('lastmod.json','w').write(json.dumps({u:LM[u] for u in urls},indent=1)+'\n')
 open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{S}{u}</loc><lastmod>{LM[u]["d"]}</lastmod></url>' for u in urls)+'</urlset>\n')
+# fill in the "last updated" date on category pages (visible text + CollectionPage dateModified)
+for cid in CATS:
+  fp=f'{cid}/index.html'; ph=open(fp).read(); open(fp,'w').write(ph.replace(LMPH,LM[f'/{cid}/']['d']))

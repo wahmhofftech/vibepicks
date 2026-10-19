@@ -779,6 +779,27 @@
   ],
   "releases": [
     {
+      "date": "2026-10-19",
+      "tool": "MiniMax M3.1 Flash",
+      "title": "MiniMax's new fast model for coding, agent work and visual reasoning (74% on DeepSWE) is live on the MiniMax API at a flat $0.15/$0.60 per million tokens, about 1/3 the cost of M3 at 3x the speed; open weights arrive Oct 23",
+      "category": "llm-apis",
+      "source": "https://x.com/MiniMax_AI/status/2112150867868541221"
+    },
+    {
+      "date": "2026-10-18",
+      "tool": "Vercel",
+      "title": "AI Gateway logs now have a Sessions view that groups requests by conversation and shows which coding agent ran it (Claude Code, Codex, Cursor), plus its cost, models and cache hit rate",
+      "category": "hosting",
+      "source": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity"
+    },
+    {
+      "date": "2026-10-17",
+      "tool": "Replit",
+      "title": "OpenAI is now the preferred partner powering Replit Agent's default experience, CEO Amjad Masad says; Replit stays model-agnostic, so you can still pick Anthropic's Claude and other supported models",
+      "category": "app-builders",
+      "source": "https://x.com/amasad/status/2111494912562888939"
+    },
+    {
       "date": "2026-10-17",
       "tool": "DeepSeek API",
       "title": "DeepSeek-V4.1-Flash-1017 now powers the deepseek-flash API model (open weights on Hugging Face), and DeepSeek's Search and Fetch web APIs are open to all developers at $0.75 per 1,000 calls",
