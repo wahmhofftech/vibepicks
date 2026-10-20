@@ -30,3 +30,13 @@ h2{margin-top:48px}.grid{display:grid;grid-template-columns:repeat(auto-fill,min
 @media(max-width:760px){.catbar{display:grid;grid-template-rows:auto auto;grid-auto-flow:column;grid-auto-columns:max-content;justify-content:start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:10px 5vw;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}.catbar::-webkit-scrollbar{display:none}.catbar-l{grid-row:1/3;white-space:normal;width:64px;line-height:1.25}}
 
 .bifm ul{padding-left:20px}.bifm-form{display:grid;gap:14px;max-width:560px}.bifm-form:hover{transform:none}.bifm-form label{display:grid;gap:6px;font-weight:600}.bifm-form input,.bifm-form textarea{width:100%;box-sizing:border-box;background:#0d1018;border:1px solid #2a3145;color:#e6e8ee;padding:11px 14px;border-radius:10px;font:inherit;font-weight:400}.bifm-form .btn{justify-self:start}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* signup card + phone bar */
+.nlcard{background:#121826;border:1px solid #2a3350;border-radius:14px;padding:16px 18px;margin:14px auto 18px;max-width:560px;text-align:left}
+.nlcard h2{margin:0 0 4px;font-size:1.2rem}.nlcard p{margin:0 0 10px}
+.nlf{display:flex;gap:8px;flex-wrap:wrap}.nlf input[type=email]{flex:1 1 180px;min-width:0;padding:11px 12px;border-radius:9px;border:1px solid #2a3350;background:#0b0f19;color:inherit;font-size:16px}
+.nlf .btn{white-space:nowrap}.nlmsg{margin:6px 0 0;font-size:.85rem;opacity:.8}
+.guide-nl{max-width:520px;margin:-6px auto 26px;text-align:left}.guide-nl p.lead{text-align:center;margin:0 0 8px}
+.nlbar{display:none}
+@media (max-width:640px){.nlbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#121826;border-top:1px solid #2a3350;padding:10px 12px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 20px rgba(0,0,0,.4)}
+.nlbar.show{transform:none}.nlbar-row{display:flex;align-items:center;gap:8px;font-size:.92rem}.nlbar-row span{flex:1}.nlbar-go{padding:8px 14px}
+.nlbar-x{background:none;border:0;color:inherit;font-size:1.4rem;line-height:1;padding:4px 6px;cursor:pointer;opacity:.7}.nlbar-form{margin-top:8px}}
