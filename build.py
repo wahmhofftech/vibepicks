@@ -57,7 +57,7 @@ L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and 
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]
-L+=['','## Sponsorship',f'Sponsored placements are always labeled and never change editorial rankings. Packages: {S}/sponsor/','','## Build it for me',f'Tell us what you want built with AI and we\'ll build it: websites, online stores and checkouts, newsletters, automations, simple apps, AI set up for your business. One-page websites from $299, everything else quoted after a quick chat: {S}/build-it-for-me/']
+L+=['','## Sponsorship',f'Sponsored placements are always labeled and never change editorial rankings. Packages: {S}/sponsor/','','## Build it for me',f'Tell us what you want built with AI and we\'ll build it: websites, online stores and checkouts, newsletters, automations, simple apps, AI set up for your business. One-page websites from $299, everything else quoted after a quick chat: {S}/build-it-for-me/','','## Guide',f'Ready, Fire, Aim. ($9 PDF, 29 pages): how a machinist with little coding experience got a website, a newsletter and a checkout running with AI, step by step with 29 copy-paste prompts: {S}/guide/']
 open('llms.txt','w').write('\n'.join(L)+'\n')
 # llms-full.txt: the whole directory in one plain-text file for AI assistants and answer engines
 CN={c['id']:c['name'] for c in d['categories']}; UPD=max((r['date'] for r in d['releases']),default='')
@@ -69,7 +69,7 @@ for c in d['categories']:
   for i,t in enumerate(c['tools']):
     F+=[f'### #{i+1} {t["name"]}',f'- Website: {t["url"]}',f'- Pricing: {t["pricing"]}',f'- Use it for: {t["use"]}']+([f'- In plain English: {t["why"]}'] if t.get('why') else [])+['']
 F+=['## Verified releases (newest first)',f'Page: {S}/releases/','']+[f'- {r["date"]} | {r["tool"]} ({CN.get(r["category"],r["category"])}): {r["title"]}. Source: {r["source"]}' for r in d['releases']]
-F+=['','## Contact','Newsletter and sponsorship: news@vibepicks.ai',f'Sponsor packages: {S}/sponsor/','Build requests: tech@vibepicks.ai',f'Build it for me (custom AI builds; one-page websites from $299): {S}/build-it-for-me/']
+F+=['','## Contact','Newsletter and sponsorship: news@vibepicks.ai',f'Sponsor packages: {S}/sponsor/','Build requests: tech@vibepicks.ai',f'Build it for me (custom AI builds; one-page websites from $299): {S}/build-it-for-me/',f'Guide: Ready, Fire, Aim. ($9 PDF) on building a website, newsletter and checkout with AI, step by step: {S}/guide/']
 open('llms-full.txt','w').write('\n'.join(F)+'\n')
 
 import re
