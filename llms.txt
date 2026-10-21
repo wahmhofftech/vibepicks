@@ -130,6 +130,10 @@ Full version with every tool, pricing label, plain-English reason and release: h
 5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
 
 ## Recent releases
+- 2026-10-21: Cloudflare Agents SDK — New createAI function in the agents package gives the AI SDK one provider for Workers AI models, AI Gateway catalog models, dynamic routes and vendor models, with fallbacks, caching and stream resume; workers-ai-provider and ai-gateway-provider are now deprecated (https://developers.cloudflare.com/changelog/)
+- 2026-10-20: OpenAI API — You can now choose 12-hour prompt caching in the Responses API, so shared instructions, tools and context stay cached at the lower cached-input rate even when requests are hours apart; 12-hour cache writes cost 2.5x the input token price (https://developers.openai.com/api/docs/changelog)
+- 2026-10-20: Vercel — WebSocket support in Vercel Functions is now generally available, for AI chat, streaming and realtime multiplayer apps, at the same limits and pricing as other Function invocations (CPU billed only while processing messages) (https://vercel.com/changelog/websocket-support-is-now-generally-available)
+- 2026-10-20: Supabase — Your coding agent can now query your Supabase logs, and a new Supabase skill points it to the signals to watch: error spikes, security issues, slow queries and growing usage, on a schedule you choose (https://x.com/supabase/status/2112578077872050470)
 - 2026-10-19: Claude Code — v2.1.304 adds /auto-mode-setup, a guided setup that reads your project and recent sessions to teach auto mode about your setup, warns Pro and Max users when resuming an old conversation would use a noticeable share of their 5-hour limit, and fixes claude --worktree deleting a worktree and its branch at exit without asking, which could lose commits (https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)
 - 2026-10-19: Mercury 3 (Inception) — Inception's Mercury 3, a diffusion LLM that writes 1,000+ tokens per second with a 1M-token context, is live on Inception's OpenAI-compatible API (new keys get 100M free tokens) and on OpenRouter, Baseten and Vercel AI Gateway; launch price is $0.10/$0.35 per million tokens, 50% off its $0.20/$0.70 list price (https://www.inceptionlabs.ai/blog/introducing-mercury-3)
 - 2026-10-19: Cloudflare Workers AI — Clairic, a new extraction model in preview on Workers AI (@cf/cloudflare/clairic), pulls typed values like invoice totals, dates and lists out of text or up to four images, with a confidence score on every answer, for $0.10 per million input tokens and no output charge; open weights are planned (https://developers.cloudflare.com/changelog/post/2026-10-19-clairic-workers-ai/)
@@ -159,6 +163,8 @@ Full version with every tool, pricing label, plain-English reason and release: h
 - 2026-10-13: Gemini 4 Argon (Google) — Google's newest frontier model is now available to developers via the paid Gemini API tier and AI Studio (https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/)
 - 2026-10-13: GitHub Copilot — Gemini 4 Argon now generally available in Copilot (Pro+, Max, Business, Enterprise) (https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/)
 - 2026-10-12: Muse Wonder (Meta) — New model on Muse Code and Meta Model API at $4/$20 per million tokens (https://dev.meta.ai/resources/blog/build-with-muse-wonder)
+
+Releases RSS feed: https://vibepicks.ai/releases/feed.xml
 
 ## Sponsorship
 Sponsored placements are always labeled and never change editorial rankings. Packages: https://vibepicks.ai/sponsor/
