@@ -61,7 +61,7 @@ open('build-it-for-me/index.html','w').write(page('build-it-for-me','Build It Fo
 urls.append('/build-it-for-me/')
 urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand-written page, hashed for lastmod
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {S}/sitemap.xml\n')
-L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','']
+L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]

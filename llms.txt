@@ -2,6 +2,7 @@
 > Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.
 
 Full version with every tool, pricing label, plain-English reason and release: https://vibepicks.ai/llms-full.txt
+Last updated: 2026-10-22
 
 ## Coding Agents & AI IDEs (https://vibepicks.ai/coding-agents/)
 1. [Claude Code](https://claude.com/product/claude-code): Terminal-based agent for multi-file changes in real repos (Paid)
@@ -130,6 +131,10 @@ Full version with every tool, pricing label, plain-English reason and release: h
 5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
 
 ## Recent releases
+- 2026-10-22: OpenAI Decisions API — The Decisions API is now generally available: you define a question and its allowed answers and get fast, low-cost classification, routing and next-action picks for apps and agents, up to 10x faster than GPT-6 Luna through the Responses API, now with prompt caching, JSON and image inputs and up to 400 questions per request (https://openai.com/index/decisions-api/)
+- 2026-10-22: Cloudflare Agents SDK — Agents SDK v0.30.0 runs PiHarness on Pi 1.4, so agents can hibernate while tasks sleep, park tasks that keep crashing, and recover from storage errors and cut-off model streams; the upgrade can't be rolled back past Pi 1.4 (https://developers.cloudflare.com/changelog/post/2026-10-22-pi-harness-pi-1-4/)
+- 2026-10-21: Recursive Flint — Recursive released Flint, a free Apache 2.0 coding model that runs on a laptop (40B mixture-of-experts, about 2.5B active), downloadable on Hugging Face so you can code offline and keep your code private (https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/)
+- 2026-10-21: GemDB Code — GemDB launched GemDB Code, a free VS Code extension where your code is the database schema, so a coding agent can change objects without writing migrations; Python only at launch, with a built-in MCP server for plain-English data questions (https://www.businesswire.com/news/home/20261021228398/en/GemDB-Makes-Code-the-Schema-Eliminating-Database-Migration-Bottlenecks-to-Accelerate-AI-Driven-Development)
 - 2026-10-21: Cloudflare Agents SDK — New createAI function in the agents package gives the AI SDK one provider for Workers AI models, AI Gateway catalog models, dynamic routes and vendor models, with fallbacks, caching and stream resume; workers-ai-provider and ai-gateway-provider are now deprecated (https://developers.cloudflare.com/changelog/)
 - 2026-10-20: OpenAI API — You can now choose 12-hour prompt caching in the Responses API, so shared instructions, tools and context stay cached at the lower cached-input rate even when requests are hours apart; 12-hour cache writes cost 2.5x the input token price (https://developers.openai.com/api/docs/changelog)
 - 2026-10-20: Vercel — WebSocket support in Vercel Functions is now generally available, for AI chat, streaming and realtime multiplayer apps, at the same limits and pricing as other Function invocations (CPU billed only while processing messages) (https://vercel.com/changelog/websocket-support-is-now-generally-available)
