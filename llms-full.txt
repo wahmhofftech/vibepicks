@@ -2,7 +2,7 @@
 > Every VibePicks ranking, tool, plain-English reason, pricing label and verified release in one file. Short index: https://vibepicks.ai/llms.txt
 
 Site: https://vibepicks.ai/
-Last updated: 2026-10-22
+Last updated: 2026-10-23
 About: VibePicks ranks AI tools for vibe coders, builders and non-coders by use case. #1 is our top pick in each category.
 Pricing labels: Free = no paid tier needed; Freemium = usable free plan plus paid upgrades; Paid = paid plan or trial that converts to paid.
 Rankings are editorial picks and are never sold. Sponsored placements are always labeled Sponsored.
@@ -605,6 +605,10 @@ Page: https://vibepicks.ai/cad-machining/
 Page: https://vibepicks.ai/releases/
 RSS feed: https://vibepicks.ai/releases/feed.xml
 
+- 2026-10-23 | Codex CLI (Coding Agents & AI IDEs): Codex CLI 0.164.0 lets you save reusable prompts and slash commands in ten numbered /presets slots, set the model and permissions inline with /model and /permissions, preview images in the terminal, and mask credentials in remote Bash commands. Source: https://github.com/openai/codex/releases/tag/rust-v0.164.0
+- 2026-10-23 | TanStack AI (LLM APIs): TanStack AI hits 1.0 with stable core APIs: an open-source, no-lock-in toolkit for adding chat, tools, MCP, media and agents to your app, with 23 provider adapters, eight UI frameworks and a new experimental agent harness. Source: https://tanstack.com/blog/tanstack-ai-1-0
+- 2026-10-22 | Amp (Coding Agents & AI IDEs): You can now self-host Amp orbs: run amp orb provider on your own machines (Docker, E2B, Modal, Vercel Sandbox, Daytona or Kubernetes) so agents run inside your own network; free for individuals and teams, and free for every workspace until Oct 29. Source: https://ampcode.com/news/self-hosted-orbs
+- 2026-10-22 | Agent Skills (Coding Agents & AI IDEs): Anthropic donated Agent Skills, the open SKILL.md standard used by 70+ agent platforms including ChatGPT, Cursor, GitHub Copilot and VS Code, to the Linux Foundation's Agentic AI Foundation, so skills you write stay vendor-neutral. Source: https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
 - 2026-10-22 | OpenAI Decisions API (LLM APIs): The Decisions API is now generally available: you define a question and its allowed answers and get fast, low-cost classification, routing and next-action picks for apps and agents, up to 10x faster than GPT-6 Luna through the Responses API, now with prompt caching, JSON and image inputs and up to 400 questions per request. Source: https://openai.com/index/decisions-api/
 - 2026-10-22 | Cloudflare Agents SDK (Deploy & Hosting): Agents SDK v0.30.0 runs PiHarness on Pi 1.4, so agents can hibernate while tasks sleep, park tasks that keep crashing, and recover from storage errors and cut-off model streams; the upgrade can't be rolled back past Pi 1.4. Source: https://developers.cloudflare.com/changelog/post/2026-10-22-pi-harness-pi-1-4/
 - 2026-10-21 | Recursive Flint (Coding Agents & AI IDEs): Recursive released Flint, a free Apache 2.0 coding model that runs on a laptop (40B mixture-of-experts, about 2.5B active), downloadable on Hugging Face so you can code offline and keep your code private. Source: https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/

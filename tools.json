@@ -780,6 +780,34 @@
  ],
  "releases": [
   {
+   "date": "2026-10-23",
+   "tool": "Codex CLI",
+   "title": "Codex CLI 0.164.0 lets you save reusable prompts and slash commands in ten numbered /presets slots, set the model and permissions inline with /model and /permissions, preview images in the terminal, and mask credentials in remote Bash commands",
+   "category": "coding-agents",
+   "source": "https://github.com/openai/codex/releases/tag/rust-v0.164.0"
+  },
+  {
+   "date": "2026-10-23",
+   "tool": "TanStack AI",
+   "title": "TanStack AI hits 1.0 with stable core APIs: an open-source, no-lock-in toolkit for adding chat, tools, MCP, media and agents to your app, with 23 provider adapters, eight UI frameworks and a new experimental agent harness",
+   "category": "llm-apis",
+   "source": "https://tanstack.com/blog/tanstack-ai-1-0"
+  },
+  {
+   "date": "2026-10-22",
+   "tool": "Amp",
+   "title": "You can now self-host Amp orbs: run amp orb provider on your own machines (Docker, E2B, Modal, Vercel Sandbox, Daytona or Kubernetes) so agents run inside your own network; free for individuals and teams, and free for every workspace until Oct 29",
+   "category": "coding-agents",
+   "source": "https://ampcode.com/news/self-hosted-orbs"
+  },
+  {
+   "date": "2026-10-22",
+   "tool": "Agent Skills",
+   "title": "Anthropic donated Agent Skills, the open SKILL.md standard used by 70+ agent platforms including ChatGPT, Cursor, GitHub Copilot and VS Code, to the Linux Foundation's Agentic AI Foundation, so skills you write stay vendor-neutral",
+   "category": "coding-agents",
+   "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+  },
+  {
    "date": "2026-10-22",
    "tool": "OpenAI Decisions API",
    "title": "The Decisions API is now generally available: you define a question and its allowed answers and get fast, low-cost classification, routing and next-action picks for apps and agents, up to 10x faster than GPT-6 Luna through the Responses API, now with prompt caching, JSON and image inputs and up to 400 questions per request",

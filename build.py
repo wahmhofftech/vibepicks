@@ -87,6 +87,9 @@ blk='<!--catbar-->'+catbar()+'<!--/catbar-->'
 h=re.sub(r'<!--catbar-->.*?<!--/catbar-->',lambda m:blk,h,flags=re.S) if '<!--catbar-->' in h else h.replace('</header>','</header>'+blk,1)
 h=h if 'application/rss+xml' in h else h.replace('<link rel="canonical"','<link rel="alternate" type="application/rss+xml" title="VibePicks: new AI tool releases" href="/releases/feed.xml"><link rel="canonical"',1)
 h=h if 'rel="icon"' in h else h.replace('<link rel="canonical"',ICON+'<link rel="canonical"',1)
+# Home JSON-LD @graph: WebSite + Organization (publisher) + an ItemList of every category page, so search and AI answer engines can see who runs the site and map each use case to its ranked page
+HLD={"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":f"{S}/#website","name":"VibePicks","url":f"{S}/","description":"Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case.","inLanguage":"en-US","publisher":{"@id":f"{S}/#org"}},{"@type":"Organization","@id":f"{S}/#org","name":"VibePicks","url":f"{S}/","logo":f"{S}/favicon.svg","email":"news@vibepicks.ai"},{"@type":"ItemList","@id":f"{S}/#categories","name":"VibePicks categories","numberOfItems":len(d['categories']),"itemListElement":[{"@type":"ListItem","position":i+1,"name":f'Best {c["name"]}',"url":f'{S}/{c["id"]}/'} for i,c in enumerate(d['categories'])]}]}
+h=re.sub(r'<script type="application/ld\+json">.*?</script>',lambda m:'<script type="application/ld+json">'+json.dumps(HLD)+'</script>',h,count=1,flags=re.S)
 open('index.html','w').write(h)
 
 # sitemap.xml with <lastmod>: a page's date changes only when its generated content changes (hashes kept in lastmod.json)
