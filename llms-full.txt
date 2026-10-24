@@ -278,7 +278,7 @@ Page: https://vibepicks.ai/code-review/
 - Website: https://www.greptile.com
 - Pricing: Freemium
 - Use it for: AI code review that understands your whole codebase
-- In plain English: Reviews each change with your whole project in mind, so it catches bugs that only show up across files, with less noise. Free for one developer (50 reviews' worth of credits a month); Pro is $30 per developer a month.
+- In plain English: Reviews each change with your whole project in mind, so it catches bugs that only show up across files, with less noise. Free for one developer (50 reviews' worth of credits a month); Pro has no seat fees: you prepay credits at $1 each (a basic review uses 1 credit), shared across your team.
 
 ### #3 Cursor Bugbot
 - Website: https://cursor.com/bugbot
@@ -605,6 +605,10 @@ Page: https://vibepicks.ai/cad-machining/
 Page: https://vibepicks.ai/releases/
 RSS feed: https://vibepicks.ai/releases/feed.xml
 
+- 2026-10-23 | Cursor (Coding Agents & AI IDEs): Cursor agents can now control your computer: Computer Use lets them click and type across desktop apps, not just the browser, such as driving the iOS Simulator to test the features they build. Cursor uses it on its own when a task needs it, or you can @-mention Computer Use; update Cursor to get it. Source: https://x.com/cursor_ai/status/2113661506634305834
+- 2026-10-23 | Kimi K3.1 Pro (Moonshot AI) (LLM APIs): Moonshot AI released Kimi K3.1 Pro, a 2.8T-parameter MoE model (104B active) with a 1M-token context and image input, aimed at full-project coding and long agent runs. It is live on the Kimi API and Vercel AI Gateway (moonshotai/kimi-k3.1-pro, plus a faster Highspeed version), with open weights planned by November 4. Source: https://vercel.com/changelog/kimi-k3-1-pro-and-kimi-k3-1-pro-highspeed-are-available-now-in-ai-gateway
+- 2026-10-23 | Replit (App Builders): Replit launched Monitoring Agent, an on-call agent that investigates production issues from your app's logs and metrics, then attempts and validates fixes (with optional auto-fix and experimental auto-republish). Also new: Agent-made reusable skills, chat and asset sharing, Stripe Atlas incorporation at 20% off, and published apps that keep running at zero credits for eligible top-up customers. Source: https://docs.replit.com/updates/2026/10/23/changelog
+- 2026-10-23 | Chroma (Databases & Backend): Chroma, the open-source vector database, signed a deal to join Replit. Chroma Cloud is winding down: writes stop November 22, 2026 and reads stop December 22, 2026, so cloud users need to export and migrate. Open-source ChromaDB stays Apache 2.0. Source: https://www.trychroma.com/blog/chroma-joins-replit
 - 2026-10-23 | Codex CLI (Coding Agents & AI IDEs): Codex CLI 0.164.0 lets you save reusable prompts and slash commands in ten numbered /presets slots, set the model and permissions inline with /model and /permissions, preview images in the terminal, and mask credentials in remote Bash commands. Source: https://github.com/openai/codex/releases/tag/rust-v0.164.0
 - 2026-10-23 | TanStack AI (LLM APIs): TanStack AI hits 1.0 with stable core APIs: an open-source, no-lock-in toolkit for adding chat, tools, MCP, media and agents to your app, with 23 provider adapters, eight UI frameworks and a new experimental agent harness. Source: https://tanstack.com/blog/tanstack-ai-1-0
 - 2026-10-22 | Amp (Coding Agents & AI IDEs): You can now self-host Amp orbs: run amp orb provider on your own machines (Docker, E2B, Modal, Vercel Sandbox, Daytona or Kubernetes) so agents run inside your own network; free for individuals and teams, and free for every workspace until Oct 29. Source: https://ampcode.com/news/self-hosted-orbs
