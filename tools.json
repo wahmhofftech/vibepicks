@@ -780,6 +780,27 @@
  ],
  "releases": [
   {
+   "date": "2026-10-25",
+   "tool": "Cloudflare WAF",
+   "title": "Cloudflare added two emergency Managed Ruleset rules for the Node.js Brotli decoder flaw CVE-2026-111497 (memory leak or code execution when decoding attacker-controlled Brotli data): one matches Brotli-encoded request bodies, one matches the Next.js image optimizer path /_next/image. Both default to Log, not Block. If you self-host Next.js or any Node app, upgrade Node.js to 22.23.4, 24.22.1 or 26.12.1",
+   "category": "hosting",
+   "source": "https://developers.cloudflare.com/changelog/post/2026-10-25-emergency-waf-release/"
+  },
+  {
+   "date": "2026-10-23",
+   "tool": "Vercel Connect",
+   "title": "Vercel Connect can now create a separate restricted Stripe API key for each agent or task (Managed API Key method), limited to the permissions you pick, so an agent never holds your full-access secret key. Vercel stores the key, and you can rotate it without redeploying",
+   "category": "payments-email",
+   "source": "https://vercel.com/changelog/vercel-connect-adds-managed-stripe-api-keys"
+  },
+  {
+   "date": "2026-10-23",
+   "tool": "GitHub Copilot",
+   "title": "The new GitHub app for Microsoft Teams combines notifications with Copilot: @mention GitHub on a bug report in a channel or chat and it investigates, fixes the bug and opens a pull request for review. The legacy app is renamed GitHub (deprecated) and retires November 16",
+   "category": "coding-agents",
+   "source": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/"
+  },
+  {
    "date": "2026-10-23",
    "tool": "Cursor",
    "title": "Cursor agents can now control your computer: Computer Use lets them click and type across desktop apps, not just the browser, such as driving the iOS Simulator to test the features they build. Cursor uses it on its own when a task needs it, or you can @-mention Computer Use; update Cursor to get it",
@@ -820,6 +841,13 @@
    "title": "TanStack AI hits 1.0 with stable core APIs: an open-source, no-lock-in toolkit for adding chat, tools, MCP, media and agents to your app, with 23 provider adapters, eight UI frameworks and a new experimental agent harness",
    "category": "llm-apis",
    "source": "https://tanstack.com/blog/tanstack-ai-1-0"
+  },
+  {
+   "date": "2026-10-22",
+   "tool": "Vercel CLI",
+   "title": "You can now deploy to Vercel without an account: run vercel deploy --temporary (or point it at a single file) to get a shareable tmp.now URL for a prototype. Temporary deployments expire after one hour unless you open the claim link and sign in",
+   "category": "hosting",
+   "source": "https://vercel.com/changelog/deploy-without-an-account-using-vercel-cli"
   },
   {
    "date": "2026-10-22",

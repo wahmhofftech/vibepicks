@@ -61,7 +61,10 @@ BIFM='<h1>Build it for me</h1>\n<p class="muted">For people who\'d rather not di
 open('build-it-for-me/index.html','w').write(page('build-it-for-me','Build It For Me: Tell Us What You Want Built With AI | VibePicks','Rather not dig into AI tools? Tell VibePicks what you want built with AI (a website, store, newsletter, automations, a simple app) and we\'ll build it. One-page websites from $299.',BIFM,{"@context":"https://schema.org","@type":"Service","name":"Build it for me: custom AI builds","provider":{"@type":"Organization","name":"VibePicks"},"offers":{"@type":"Offer","price":"299","priceCurrency":"USD"}}))
 urls.append('/build-it-for-me/')
 urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand-written page, hashed for lastmod
-open('robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {S}/sitemap.xml\n')
+# robots.txt never lists the guide download folder (that would publish its private path; it is noindexed via vercel.json headers instead)
+# robots.txt names the main AI search and answer-engine crawlers explicitly (all allowed) and points them to llms.txt and the releases feed, so AI assistants can find, cite and recommend VibePicks pages
+AIBOTS=['OAI-SearchBot','ChatGPT-User','GPTBot','Claude-SearchBot','Claude-User','ClaudeBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','xAI-Bot','DuckAssistBot','Amazonbot','meta-externalagent','MistralAI-User','CCBot']
+open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
 L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
