@@ -1,5 +1,30 @@
 {
   "headers": [
-    { "source": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)", "headers": [ { "key": "X-Robots-Tag", "value": "noindex, nofollow" }, { "key": "Cache-Control", "value": "private, no-store" } ] }
+    {
+      "source": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/:cat/index.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Link",
+          "value": "<https://vibepicks.ai/:cat/>; rel=\"canonical\""
+        }
+      ]
+    }
   ]
 }

@@ -5,12 +5,15 @@ S="https://vibepicks.ai"; d=json.load(open('tools.json')); E=html.escape
 ICON='<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
 PAGES={}  # path -> generated html, used for sitemap lastmod
 def catbar(cur=''): return '<nav class="catbar" aria-label="Browse categories"><span class="catbar-l">Browse categories</span>'+''.join(f'<a class="chip{" on" if c["id"]==cur else ""}" href="/{c["id"]}/"'+(' aria-current="page"' if c["id"]==cur else '')+f'>{c["icon"]} {E(c["name"])}</a>' for c in d['categories'])+'</nav>'+('<script>document.querySelector(".catbar .on").scrollIntoView({inline:"center",block:"nearest"})</script>' if cur in [c['id'] for c in d['categories']] else '')
+CATIDS={c['id'] for c in d['categories']}
+# category pages advertise a plain Markdown copy (/<category>/index.md) so AI agents and answer engines can read the ranking without parsing HTML
+def MDALT(path): return f'<link rel="alternate" type="text/markdown" title="This ranking as Markdown" href="/{path}/index.md">' if path in CATIDS else ''
 def page(path,title,desc,body,ld):
   os.makedirs(path or '.',exist_ok=True); url=f"{S}/{path+'/' if path else ''}"
   h=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">{ICON}
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/style.css"><link rel="alternate" type="application/rss+xml" title="VibePicks: new AI tool releases" href="/releases/feed.xml"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
+<link rel="stylesheet" href="/style.css">{MDALT(path)}<link rel="alternate" type="application/rss+xml" title="VibePicks: new AI tool releases" href="/releases/feed.xml"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>
 <header class="nav"><a href="/" class="logo">Vibe<span>Picks</span></a><nav><a href="/">Home</a><a href="/#/directory">Directory</a><a href="/releases/">New releases</a><a href="/sponsor/">Sponsor</a><a href="/build-it-for-me/">Build it for me</a><a href="/guide/">Guide</a></nav></header>{catbar(path)}<main>{body}</main><footer>VibePicks · Rankings are editorial picks · <a href="/sponsor/">Sponsor</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a> · <a href="/releases/feed.xml">RSS</a></footer><script src="/signup.js"></script></body></html>'''
   PAGES[f'/{path}/' if path else '/']=h; return h
 def tl(t,i): return f'<div class="card tool"><div class="rank">#{i+1}</div><div><h3><a href="{t.get("aff") or t["url"]}" rel="{"sponsored nofollow noopener" if t.get("aff") else "noopener"}">{E(t["name"])}</a></h3><div class="muted">Use it for: {E(t["use"])}</div><span class="tag {t["pricing"]}">{t["pricing"]}</span>{" <span class=\"tag\">Affiliate link</span>" if t.get("aff") else ""}</div></div>'
@@ -65,7 +68,7 @@ urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand
 # robots.txt names the main AI search and answer-engine crawlers explicitly (all allowed) and points them to llms.txt and the releases feed, so AI assistants can find, cite and recommend VibePicks pages
 AIBOTS=['OAI-SearchBot','ChatGPT-User','GPTBot','Claude-SearchBot','Claude-User','ClaudeBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','xAI-Bot','DuckAssistBot','Amazonbot','meta-externalagent','MistralAI-User','CCBot']
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
-L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
+L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]
@@ -110,3 +113,10 @@ open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset x
 # fill in the "last updated" date on category pages (visible text + CollectionPage dateModified)
 for cid in CATS:
   fp=f'{cid}/index.html'; ph=open(fp).read(); open(fp,'w').write(ph.replace(LMPH,LM[f'/{cid}/']['d']))
+# Markdown copy of each category ranking (linked from the page head via rel="alternate" type="text/markdown"), dated with the page's last-changed date
+for c in d['categories']:
+  M=[f'# Best {c["name"]} for Vibe Coders (2026)',f'> Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.','',f'Page: {S}/{c["id"]}/',f'Last updated: {LM[f"/{c["id"]}/"]["d"]}','']
+  for i,t in enumerate(c['tools']):
+    M+=[f'## #{i+1} {t["name"]}',f'- Website: {t["url"]}',f'- Pricing: {t["pricing"]}',f'- Use it for: {t["use"]}']+([f'- In plain English: {t["why"]}'] if t.get('why') else [])+['']
+  M+=[f'All categories: {S}/llms.txt',f'Full directory: {S}/llms-full.txt',f'New releases: {S}/releases/']
+  open(f'{c["id"]}/index.md','w').write('\n'.join(M)+'\n')

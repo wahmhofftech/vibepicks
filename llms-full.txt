@@ -2,7 +2,7 @@
 > Every VibePicks ranking, tool, plain-English reason, pricing label and verified release in one file. Short index: https://vibepicks.ai/llms.txt
 
 Site: https://vibepicks.ai/
-Last updated: 2026-10-25
+Last updated: 2026-10-26
 About: VibePicks ranks AI tools for vibe coders, builders and non-coders by use case. #1 is our top pick in each category.
 Pricing labels: Free = no paid tier needed; Freemium = usable free plan plus paid upgrades; Paid = paid plan or trial that converts to paid.
 Rankings are editorial picks and are never sold. Sponsored placements are always labeled Sponsored.
@@ -605,6 +605,9 @@ Page: https://vibepicks.ai/cad-machining/
 Page: https://vibepicks.ai/releases/
 RSS feed: https://vibepicks.ai/releases/feed.xml
 
+- 2026-10-26 | Gemini API (LLM APIs): New paid-tier projects now store Generate Content API requests by default (store=true), matching the Interactions API; opt out per request with store=false or in Logs and Datasets settings. Source: https://ai.google.dev/gemini-api/docs/changelog
+- 2026-10-26 | Vercel (Deploy & Hosting): Faster pnpm installs: dependency verification is reused across deployments, cutting average install time 14% on Pro, automatic on all plans. Source: https://vercel.com/changelog/faster-pnpm-installs
+- 2026-10-26 | Replit (App Builders): Replit now works fully in Japanese, from the interface to prompts and agent output. Source: https://x.com/Replit/status/2114587332137664535
 - 2026-10-25 | Cloudflare WAF (Deploy & Hosting): Cloudflare added two emergency Managed Ruleset rules for the Node.js Brotli decoder flaw CVE-2026-111497 (memory leak or code execution when decoding attacker-controlled Brotli data): one matches Brotli-encoded request bodies, one matches the Next.js image optimizer path /_next/image. Both default to Log, not Block. If you self-host Next.js or any Node app, upgrade Node.js to 22.23.4, 24.22.1 or 26.12.1. Source: https://developers.cloudflare.com/changelog/post/2026-10-25-emergency-waf-release/
 - 2026-10-23 | Vercel Connect (Payments & Email): Vercel Connect can now create a separate restricted Stripe API key for each agent or task (Managed API Key method), limited to the permissions you pick, so an agent never holds your full-access secret key. Vercel stores the key, and you can rotate it without redeploying. Source: https://vercel.com/changelog/vercel-connect-adds-managed-stripe-api-keys
 - 2026-10-23 | GitHub Copilot (Coding Agents & AI IDEs): The new GitHub app for Microsoft Teams combines notifications with Copilot: @mention GitHub on a bug report in a channel or chat and it investigates, fixes the bug and opens a pull request for review. The legacy app is renamed GitHub (deprecated) and retires November 16. Source: https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/
