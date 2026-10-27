@@ -24,6 +24,13 @@ DISC=f'<p class="muted disclosure" style="font-size:.82rem;margin:14px 2px">Disc
 urls=['/','/releases/']
 LMPH='@@LASTMOD@@'  # placeholder for a page's last-changed date; swapped in after lastmod.json is updated, so it doesn't affect the content hash
 CATS=[]
+def faq(c):
+  T=c['tools']; nl=c['name']; top=T[0]; lc=lambda u: u if (len(u)>1 and u[1].isupper()) else u[0].lower()+u[1:]
+  Q=[(f'What is the best pick in {nl} for 2026?',f'{top["name"]} is our #1 pick in {nl}: {lc(top["use"])}. {top["why"]}')]
+  fr=next((t for t in T if t['pricing'] in ('Free','Freemium')),None)
+  if fr: Q.append((f'Is there a free option in {nl}?',(f'Yes. {fr["name"]} is ' + ('completely free' if fr['pricing']=='Free' else 'free to start, with paid upgrades') + f'. {fr["why"]}') if fr is not top else f'Yes. Our #1 pick, {top["name"]}, is ' + ('completely free.' if top['pricing']=='Free' else 'free to start, with paid upgrades.')))
+  if len(T)>1: Q.append((f'What are the best alternatives to {top["name"]}?','In our ranking: '+'; '.join(f'#{i+2} {t["name"]} ({lc(t["use"])})' for i,t in enumerate(T[1:4]))+'.'))
+  return Q
 for c in d['categories']:
   title=f'Best {c["name"]} for Vibe Coders (2026) — VibePicks'
   desc=f'Ranked {c["name"].lower()} for builders shipping apps with AI: '+', '.join(t['name'] for t in c['tools'])+'.'
@@ -31,7 +38,10 @@ for c in d['categories']:
   cu=f'{S}/{c["id"]}/'
   il={"@type":"ItemList","name":f'Best {c["name"]}',"numberOfItems":len(c['tools']),"itemListOrder":"https://schema.org/ItemListOrderAscending","itemListElement":[{"@type":"ListItem","position":i+1,"item":{"@type":"SoftwareApplication","name":t["name"],"url":t["url"],"applicationCategory":"DeveloperApplication","description":t["use"]}} for i,t in enumerate(c['tools'])]}
   ld={"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":desc,"url":cu,"dateModified":LMPH,"isPartOf":{"@type":"WebSite","name":"VibePicks","url":f"{S}/"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VibePicks","item":f"{S}/"},{"@type":"ListItem","position":2,"name":c["name"],"item":cu}]},"mainEntity":il}
-  body=f'<section class="hero" style="padding-bottom:10px"><div style="font-size:2.4rem">{c["icon"]}</div><h1>Best {E(c["name"])}</h1><p>Ranked editorial picks for vibe coders and builders.</p><p class="muted" style="font-size:.85rem">Page last updated <time datetime="{LMPH}">{LMPH}</time></p></section><div class="grid" style="grid-template-columns:1fr">'+''.join(tl(t,i) for i,t in enumerate(c['tools']))+'</div>'+disc(any(any(k in t['name'] for k in ('Grok','Cursor','xAI')) for t in c['tools']),any(t.get('aff') for t in c['tools']))+'<p><a href="/">← All categories</a></p>'
+  # Quick answers: short visible Q&A built from the ranking, mirrored as FAQPage JSON-LD, so AI chatbots and answer engines can lift a direct, citable answer to "what's the best/free X?"
+  FQ=faq(c); ld={"@context":"https://schema.org","@graph":[{k:v for k,v in ld.items() if k!="@context"},{"@type":"FAQPage","@id":cu+"#quick-answers","url":cu,"mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FQ]}]}
+  FAQH='<section class="faq" id="quick-answers" aria-labelledby="qa-h"><h2 id="qa-h" style="font-size:1.15rem;margin:22px 2px 8px">Quick answers</h2>'+''.join(f'<details class="card" style="margin:8px 0;padding:12px 16px"><summary style="cursor:pointer;font-weight:600">{E(q)}</summary><p style="margin:8px 0 0">{E(a)}</p></details>' for q,a in FQ)+'</section>'
+  body=f'<section class="hero" style="padding-bottom:10px"><div style="font-size:2.4rem">{c["icon"]}</div><h1>Best {E(c["name"])}</h1><p>Ranked editorial picks for vibe coders and builders.</p><p class="muted" style="font-size:.85rem">Page last updated <time datetime="{LMPH}">{LMPH}</time></p></section><div class="grid" style="grid-template-columns:1fr">'+''.join(tl(t,i) for i,t in enumerate(c['tools']))+'</div>'+FAQH+disc(any(any(k in t['name'] for k in ('Grok','Cursor','xAI')) for t in c['tools']),any(t.get('aff') for t in c['tools']))+'<p><a href="/">← All categories</a></p>'
   open(f'{c["id"]}/index.html' if os.makedirs(c['id'],exist_ok=True) is None else '','w').write(page(c['id'],title,desc,body,ld)); urls.append(f'/{c["id"]}/'); CATS.append(c['id'])
 rel=''.join(f'<div class="release {"sample" if r.get("sample") else ""}"><span class="tag">{r["date"]}</span> <b>{E(r["tool"])}</b> — {E(r["title"])} <a href="{r["source"]}">source</a></div>' for r in d['releases'])
 os.makedirs('releases',exist_ok=True)
@@ -118,5 +128,6 @@ for c in d['categories']:
   M=[f'# Best {c["name"]} for Vibe Coders (2026)',f'> Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.','',f'Page: {S}/{c["id"]}/',f'Last updated: {LM[f"/{c["id"]}/"]["d"]}','']
   for i,t in enumerate(c['tools']):
     M+=[f'## #{i+1} {t["name"]}',f'- Website: {t["url"]}',f'- Pricing: {t["pricing"]}',f'- Use it for: {t["use"]}']+([f'- In plain English: {t["why"]}'] if t.get('why') else [])+['']
+  M+=['## Quick answers','']+[x for q,a in faq(c) for x in (f'**{q}**',a,'')]
   M+=[f'All categories: {S}/llms.txt',f'Full directory: {S}/llms-full.txt',f'New releases: {S}/releases/']
   open(f'{c["id"]}/index.md','w').write('\n'.join(M)+'\n')

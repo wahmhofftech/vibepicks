@@ -2,7 +2,7 @@
 > Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.
 
 Page: https://vibepicks.ai/ai-video/
-Last updated: 2026-10-26
+Last updated: 2026-10-27
 
 ## #1 CapCut
 - Website: https://www.capcut.com
@@ -45,6 +45,17 @@ Last updated: 2026-10-26
 - Pricing: Paid
 - Use it for: Short AI video clips with sound from text or a picture
 - In plain English: Turns a description or a picture into a short clip with sound effects and even talking characters. Video needs the $30/month Premium plan, so try Runway's free credits first.
+
+## Quick answers
+
+**What is the best pick in AI Video & Clips for 2026?**
+CapCut is our #1 pick in AI Video & Clips: edit shorts and reels with auto captions. A free, easy video editor made for TikTok-style videos. Auto captions, templates and simple cuts are on the free plan; some effects need Pro.
+
+**Is there a free option in AI Video & Clips?**
+Yes. Our #1 pick, CapCut, is free to start, with paid upgrades.
+
+**What are the best alternatives to CapCut?**
+In our ranking: #2 Opus Clip (turn a long video or stream into short clips); #3 Gemini Omni (formerly Veo) (realistic AI video clips with sound, made and edited by chatting); #4 Kling AI (make AI video clips from text or a picture).
 
 All categories: https://vibepicks.ai/llms.txt
 Full directory: https://vibepicks.ai/llms-full.txt

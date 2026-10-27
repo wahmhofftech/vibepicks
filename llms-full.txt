@@ -137,7 +137,7 @@ Page: https://vibepicks.ai/auth/
 - Website: https://better-auth.com
 - Pricing: Free
 - Use it for: Free, open-source auth that keeps users in your own database
-- In plain English: A free log-in system you add to your own code, so your users and passwords live in your own database. It took over from NextAuth (Auth.js). An optional $20/month dashboard adds logs and security alerts.
+- In plain English: A free log-in system you add to your own code, so your users and passwords live in your own database. It took over from NextAuth (Auth.js). An optional hosted dashboard with logs and security alerts is free to start, then $20/month on Pro.
 
 ### #4 Auth0
 - Website: https://auth0.com
@@ -605,6 +605,11 @@ Page: https://vibepicks.ai/cad-machining/
 Page: https://vibepicks.ai/releases/
 RSS feed: https://vibepicks.ai/releases/feed.xml
 
+- 2026-10-26 | GPT-6.1 Terra (OpenAI) (LLM APIs): OpenAI released GPT-6.1 Terra, a fast, lower-cost model for computer use, visual reasoning and writing. On the API as gpt-6.1-terra at $1 per million input tokens and $5 per million output (half the price of GPT-6.1 Sol), with a 1M-token context; also in ChatGPT and Codex for paid plans, and generally available in GitHub Copilot. Source: https://openai.com/index/introducing-gpt-6-1-terra/
+- 2026-10-26 | Cursor (Coding Agents & AI IDEs): Cursor's Agent SDK is generally available: define an agent as a folder (instructions.md for the prompt, tools/ in TypeScript, skills, MCP connections), test it with built-in evals, and deploy it to Cursor with agent-sdk deploy or run it on your own servers. Agents can wake on GitHub, GitLab or Bitbucket events, Slack messages, webhooks or a schedule. Source: https://cursor.com/blog/agent-sdk
+- 2026-10-26 | GitHub Copilot (Coding Agents & AI IDEs): Assisted permissions are generally available in Copilot CLI, the Copilot app and VS Code: an AI model checks each command, file path or URL Copilot asks to use, lets clearly safe ones run, and still asks you about the rest. It's a middle ground between approving everything by hand and Allow All. Source: https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/
+- 2026-10-26 | Claude Code (Coding Agents & AI IDEs): v2.1.311 fixes long sessions stopping with "Usage credits required for 1M context" past 200K tokens (it now compacts and keeps going), fixes multi-thousand-line edits stalling for up to 5 seconds, lets subagents use MCP servers that connect late, and typing ultrathink mid-turn now raises effort for the rest of that turn. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.311
+- 2026-10-26 | Entire (AI Code Review): Former GitHub CEO Thomas Dohmke's Entire launched a Git hosting platform built for coding agents: Trails replace pull requests with agent-scored checks on every push, Continuous Memory saves agent sessions into the repo so agents can search past work, and Buildkite and Depot handle CI. Open to every developer today, with private repos only for now. Source: https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration
 - 2026-10-26 | Gemini API (LLM APIs): New paid-tier projects now store Generate Content API requests by default (store=true), matching the Interactions API; opt out per request with store=false or in Logs and Datasets settings. Source: https://ai.google.dev/gemini-api/docs/changelog
 - 2026-10-26 | Vercel (Deploy & Hosting): Faster pnpm installs: dependency verification is reused across deployments, cutting average install time 14% on Pro, automatic on all plans. Source: https://vercel.com/changelog/faster-pnpm-installs
 - 2026-10-26 | Replit (App Builders): Replit now works fully in Japanese, from the interface to prompts and agent output. Source: https://x.com/Replit/status/2114587332137664535

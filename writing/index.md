@@ -2,7 +2,7 @@
 > Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.
 
 Page: https://vibepicks.ai/writing/
-Last updated: 2026-10-26
+Last updated: 2026-10-27
 
 ## #1 ChatGPT
 - Website: https://chatgpt.com
@@ -33,6 +33,17 @@ Last updated: 2026-10-26
 - Pricing: Freemium
 - Use it for: Fix spelling, grammar and tone as you type
 - In plain English: Checks your writing everywhere you type, in email, social posts and docs. The free plan catches spelling and grammar mistakes.
+
+## Quick answers
+
+**What is the best pick in Writing & Marketing for 2026?**
+ChatGPT is our #1 pick in Writing & Marketing: draft posts, emails and product descriptions. Tell it what you're selling and who it's for and it writes a first draft in seconds. Ask for a few versions and pick the one that sounds most like you.
+
+**Is there a free option in Writing & Marketing?**
+Yes. Our #1 pick, ChatGPT, is free to start, with paid upgrades.
+
+**What are the best alternatives to ChatGPT?**
+In our ranking: #2 Claude (natural-sounding writing and rewrites); #3 Gemini (drafts and rewrites, built into Gmail and Google Docs); #4 Grok (timely social posts and replies).
 
 All categories: https://vibepicks.ai/llms.txt
 Full directory: https://vibepicks.ai/llms-full.txt
