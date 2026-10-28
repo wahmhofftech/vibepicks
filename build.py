@@ -78,7 +78,7 @@ urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand
 # robots.txt names the main AI search and answer-engine crawlers explicitly (all allowed) and points them to llms.txt and the releases feed, so AI assistants can find, cite and recommend VibePicks pages
 AIBOTS=['OAI-SearchBot','ChatGPT-User','GPTBot','Claude-SearchBot','Claude-User','ClaudeBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','xAI-Bot','DuckAssistBot','Amazonbot','meta-externalagent','MistralAI-User','CCBot']
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
-L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
+L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md',f'Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" {S}/coding-agents/','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]
@@ -131,3 +131,18 @@ for c in d['categories']:
   M+=['## Quick answers','']+[x for q,a in faq(c) for x in (f'**{q}**',a,'')]
   M+=[f'All categories: {S}/llms.txt',f'Full directory: {S}/llms-full.txt',f'New releases: {S}/releases/']
   open(f'{c["id"]}/index.md','w').write('\n'.join(M)+'\n')
+
+# vercel.json: Markdown content negotiation for AI agents. A request for a category page (or the homepage) whose Accept header asks for text/markdown
+# gets the page's Markdown copy (homepage -> llms.txt) at the same URL; browsers still get HTML. Uses "routes" because they run before the static
+# filesystem check (plain rewrites never fire for URLs a file already answers). Vary: Accept keeps caches from mixing the two versions.
+MDH={"type":"header","key":"accept","value":".*text/markdown.*"}
+CRE='|'.join(c['id'] for c in d['categories'])  # ids are lowercase letters and hyphens
+MDT='text/markdown; charset=utf-8'
+VJ={"routes":[
+ {"src":"/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)","headers":{"X-Robots-Tag":"noindex, nofollow","Cache-Control":"private, no-store"},"continue":True},
+ {"src":f"/({CRE})/index\\.md","headers":{"Content-Type":MDT,"Link":f'<{S}/$1/>; rel="canonical"'},"continue":True},
+ {"src":f"/({CRE})/?","has":[MDH],"dest":"/$1/index.md","headers":{"Content-Type":MDT,"Vary":"Accept","Link":f'<{S}/$1/>; rel="canonical"'}},
+ {"src":"/","has":[MDH],"dest":"/llms.txt","headers":{"Content-Type":MDT,"Vary":"Accept","Link":f'<{S}/>; rel="canonical"'}},
+ {"src":f"/(({CRE})/?)?","headers":{"Vary":"Accept"},"continue":True},
+]}
+open('vercel.json','w').write(json.dumps(VJ,indent=2)+'\n')

@@ -780,6 +780,55 @@
  ],
  "releases": [
   {
+   "date": "2026-10-27",
+   "tool": "Supabase",
+   "title": "Supabase Compute is in private alpha: run AI agents, background jobs and APIs (Node, Deno or any Dockerfile) inside your Supabase project, next to your Postgres data, for minutes or hours instead of the 400-second Edge Function limit. Deploy with supabase compute push (CLI v2.120.0+); free during the alpha, us-west-2 projects only, waitlist required and not for production yet",
+   "category": "databases",
+   "source": "https://supabase.com/blog/supabase-compute-private-alpha"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "Replit",
+   "title": "Replit Cloud Agents let anyone on a team describe a change in plain English, watch it in a live preview of the running app, and have the agent open a tested pull request on GitHub (or merge request on GitLab) that follows the team's guidelines and keeps fixing it as review comments come in. Engineers still approve what ships. Available now on Pro and Enterprise",
+   "category": "app-builders",
+   "source": "https://replit.com/blog/anyone-can-bring-ideas-to-company-codebase"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "Cursor",
+   "title": "Cursor design mode adds Annotate: give the agent visual prompts by editing elements, drawing right on the page, and reviewing your design at different screen sizes",
+   "category": "coding-agents",
+   "source": "https://x.com/cursor_ai/status/2115159585548021814"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "Gemini API",
+   "title": "Google released the Gemini API CLI (gemini-api) in beta, a stateless, zero-dependency command-line client built for AI coding agents, scripts and CI pipelines. It uses the Interactions API to generate text and media, analyze files and run Gemini managed agents",
+   "category": "llm-apis",
+   "source": "https://ai.google.dev/gemini-api/docs/changelog"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "Ramp Inspect",
+   "title": "Ramp opened early access to Inspect, the cloud coding agent its own teams use: hand it a task from Slack, GitHub, Linear, the web or your phone (even a screenshot with \"@inspect fix this\") and it returns a visually checked, reviewed pull request. Sessions are multiplayer so teammates can jump in and steer. Ramp says it now writes 74% of the company's merged PRs",
+   "category": "coding-agents",
+   "source": "https://ramp.com/blog/introducing-inspect"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "Vercel",
+   "title": "Vercel Observability now shows AI traffic: requests by each verified AI bot, the pages AI crawlers hit most, pages AI assistants fetch in answer to a user's question, Markdown requests, and pages that return errors to bots. Find it under Observability > AI Traffic; querying it from the CLI with vercel metrics needs Observability Plus",
+   "category": "hosting",
+   "source": "https://vercel.com/changelog/ai-traffic-insights-now-available-in-vercel-observability"
+  },
+  {
+   "date": "2026-10-27",
+   "tool": "OpenCode",
+   "title": "OpenCode v2.2.0 adds experimental desktop plugins you can create, install and share, a refreshed desktop app, experimental image-generation APIs for plugins, keyed session instructions that survive compaction without busting the prompt cache, and prompt-cache lifetimes you can set per provider and model. Heads-up: the OpenCode GitHub Action is no longer published, so remove it from your workflows",
+   "category": "coding-agents",
+   "source": "https://github.com/anomalyco/opencode/releases/tag/v2.2.0"
+  },
+  {
    "date": "2026-10-26",
    "tool": "GPT-6.1 Terra (OpenAI)",
    "title": "OpenAI released GPT-6.1 Terra, a fast, lower-cost model for computer use, visual reasoning and writing. On the API as gpt-6.1-terra at $1 per million input tokens and $5 per million output (half the price of GPT-6.1 Sol), with a 1M-token context; also in ChatGPT and Codex for paid plans, and generally available in GitHub Copilot",

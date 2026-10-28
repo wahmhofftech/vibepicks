@@ -1,30 +1,59 @@
 {
-  "headers": [
+  "routes": [
     {
-      "source": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "private, no-store"
-        }
-      ]
+      "src": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "private, no-store"
+      },
+      "continue": true
     },
     {
-      "source": "/:cat/index.md",
-      "headers": [
+      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/index\\.md",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Link": "<https://vibepicks.ai/$1/>; rel=\"canonical\""
+      },
+      "continue": true
+    },
+    {
+      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/?",
+      "has": [
         {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        },
-        {
-          "key": "Link",
-          "value": "<https://vibepicks.ai/:cat/>; rel=\"canonical\""
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
         }
-      ]
+      ],
+      "dest": "/$1/index.md",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Vary": "Accept",
+        "Link": "<https://vibepicks.ai/$1/>; rel=\"canonical\""
+      }
+    },
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ],
+      "dest": "/llms.txt",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Vary": "Accept",
+        "Link": "<https://vibepicks.ai/>; rel=\"canonical\""
+      }
+    },
+    {
+      "src": "/((coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/?)?",
+      "headers": {
+        "Vary": "Accept"
+      },
+      "continue": true
     }
   ]
 }
