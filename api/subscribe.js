@@ -20,7 +20,16 @@ module.exports = async (req, res) => {
   const h = { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' };
   try {
     let r = await fetch('https://api.resend.com/contacts', { method: 'POST', headers: h, body: JSON.stringify({ email, unsubscribed: false, segments: [{ id: SEGMENT }] }) });
-    if (r.ok) return send(200, { ok: true });
+    if (r.ok) {
+      // Welcome email: fire the Resend event only for brand-new contacts, and only when WELCOME_ENABLED=1 is set in Vercel.
+      // The matching Resend automation ("VibePicks welcome email") must also be enabled for anything to send.
+      if (process.env.WELCOME_ENABLED === '1') {
+        try {
+          await fetch('https://api.resend.com/events/send', { method: 'POST', headers: h, body: JSON.stringify({ event: 'newsletter.subscribed', email, payload: { source: 'site' } }) });
+        } catch (e) { console.error('welcome event failed', e); }
+      }
+      return send(200, { ok: true });
+    }
     const err = await r.json().catch(() => ({}));
     if (r.status === 409 || /exist/i.test(err.message || '')) {
       r = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(email)}/segments/${SEGMENT}`, { method: 'POST', headers: h });
