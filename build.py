@@ -7,7 +7,7 @@ PAGES={}  # path -> generated html, used for sitemap lastmod
 def catbar(cur=''): return '<nav class="catbar" aria-label="Browse categories"><span class="catbar-l">Browse categories</span>'+''.join(f'<a class="chip{" on" if c["id"]==cur else ""}" href="/{c["id"]}/"'+(' aria-current="page"' if c["id"]==cur else '')+f'>{c["icon"]} {E(c["name"])}</a>' for c in d['categories'])+'</nav>'+('<script>document.querySelector(".catbar .on").scrollIntoView({inline:"center",block:"nearest"})</script>' if cur in [c['id'] for c in d['categories']] else '')
 CATIDS={c['id'] for c in d['categories']}
 # category pages advertise a plain Markdown copy (/<category>/index.md) so AI agents and answer engines can read the ranking without parsing HTML
-def MDALT(path): return f'<link rel="alternate" type="text/markdown" title="This ranking as Markdown" href="/{path}/index.md">' if path in CATIDS else ''
+def MDALT(path): return f'<link rel="alternate" type="text/markdown" title="{"New releases" if path=="releases" else "This ranking"} as Markdown" href="/{path}/index.md">' if path in CATIDS or path=='releases' else ''
 def page(path,title,desc,body,ld):
   os.makedirs(path or '.',exist_ok=True); url=f"{S}/{path+'/' if path else ''}"
   h=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -78,7 +78,7 @@ urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand
 # robots.txt names the main AI search and answer-engine crawlers explicitly (all allowed) and points them to llms.txt and the releases feed, so AI assistants can find, cite and recommend VibePicks pages
 AIBOTS=['OAI-SearchBot','ChatGPT-User','GPTBot','Claude-SearchBot','Claude-User','ClaudeBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','xAI-Bot','DuckAssistBot','Amazonbot','meta-externalagent','MistralAI-User','CCBot']
 open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
-L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md',f'Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" {S}/coding-agents/','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
+L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md',f'New releases as Markdown: {S}/releases/index.md',f'Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" {S}/coding-agents/','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
 L+=['## Recent releases']+[f'- {r["date"]}: {r["tool"]} — {r["title"]} ({r["source"]})' for r in d['releases']]
@@ -132,11 +132,19 @@ for c in d['categories']:
   M+=[f'All categories: {S}/llms.txt',f'Full directory: {S}/llms-full.txt',f'New releases: {S}/releases/']
   open(f'{c["id"]}/index.md','w').write('\n'.join(M)+'\n')
 
+# Markdown copy of the releases feed (/releases/index.md) so AI agents can read every verified launch, newest first, without parsing HTML
+_RM=['# New AI tool releases for builders','> Verified AI tool and model launches that matter to people shipping apps, newest first, each with its source link. Curated by VibePicks.','',f'Page: {S}/releases/',f'RSS: {S}/releases/feed.xml','Last updated: '+max((r['date'] for r in d['releases']),default=''),'']
+for r in d['releases']:
+  if r.get('sample'): continue
+  _RM+=[f'## {r["date"]}: {r["tool"]}',r['title'],f'- Category: {r["category"]}',f'- Source: {r["source"]}','']
+_RM+=[f'All categories: {S}/llms.txt',f'Full directory: {S}/llms-full.txt']
+open('releases/index.md','w').write('\n'.join(_RM)+'\n')
+
 # vercel.json: Markdown content negotiation for AI agents. A request for a category page (or the homepage) whose Accept header asks for text/markdown
 # gets the page's Markdown copy (homepage -> llms.txt) at the same URL; browsers still get HTML. Uses "routes" because they run before the static
 # filesystem check (plain rewrites never fire for URLs a file already answers). Vary: Accept keeps caches from mixing the two versions.
 MDH={"type":"header","key":"accept","value":".*text/markdown.*"}
-CRE='|'.join(c['id'] for c in d['categories'])  # ids are lowercase letters and hyphens
+CRE='|'.join([c['id'] for c in d['categories']]+['releases'])  # ids are lowercase letters and hyphens
 MDT='text/markdown; charset=utf-8'
 VJ={"routes":[
  {"src":"/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)","headers":{"X-Robots-Tag":"noindex, nofollow","Cache-Control":"private, no-store"},"continue":True},

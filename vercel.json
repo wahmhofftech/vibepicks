@@ -9,7 +9,7 @@
       "continue": true
     },
     {
-      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/index\\.md",
+      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining|releases)/index\\.md",
       "headers": {
         "Content-Type": "text/markdown; charset=utf-8",
         "Link": "<https://vibepicks.ai/$1/>; rel=\"canonical\""
@@ -17,7 +17,7 @@
       "continue": true
     },
     {
-      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/?",
+      "src": "/(coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining|releases)/?",
       "has": [
         {
           "type": "header",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "src": "/((coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining)/?)?",
+      "src": "/((coding-agents|app-builders|hosting|auth|payments-email|databases|design-to-code|testing|code-review|llm-apis|ai-images|ai-audio|ai-hardware|ai-video|automations|websites|writing|cad-machining|releases)/?)?",
       "headers": {
         "Vary": "Accept"
       },

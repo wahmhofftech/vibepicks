@@ -780,6 +780,41 @@
  ],
  "releases": [
   {
+   "date": "2026-10-28",
+   "tool": "GitHub Copilot",
+   "title": "Copilot Fusion is generally available: pick Fusion in the model picker and Copilot routes and combines models for each task instead of you choosing one, with Standard, High and Max effort levels. GitHub says Fusion Max scored within two points of Claude Code with Opus 5.5 Max on the Artificial Analysis Coding Agent Index at about half the cost. On all Copilot plans in VS Code, the Copilot app, Copilot CLI and JetBrains",
+   "category": "coding-agents",
+   "source": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "GitHub Copilot",
+   "title": "Copilot cloud sessions now follow you everywhere: start a cloud agent task on github.com, GitHub Mobile, Copilot CLI, the Copilot app, VS Code, Slack or Teams and pick it up on any of the others while it keeps running in a cloud sandbox. Sandbox time can come out of your included Actions minutes. Generally available on paid Copilot plans, rolling out from Oct 28; Copilot Projects for multi-repo goals are in public preview",
+   "category": "coding-agents",
+   "source": "https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "GitHub Agentic Workflows",
+   "title": "GitHub Agentic Workflows is generally available: write an automation (issue triage, CI failure analysis, docs updates, test writing) as a plain-English Markdown file and it compiles to a normal GitHub Actions workflow run by Copilot or your own coding agent, read-only by default and sandboxed. On GitHub Free, Team and Enterprise; the default Copilot CLI engine needs a Copilot license",
+   "category": "automations",
+   "source": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "Supabase",
+   "title": "OrioleDB is in public beta on every Supabase plan: an open-source Postgres storage engine built for tables with lots of updates and deletes, cutting the table bloat and VACUUM tuning the default engine needs. Choose it when you create a project; billed like standard Postgres, backups and read replicas work, but not ready for production yet",
+   "category": "databases",
+   "source": "https://supabase.com/blog/orioledb-public-beta"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "Vercel",
+   "title": "The Vercel Plugin now works in OpenCode 2: install it with opencode plugin add github:vercel/vercel-plugin to get Vercel skills (AI SDK, Functions, Workflow), /vercel:deploy and /vercel:env commands, and the Vercel MCP server so the agent can see your projects, deployments and logs",
+   "category": "hosting",
+   "source": "https://vercel.com/changelog/vercel-plugin-now-available-in-opencode"
+  },
+  {
    "date": "2026-10-27",
    "tool": "Supabase",
    "title": "Supabase Compute is in private alpha: run AI agents, background jobs and APIs (Node, Deno or any Dockerfile) inside your Supabase project, next to your Postgres data, for minutes or hours instead of the 400-second Edge Function limit. Deploy with supabase compute push (CLI v2.120.0+); free during the alpha, us-west-2 projects only, waitlist required and not for production yet",
