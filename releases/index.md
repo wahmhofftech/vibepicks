@@ -3,7 +3,42 @@
 
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
-Last updated: 2026-10-28
+Last updated: 2026-10-29
+
+## 2026-10-29: Google Jules
+Google is shutting down Jules, its background AI coding agent, to fold the idea into Antigravity: you can keep finishing sessions until November 11, then Jules goes read-only and winds down December 31, 2026. Export your settings, environment variables, scheduled tasks, memories, setup scripts and session history first with the Jules Tools CLI (npm install -g @google/jules); your code, branches and pull requests stay in GitHub
+- Category: coding-agents
+- Source: https://jules.google/docs/changelog/2026-10-29/
+
+## 2026-10-29: Google Antigravity
+Antigravity now has a Plugin Marketplace in the Antigravity app and CLI: one-click plugins that bundle skills, MCP servers, rules, hooks and custom agents, so you no longer wire up each MCP server by hand. Launch partners include Atlassian, Canva, Datadog, Dropbox, Figma, Stripe and Unity, plus a Vercel plugin
+- Category: coding-agents
+- Source: https://antigravity.google/blog/plugin-marketplace-in-antigravity/
+
+## 2026-10-29: Factory Droid
+Factory released Droid 1.0, a rebuilt coding-agent harness whose default Script mode lets the model write a small sandboxed JavaScript program that runs many tool calls in one request instead of one call at a time. Factory says that cuts cost about 15% on Claude Opus 5.5 and turned one 312-call cleanup into 2 requests; its benchmark wins are self-reported. On desktop, CLI and an SDK
+- Category: coding-agents
+- Source: https://factory.com/news/frontier-harness
+
+## 2026-10-29: OpenCode
+OpenCode v2.2.1 adds /goal: give the session an objective and it keeps working until an automatic review confirms it is done, with /goal pause, resume and clear. Also new: opt-in scheduled prompts (/schedule), an opt-in image_generate tool, live background-shell output in Desktop and a redesigned model picker
+- Category: coding-agents
+- Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.1
+
+## 2026-10-29: Vercel
+Node.js 26 LTS is generally available on Vercel for builds and Functions and is now the default for new projects. Built-in fetch uses HTTP/2 by default (set VERCEL_FETCH_DISABLE_H2=1 to keep HTTP/1.1), and you get the Temporal date API. Existing projects move to 26 on the next deploy if engines.node allows it, e.g. >=20
+- Category: hosting
+- Source: https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel
+
+## 2026-10-29: Vercel
+Vercel Firewall can now treat AI crawlers (bots that collect pages for indexing and model training) and AI assistants (bots fetching a page to answer someone's question) separately, so you can block training crawlers but still let ChatGPT-style assistants read and cite your site. In the AI Bots managed ruleset, on all plans
+- Category: hosting
+- Source: https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules
+
+## 2026-10-28: GitHub Replica
+GitHub Design open-sourced Replica (MIT license), an AI prototyping tool that turns plain-English ideas into interactive prototypes built from your own design system's components, driven from the GitHub Copilot app, with an optional self-hosted Replica Hub for sharing and comments
+- Category: design-to-code
+- Source: https://github.blog/changelog/2026-10-28-introducing-replica-an-open-source-ai-prototyping-tool/
 
 ## 2026-10-28: GitHub Copilot
 Copilot Fusion is generally available: pick Fusion in the model picker and Copilot routes and combines models for each task instead of you choosing one, with Standard, High and Max effort levels. GitHub says Fusion Max scored within two points of Claude Code with Opus 5.5 Max on the Artificial Analysis Coding Agent Index at about half the cost. On all Copilot plans in VS Code, the Copilot app, Copilot CLI and JetBrains
