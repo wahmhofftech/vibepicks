@@ -3,7 +3,38 @@
 
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
-Last updated: 2026-10-29
+JSON Feed: https://vibepicks.ai/releases/feed.json
+Last updated: 2026-10-30
+
+## 2026-10-30: Claude (Anthropic)
+Anthropic renamed its Max plans: Max 5x is now just Max ($100/month) and Max 20x is now Ultra ($200/month), with no change in price and nothing for subscribers to do. Verified Ultra accounts also lose the 5-hour usage limit, starting with most existing subscribers; newer accounts keep a temporary limit until verified, and weekly limits stay the same. Claude Code is included in Pro, Max and Ultra
+- Category: coding-agents
+- Source: https://x.com/claudeai/status/2116220869479428500
+
+## 2026-10-30: Gemini API
+The Gemini API's Computer Use tool is generally available in both the Interactions and GenerateContent APIs, so you can build agents that operate a browser, phone or desktop app by clicking and typing, now with production support instead of preview
+- Category: llm-apis
+- Source: https://ai.google.dev/gemini-api/docs/changelog
+
+## 2026-10-30: Supabase
+Explorer, the new Supabase query editor, runs SQL against both your database and your logs in one place, and Notebooks save those queries plus Markdown notes as a file in your supabase folder that you, a teammate or your coding agent can rerun (supabase notebooks pull/push in the beta CLI). Feature preview on every project: turn it on under Feature Previews
+- Category: databases
+- Source: https://supabase.com/blog/explorer-and-notebooks-investigations-your-team-can-rerun
+
+## 2026-10-30: Vercel
+Data Cache is leaving beta and merging into Runtime Cache: Next.js fetch caching and unstable_cache switch over with no code changes and get 8x more storage on Pro, but reads and writes that were free become billed (from $0.40 per million reads and $4 per million writes). Hobby gets 1M reads and 200K writes free a month and migrates November 29, 2026; new teams use Runtime Cache from today
+- Category: hosting
+- Source: https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache
+
+## 2026-10-30: Convex
+Convex 1.49.0 adds npx convex plugins install, which installs the Convex plugin for Claude Code and Codex (CLI, desktop apps and VS Code) on macOS and Linux, plus a v.function() validator for function handles. It drops Node.js 20, so update to Node 22 or newer
+- Category: databases
+- Source: https://github.com/get-convex/convex-js/blob/main/CHANGELOG.md
+
+## 2026-10-29: Claude Code
+v2.1.314 adds permissions.blockWritesOutsideWorkingDirectories: turn it on and Claude Code's Write and Edit tools refuse any file outside your project folders in every permission mode, a good safety net for unattended or CI runs. Also: claude -p now exits with an error instead of silently succeeding when startup fails, and long idle chats in VS Code and the desktop Code tab get compacted
+- Category: coding-agents
+- Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.314
 
 ## 2026-10-29: Google Jules
 Google is shutting down Jules, its background AI coding agent, to fold the idea into Antigravity: you can keep finishing sessions until November 11, then Jules goes read-only and winds down December 31, 2026. Export your settings, environment variables, scheduled tasks, memories, setup scripts and session history first with the Jules Tools CLI (npm install -g @google/jules); your code, branches and pull requests stay in GitHub
