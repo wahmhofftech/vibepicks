@@ -6,6 +6,16 @@ RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
 Last updated: 2026-10-30
 
+## 2026-10-30: Claude Code
+v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level than your main session instead of inheriting it, plus CLAUDE_CODE_DISABLE_ULTRATHINK to turn the ultrathink keyword off. Fast mode for Opus 4.8 is deprecated and will be removed on November 30, 2026, after which those requests error instead of falling back; Anthropic says to move to Opus 5.5
+- Category: coding-agents
+- Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.316
+
+## 2026-10-30: OpenCode
+OpenCode v2.2.3 lets you use Claude Code inside OpenCode: install Claude Code, run claude auth login, then pick Claude Agent in /connect to use your Claude Code login and models. v2.2.4 and v2.2.5 the same day added persistent desktop terminals, experimental HTML artifact publishing and a compaction buffer you can set as a percentage of the model's context window
+- Category: coding-agents
+- Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.3
+
 ## 2026-10-30: Claude (Anthropic)
 Anthropic renamed its Max plans: Max 5x is now just Max ($100/month) and Max 20x is now Ultra ($200/month), with no change in price and nothing for subscribers to do. Verified Ultra accounts also lose the 5-hour usage limit, starting with most existing subscribers; newer accounts keep a temporary limit until verified, and weekly limits stay the same. Claude Code is included in Pro, Max and Ultra
 - Category: coding-agents
@@ -30,6 +40,11 @@ Data Cache is leaving beta and merging into Runtime Cache: Next.js fetch caching
 Convex 1.49.0 adds npx convex plugins install, which installs the Convex plugin for Claude Code and Codex (CLI, desktop apps and VS Code) on macOS and Linux, plus a v.function() validator for function handles. It drops Node.js 20, so update to Node 22 or newer
 - Category: databases
 - Source: https://github.com/get-convex/convex-js/blob/main/CHANGELOG.md
+
+## 2026-10-29: Codex CLI (OpenAI)
+Codex CLI 0.166.0 adds keyboard transcript selection and search in the terminal UI, GPT-6.1 Terra in the bundled, Vertex AI and Amazon Bedrock model lists, codex queue --resume to pick unloaded threads back up, and codex doctor --network-only for quick connection checks
+- Category: coding-agents
+- Source: https://github.com/openai/codex/releases/tag/rust-v0.166.0
 
 ## 2026-10-29: Claude Code
 v2.1.314 adds permissions.blockWritesOutsideWorkingDirectories: turn it on and Claude Code's Write and Edit tools refuse any file outside your project folders in every permission mode, a good safety net for unattended or CI runs. Also: claude -p now exits with an error instead of silently succeeding when startup fails, and long idle chats in VS Code and the desktop Code tab get compacted
@@ -65,6 +80,16 @@ Node.js 26 LTS is generally available on Vercel for builds and Functions and is 
 Vercel Firewall can now treat AI crawlers (bots that collect pages for indexing and model training) and AI assistants (bots fetching a page to answer someone's question) separately, so you can block training crawlers but still let ChatGPT-style assistants read and cite your site. In the AI Bots managed ruleset, on all plans
 - Category: hosting
 - Source: https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules
+
+## 2026-10-28: GitHub Copilot
+Copilot Memory is generally available on paid Copilot plans: tell Copilot a preference once (like how to start your PR descriptions) or let it learn your repo's test command, and it carries that across the Copilot app, CLI, VS Code, cloud agent and code review. Copilot Dreaming, in public preview, reviews past sessions and proposes changes to your skills and instruction files as pull requests
+- Category: coding-agents
+- Source: https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/
+
+## 2026-10-28: Vercel
+Vercel CI is in beta for Turborepo repos: tag tasks like lint or test with ci in turbo.json and they run on every push, only for code that changed, with remote caching and dependencies installed once per run. Vercel says its own push-to-green time got 2 to 6 times shorter
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-ci-is-now-in-beta
 
 ## 2026-10-28: GitHub Replica
 GitHub Design open-sourced Replica (MIT license), an AI prototyping tool that turns plain-English ideas into interactive prototypes built from your own design system's components, driven from the GitHub Copilot app, with an optional self-hosted Replica Hub for sharing and comments

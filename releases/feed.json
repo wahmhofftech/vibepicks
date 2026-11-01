@@ -13,6 +13,30 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-10-30-ebd3b9afe4",
+   "url": "https://vibepicks.ai/releases/",
+   "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+   "title": "Claude Code: v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level …",
+   "content_text": "v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level than your main session instead of inheriting it, plus CLAUDE_CODE_DISABLE_ULTRATHINK to turn the ultrathink keyword off. Fast mode for Opus 4.8 is deprecated and will be removed on November 30, 2026, after which those requests error instead of falling back; Anthropic says to move to Opus 5.5. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+   "date_published": "2026-10-30T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Claude Code"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-10-30-bf53431fe3",
+   "url": "https://vibepicks.ai/releases/",
+   "external_url": "https://github.com/anomalyco/opencode/releases/tag/v2.2.3",
+   "title": "OpenCode: OpenCode v2.2.3 lets you use Claude Code inside OpenCode: install Claude Code, run claude auth login, then pick Claude A…",
+   "content_text": "OpenCode v2.2.3 lets you use Claude Code inside OpenCode: install Claude Code, run claude auth login, then pick Claude Agent in /connect to use your Claude Code login and models. v2.2.4 and v2.2.5 the same day added persistent desktop terminals, experimental HTML artifact publishing and a compaction buffer you can set as a percentage of the model's context window. Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.3",
+   "date_published": "2026-10-30T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "OpenCode"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-10-30-363dc284d6",
    "url": "https://vibepicks.ai/releases/",
    "external_url": "https://x.com/claudeai/status/2116220869479428500",
@@ -70,6 +94,18 @@
    "tags": [
     "Databases & Backend",
     "Convex"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-10-29-bd0c544e72",
+   "url": "https://vibepicks.ai/releases/",
+   "external_url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+   "title": "Codex CLI (OpenAI): Codex CLI 0.166.0 adds keyboard transcript selection and search in the terminal UI, GPT-6.1 Terra in the bundled, Vertex…",
+   "content_text": "Codex CLI 0.166.0 adds keyboard transcript selection and search in the terminal UI, GPT-6.1 Terra in the bundled, Vertex AI and Amazon Bedrock model lists, codex queue --resume to pick unloaded threads back up, and codex doctor --network-only for quick connection checks. Source: https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+   "date_published": "2026-10-29T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Codex CLI (OpenAI)"
    ]
   },
   {
@@ -151,6 +187,30 @@
    "title": "Vercel: Vercel Firewall can now treat AI crawlers (bots that collect pages for indexing and model training) and AI assistants (b…",
    "content_text": "Vercel Firewall can now treat AI crawlers (bots that collect pages for indexing and model training) and AI assistants (bots fetching a page to answer someone's question) separately, so you can block training crawlers but still let ChatGPT-style assistants read and cite your site. In the AI Bots managed ruleset, on all plans. Source: https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules",
    "date_published": "2026-10-29T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-10-28-73eb4ea5d5",
+   "url": "https://vibepicks.ai/releases/",
+   "external_url": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/",
+   "title": "GitHub Copilot: Copilot Memory is generally available on paid Copilot plans: tell Copilot a preference once (like how to start your PR d…",
+   "content_text": "Copilot Memory is generally available on paid Copilot plans: tell Copilot a preference once (like how to start your PR descriptions) or let it learn your repo's test command, and it carries that across the Copilot app, CLI, VS Code, cloud agent and code review. Copilot Dreaming, in public preview, reviews past sessions and proposes changes to your skills and instruction files as pull requests. Source: https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/",
+   "date_published": "2026-10-28T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "GitHub Copilot"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-10-28-7927251e08",
+   "url": "https://vibepicks.ai/releases/",
+   "external_url": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+   "title": "Vercel: Vercel CI is in beta for Turborepo repos: tag tasks like lint or test with ci in turbo.json and they run on every push, …",
+   "content_text": "Vercel CI is in beta for Turborepo repos: tag tasks like lint or test with ci in turbo.json and they run on every push, only for code that changed, with remote caching and dependencies installed once per run. Vercel says its own push-to-green time got 2 to 6 times shorter. Source: https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+   "date_published": "2026-10-28T12:00:00Z",
    "tags": [
     "Deploy & Hosting",
     "Vercel"

@@ -781,6 +781,20 @@
  "releases": [
   {
    "date": "2026-10-30",
+   "tool": "Claude Code",
+   "title": "v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level than your main session instead of inheriting it, plus CLAUDE_CODE_DISABLE_ULTRATHINK to turn the ultrathink keyword off. Fast mode for Opus 4.8 is deprecated and will be removed on November 30, 2026, after which those requests error instead of falling back; Anthropic says to move to Opus 5.5",
+   "category": "coding-agents",
+   "source": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316"
+  },
+  {
+   "date": "2026-10-30",
+   "tool": "OpenCode",
+   "title": "OpenCode v2.2.3 lets you use Claude Code inside OpenCode: install Claude Code, run claude auth login, then pick Claude Agent in /connect to use your Claude Code login and models. v2.2.4 and v2.2.5 the same day added persistent desktop terminals, experimental HTML artifact publishing and a compaction buffer you can set as a percentage of the model's context window",
+   "category": "coding-agents",
+   "source": "https://github.com/anomalyco/opencode/releases/tag/v2.2.3"
+  },
+  {
+   "date": "2026-10-30",
    "tool": "Claude (Anthropic)",
    "title": "Anthropic renamed its Max plans: Max 5x is now just Max ($100/month) and Max 20x is now Ultra ($200/month), with no change in price and nothing for subscribers to do. Verified Ultra accounts also lose the 5-hour usage limit, starting with most existing subscribers; newer accounts keep a temporary limit until verified, and weekly limits stay the same. Claude Code is included in Pro, Max and Ultra",
    "category": "coding-agents",
@@ -813,6 +827,13 @@
    "title": "Convex 1.49.0 adds npx convex plugins install, which installs the Convex plugin for Claude Code and Codex (CLI, desktop apps and VS Code) on macOS and Linux, plus a v.function() validator for function handles. It drops Node.js 20, so update to Node 22 or newer",
    "category": "databases",
    "source": "https://github.com/get-convex/convex-js/blob/main/CHANGELOG.md"
+  },
+  {
+   "date": "2026-10-29",
+   "tool": "Codex CLI (OpenAI)",
+   "title": "Codex CLI 0.166.0 adds keyboard transcript selection and search in the terminal UI, GPT-6.1 Terra in the bundled, Vertex AI and Amazon Bedrock model lists, codex queue --resume to pick unloaded threads back up, and codex doctor --network-only for quick connection checks",
+   "category": "coding-agents",
+   "source": "https://github.com/openai/codex/releases/tag/rust-v0.166.0"
   },
   {
    "date": "2026-10-29",
@@ -862,6 +883,20 @@
    "title": "Vercel Firewall can now treat AI crawlers (bots that collect pages for indexing and model training) and AI assistants (bots fetching a page to answer someone's question) separately, so you can block training crawlers but still let ChatGPT-style assistants read and cite your site. In the AI Bots managed ruleset, on all plans",
    "category": "hosting",
    "source": "https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "GitHub Copilot",
+   "title": "Copilot Memory is generally available on paid Copilot plans: tell Copilot a preference once (like how to start your PR descriptions) or let it learn your repo's test command, and it carries that across the Copilot app, CLI, VS Code, cloud agent and code review. Copilot Dreaming, in public preview, reviews past sessions and proposes changes to your skills and instruction files as pull requests",
+   "category": "coding-agents",
+   "source": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/"
+  },
+  {
+   "date": "2026-10-28",
+   "tool": "Vercel",
+   "title": "Vercel CI is in beta for Turborepo repos: tag tasks like lint or test with ci in turbo.json and they run on every push, only for code that changed, with remote caching and dependencies installed once per run. Vercel says its own push-to-green time got 2 to 6 times shorter",
+   "category": "hosting",
+   "source": "https://vercel.com/changelog/vercel-ci-is-now-in-beta"
   },
   {
    "date": "2026-10-28",
