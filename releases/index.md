@@ -4,7 +4,17 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-10-30
+Last updated: 2026-11-02
+
+## 2026-11-02: Supabase CLI
+Supabase CLI v3.0.0 is a major release: commands like db push, db pull, gen types and storage now target your local stack by default, one --remote flag replaces --linked, --project-ref and --db-url, and every change to a hosted project asks for confirmation, with No as the default answer (pass --yes in CI or agent runs). Read the v2 to v3 migration guide before upgrading scripts. It also points to the experimental local stack that gives each project, git worktree or agent its own local Supabase, with or without Docker
+- Category: databases
+- Source: https://github.com/supabase/cli/releases/tag/v3.0.0
+
+## 2026-10-31: DeepSeek dsh-superagent
+DeepSeek open-sourced dsh-superagent (MIT), a research prototype of a proactive coding agent for one GitHub repository: when an allowed person asks for work in an issue thread (or optionally Feishu), it opens a work item, does the job in its own session and directory and answers back, often with a pull request, plus a web panel for what needs a human. It runs as a DeepSeek Harness bundle; DeepSeek says it is not an official product, so try it on a side repo
+- Category: coding-agents
+- Source: https://github.com/deepseek-ai/dsh-superagent-prototype
 
 ## 2026-10-30: Claude Code
 v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level than your main session instead of inheriting it, plus CLAUDE_CODE_DISABLE_ULTRATHINK to turn the ultrathink keyword off. Fast mode for Opus 4.8 is deprecated and will be removed on November 30, 2026, after which those requests error instead of falling back; Anthropic says to move to Opus 5.5
@@ -40,6 +50,11 @@ Data Cache is leaving beta and merging into Runtime Cache: Next.js fetch caching
 Convex 1.49.0 adds npx convex plugins install, which installs the Convex plugin for Claude Code and Codex (CLI, desktop apps and VS Code) on macOS and Linux, plus a v.function() validator for function handles. It drops Node.js 20, so update to Node 22 or newer
 - Category: databases
 - Source: https://github.com/get-convex/convex-js/blob/main/CHANGELOG.md
+
+## 2026-10-29: Mistral Large 4 (Mistral AI)
+Mistral released the open weights of Mistral Large 4 (Le Chonk), its 1-trillion-parameter multimodal model, after extra training that Mistral says makes it the top open-weight model on FrontierCode and Terminal-Bench 4.0 (41%) while using about 47% fewer tokens per task than GLM-5.3. It adds Low, Medium and High reasoning modes. Use it in Mistral Studio, the Mistral API or OpenRouter, or download the weights from Hugging Face and run it with vLLM or SGLang; benchmarks are Mistral's own
+- Category: llm-apis
+- Source: https://mistral.ai/news/mistral-large-4-oss/
 
 ## 2026-10-29: Codex CLI (OpenAI)
 Codex CLI 0.166.0 adds keyboard transcript selection and search in the terminal UI, GPT-6.1 Terra in the bundled, Vertex AI and Amazon Bedrock model lists, codex queue --resume to pick unloaded threads back up, and codex doctor --network-only for quick connection checks

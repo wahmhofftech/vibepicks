@@ -780,6 +780,20 @@
  ],
  "releases": [
   {
+   "date": "2026-11-02",
+   "tool": "Supabase CLI",
+   "title": "Supabase CLI v3.0.0 is a major release: commands like db push, db pull, gen types and storage now target your local stack by default, one --remote flag replaces --linked, --project-ref and --db-url, and every change to a hosted project asks for confirmation, with No as the default answer (pass --yes in CI or agent runs). Read the v2 to v3 migration guide before upgrading scripts. It also points to the experimental local stack that gives each project, git worktree or agent its own local Supabase, with or without Docker",
+   "category": "databases",
+   "source": "https://github.com/supabase/cli/releases/tag/v3.0.0"
+  },
+  {
+   "date": "2026-10-31",
+   "tool": "DeepSeek dsh-superagent",
+   "title": "DeepSeek open-sourced dsh-superagent (MIT), a research prototype of a proactive coding agent for one GitHub repository: when an allowed person asks for work in an issue thread (or optionally Feishu), it opens a work item, does the job in its own session and directory and answers back, often with a pull request, plus a web panel for what needs a human. It runs as a DeepSeek Harness bundle; DeepSeek says it is not an official product, so try it on a side repo",
+   "category": "coding-agents",
+   "source": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+  },
+  {
    "date": "2026-10-30",
    "tool": "Claude Code",
    "title": "v2.1.316 adds CLAUDE_CODE_SUBAGENT_EFFORT, so subagents that only search and read files can run at a lower effort level than your main session instead of inheriting it, plus CLAUDE_CODE_DISABLE_ULTRATHINK to turn the ultrathink keyword off. Fast mode for Opus 4.8 is deprecated and will be removed on November 30, 2026, after which those requests error instead of falling back; Anthropic says to move to Opus 5.5",
@@ -827,6 +841,13 @@
    "title": "Convex 1.49.0 adds npx convex plugins install, which installs the Convex plugin for Claude Code and Codex (CLI, desktop apps and VS Code) on macOS and Linux, plus a v.function() validator for function handles. It drops Node.js 20, so update to Node 22 or newer",
    "category": "databases",
    "source": "https://github.com/get-convex/convex-js/blob/main/CHANGELOG.md"
+  },
+  {
+   "date": "2026-10-29",
+   "tool": "Mistral Large 4 (Mistral AI)",
+   "title": "Mistral released the open weights of Mistral Large 4 (Le Chonk), its 1-trillion-parameter multimodal model, after extra training that Mistral says makes it the top open-weight model on FrontierCode and Terminal-Bench 4.0 (41%) while using about 47% fewer tokens per task than GLM-5.3. It adds Low, Medium and High reasoning modes. Use it in Mistral Studio, the Mistral API or OpenRouter, or download the weights from Hugging Face and run it with vLLM or SGLang; benchmarks are Mistral's own",
+   "category": "llm-apis",
+   "source": "https://mistral.ai/news/mistral-large-4-oss/"
   },
   {
    "date": "2026-10-29",
