@@ -13,6 +13,66 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-02-3b1a4a1fec",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-02-claude-code-3b1a4a",
+   "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "title": "Claude Code: Claude Code 2.1.317 now asks before a web or shell tool call sends your account email address out, warns when a new /sch…",
+   "content_text": "Claude Code 2.1.317 now asks before a web or shell tool call sends your account email address out, warns when a new /schedule cloud task picks up connectors you did not ask for, and lets Agent SDK hooks use onFailure: \"block\" so a failing check stops the action instead of letting it run. It also fixes project MCP servers dropping after the first turn in some desktop sessions and claude auth status signing you out after a slow token refresh. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "date_published": "2026-11-02T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Claude Code"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-02-694c0bfc75",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-02-vercel-694c0b",
+   "external_url": "https://vercel.com/changelog/blocking-malicious-npm-packages-before-and-during-installation",
+   "title": "Vercel: Vercel now blocks known-malicious npm package versions before and during dependency installs on every plan, with no setu…",
+   "content_text": "Vercel now blocks known-malicious npm package versions before and during dependency installs on every plan, with no setup: it checks your lockfile (including cached dependencies) and stops bad downloads, so a poisoned install script can't run in your build. If one is found the deploy fails and names the package and version; bump it, update the lockfile and redeploy. Source: https://vercel.com/changelog/blocking-malicious-npm-packages-before-and-during-installation",
+   "date_published": "2026-11-02T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-02-f9ed101e0d",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-02-vercel-f9ed10",
+   "external_url": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
+   "title": "Vercel: Projects can now be configured with vercel.toml, which takes every setting vercel.json does but allows comments and has …",
+   "content_text": "Projects can now be configured with vercel.toml, which takes every setting vercel.json does but allows comments and has a flatter layout. Use only one config file per project: vercel.toml, vercel.json or vercel.ts. Source: https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
+   "date_published": "2026-11-02T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-02-7bf9d161b7",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-02-vercel-mcp-7bf9d1",
+   "external_url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+   "title": "Vercel MCP: Vercel MCP now shows your deployments as a live card inside ChatGPT and other chat apps that support MCP Apps, with buil…",
+   "content_text": "Vercel MCP now shows your deployments as a live card inside ChatGPT and other chat apps that support MCP Apps, with build status, build logs, commit details and a Visit button, so you can paste logs into the chat and debug a failed deploy with the model without opening the dashboard. Source: https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+   "date_published": "2026-11-02T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel MCP"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-02-1234aad21e",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-02-longcat-2-5-meituan-1234aa",
+   "external_url": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+   "title": "LongCat 2.5 (Meituan): Meituan's LongCat 2.5, a model built for coding agents and image-based programming with a 1M-token context and text plus…",
+   "content_text": "Meituan's LongCat 2.5, a model built for coding agents and image-based programming with a 1M-token context and text plus image input, is now on Vercel AI Gateway as meituan/longcat-2.5, so you can try it in Claude Code, Codex or Cursor through one AI Gateway key without opening a Meituan account. Source: https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+   "date_published": "2026-11-02T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "LongCat 2.5 (Meituan)"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-02-b33c721dd6",
    "url": "https://vibepicks.ai/releases/#r-2026-11-02-supabase-cli-b33c72",
    "external_url": "https://github.com/supabase/cli/releases/tag/v3.0.0",

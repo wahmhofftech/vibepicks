@@ -6,6 +6,31 @@ RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
 Last updated: 2026-11-02
 
+## 2026-11-02: Claude Code
+Claude Code 2.1.317 now asks before a web or shell tool call sends your account email address out, warns when a new /schedule cloud task picks up connectors you did not ask for, and lets Agent SDK hooks use onFailure: "block" so a failing check stops the action instead of letting it run. It also fixes project MCP servers dropping after the first turn in some desktop sessions and claude auth status signing you out after a slow token refresh
+- Category: coding-agents
+- Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.317
+
+## 2026-11-02: Vercel
+Vercel now blocks known-malicious npm package versions before and during dependency installs on every plan, with no setup: it checks your lockfile (including cached dependencies) and stops bad downloads, so a poisoned install script can't run in your build. If one is found the deploy fails and names the package and version; bump it, update the lockfile and redeploy
+- Category: hosting
+- Source: https://vercel.com/changelog/blocking-malicious-npm-packages-before-and-during-installation
+
+## 2026-11-02: Vercel
+Projects can now be configured with vercel.toml, which takes every setting vercel.json does but allows comments and has a flatter layout. Use only one config file per project: vercel.toml, vercel.json or vercel.ts
+- Category: hosting
+- Source: https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml
+
+## 2026-11-02: Vercel MCP
+Vercel MCP now shows your deployments as a live card inside ChatGPT and other chat apps that support MCP Apps, with build status, build logs, commit details and a Visit button, so you can paste logs into the chat and debug a failed deploy with the model without opening the dashboard
+- Category: hosting
+- Source: https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt
+
+## 2026-11-02: LongCat 2.5 (Meituan)
+Meituan's LongCat 2.5, a model built for coding agents and image-based programming with a 1M-token context and text plus image input, is now on Vercel AI Gateway as meituan/longcat-2.5, so you can try it in Claude Code, Codex or Cursor through one AI Gateway key without opening a Meituan account
+- Category: llm-apis
+- Source: https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway
+
 ## 2026-11-02: Supabase CLI
 Supabase CLI v3.0.0 is a major release: commands like db push, db pull, gen types and storage now target your local stack by default, one --remote flag replaces --linked, --project-ref and --db-url, and every change to a hosted project asks for confirmation, with No as the default answer (pass --yes in CI or agent runs). Read the v2 to v3 migration guide before upgrading scripts. It also points to the experimental local stack that gives each project, git worktree or agent its own local Supabase, with or without Docker
 - Category: databases
