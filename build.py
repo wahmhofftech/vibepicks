@@ -114,6 +114,7 @@ blk='<!--catbar-->'+catbar()+'<!--/catbar-->'
 h=re.sub(r'<!--catbar-->.*?<!--/catbar-->',lambda m:blk,h,flags=re.S) if '<!--catbar-->' in h else h.replace('</header>','</header>'+blk,1)
 h=h if 'application/rss+xml' in h else h.replace('<link rel="canonical"','<link rel="alternate" type="application/rss+xml" title="VibePicks: new AI tool releases" href="/releases/feed.xml"><link rel="canonical"',1)
 h=h if 'application/feed+json' in h else h.replace('<link rel="canonical"','<link rel="alternate" type="application/feed+json" title="VibePicks: new AI tool releases (JSON Feed)" href="/releases/feed.json"><link rel="canonical"',1)
+h=h if 'href="/llms.txt"' in h.split('</head>')[0] else h.replace('<link rel="canonical"','<link rel="alternate" type="text/markdown" title="VibePicks as Markdown (llms.txt)" href="/llms.txt"><link rel="canonical"',1)  # homepage Markdown copy is llms.txt (also served via Accept: text/markdown)
 h=h if 'twitter:site' in h else h.replace('<meta name="twitter:card" content="summary">','<meta name="twitter:card" content="summary"><meta name="twitter:site" content="'+XH+'">',1)
 h=h if 'rel="icon"' in h else h.replace('<link rel="canonical"',ICON+'<link rel="canonical"',1)
 # Home JSON-LD @graph: WebSite + Organization (publisher) + an ItemList of every category page, so search and AI answer engines can see who runs the site and map each use case to its ranked page
@@ -158,7 +159,10 @@ open('releases/index.md','w').write('\n'.join(_RM)+'\n')
 MDH={"type":"header","key":"accept","value":".*text/markdown.*"}
 CRE='|'.join([c['id'] for c in d['categories']]+['releases'])  # ids are lowercase letters and hyphens
 MDT='text/markdown; charset=utf-8'
+# Site-wide HTTP Link header (RFC 8288): every response points crawlers and AI agents that read headers (not HTML) to llms.txt, the sitemap and the releases JSON Feed. Routes below that set their own Link (Markdown copies) override it
+LINKH=f'<{S}/llms.txt>; rel="alternate"; type="text/markdown"; title="llms.txt", <{S}/sitemap.xml>; rel="sitemap"; type="application/xml", <{S}/releases/feed.json>; rel="alternate"; type="application/feed+json"'
 VJ={"routes":[
+ {"src":"/(.*)","headers":{"Link":LINKH},"continue":True},
  {"src":"/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)","headers":{"X-Robots-Tag":"noindex, nofollow","Cache-Control":"private, no-store"},"continue":True},
  {"src":f"/({CRE})/index\\.md","headers":{"Content-Type":MDT,"Link":f'<{S}/$1/>; rel="canonical"'},"continue":True},
  {"src":f"/({CRE})/?","has":[MDH],"dest":"/$1/index.md","headers":{"Content-Type":MDT,"Vary":"Accept","Link":f'<{S}/$1/>; rel="canonical"'}},

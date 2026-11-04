@@ -4,7 +4,42 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-02
+Last updated: 2026-11-03
+
+## 2026-11-03: Claude Code
+Claude Code 2.1.318 shows when your stored claude.ai sign-in expires (claude auth status and claude -p JSON) and warns in claude -p output 10 days before it ends, lets a mod's side job run at low effort, and fixes --continue losing earlier conversation, macOS sessions stalling with many Bash commands, and keys typed right after sending a message answering permission prompts. It also stops auto-installing the IDE extension from IDE terminals
+- Category: coding-agents
+- Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.318
+
+## 2026-11-03: Vercel Security Review
+Vercel Security Review is in public beta for Pro and Enterprise teams: every push to a connected GitHub repo (including direct pushes to production) gets an AI scan of the changed code for issues like missing auth checks or exposed secrets, with findings in a Vulnerabilities dashboard, a GitHub check and PR comments. Vercel Agent can open a fix PR, or pull findings into your own coding agent with vercel security vulnerabilities. Reviews are free until Nov 10, 2026, then billed at the Vercel Agent token rate
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-security-review-public-beta
+
+## 2026-11-03: Vercel CLI
+vercel doctor checks your Vercel CLI version and install, login, team, project link and vercel.json, reports Vercel status incidents, and prints the exact command that fixes each problem. It never prompts or logs in, and --json gives structured output, so coding agents can run it before guessing at a fix
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor
+
+## 2026-11-03: Tencent Hy4
+Tencent's Hy4, the first Hy model with vision and computer use, is on Vercel AI Gateway as tencent/hy4 at 50% off through Dec 31, 2026 (about $0.42 in / $1.25 out per million tokens): 1M-token context, tool calling, structured outputs and image input, and usable from Claude Code, Codex or Cursor via the gateway
+- Category: llm-apis
+- Source: https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway
+
+## 2026-11-03: GitHub Copilot
+GitHub Copilot now works inside JetBrains Air: pick Copilot in Air's agent picker to delegate tasks on your existing Copilot subscription, track several agent sessions in parallel and review changes next to your code, or run cloud tasks in isolated containers through Air Teams billed to your Copilot plan rather than JetBrains AI credits
+- Category: coding-agents
+- Source: https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/
+
+## 2026-11-03: Replit Agent
+Replit Agent now works in Slack: mention @Replit in a channel or DM to build a prototype, work on an existing project, ask questions about your codebase or pull data from connected tools like Linear and Notion; each thread is its own Replit chat and uses the linked user's own permissions
+- Category: app-builders
+- Source: https://x.com/Replit/status/2117689305019887899
+
+## 2026-11-03: Bolt
+Bolt for Microsoft Teams is live on the Microsoft Marketplace: describe what you want inside Teams or Copilot, get a build plan, and ship the app without leaving the chat
+- Category: app-builders
+- Source: https://x.com/boltdotnew/status/2117648022737682467
 
 ## 2026-11-02: Claude Code
 Claude Code 2.1.317 now asks before a web or shell tool call sends your account email address out, warns when a new /schedule cloud task picks up connectors you did not ask for, and lets Agent SDK hooks use onFailure: "block" so a failing check stops the action instead of letting it run. It also fixes project MCP servers dropping after the first turn in some desktop sessions and claude auth status signing you out after a slow token refresh

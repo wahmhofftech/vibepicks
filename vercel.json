@@ -1,6 +1,13 @@
 {
   "routes": [
     {
+      "src": "/(.*)",
+      "headers": {
+        "Link": "<https://vibepicks.ai/llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"llms.txt\", <https://vibepicks.ai/sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\", <https://vibepicks.ai/releases/feed.json>; rel=\"alternate\"; type=\"application/feed+json\""
+      },
+      "continue": true
+    },
+    {
       "src": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)",
       "headers": {
         "X-Robots-Tag": "noindex, nofollow",

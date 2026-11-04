@@ -13,6 +13,90 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-03-d95d5e9c20",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-claude-code-d95d5e",
+   "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+   "title": "Claude Code: Claude Code 2.1.318 shows when your stored claude.ai sign-in expires (claude auth status and claude -p JSON) and warns i…",
+   "content_text": "Claude Code 2.1.318 shows when your stored claude.ai sign-in expires (claude auth status and claude -p JSON) and warns in claude -p output 10 days before it ends, lets a mod's side job run at low effort, and fixes --continue losing earlier conversation, macOS sessions stalling with many Bash commands, and keys typed right after sending a message answering permission prompts. It also stops auto-installing the IDE extension from IDE terminals. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Claude Code"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-d287f57054",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-vercel-security-review-d287f5",
+   "external_url": "https://vercel.com/changelog/vercel-security-review-public-beta",
+   "title": "Vercel Security Review: Vercel Security Review is in public beta for Pro and Enterprise teams: every push to a connected GitHub repo (including …",
+   "content_text": "Vercel Security Review is in public beta for Pro and Enterprise teams: every push to a connected GitHub repo (including direct pushes to production) gets an AI scan of the changed code for issues like missing auth checks or exposed secrets, with findings in a Vulnerabilities dashboard, a GitHub check and PR comments. Vercel Agent can open a fix PR, or pull findings into your own coding agent with vercel security vulnerabilities. Reviews are free until Nov 10, 2026, then billed at the Vercel Agent token rate. Source: https://vercel.com/changelog/vercel-security-review-public-beta",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel Security Review"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-07c26fc5aa",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-vercel-cli-07c26f",
+   "external_url": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+   "title": "Vercel CLI: vercel doctor checks your Vercel CLI version and install, login, team, project link and vercel.json, reports Vercel stat…",
+   "content_text": "vercel doctor checks your Vercel CLI version and install, login, team, project link and vercel.json, reports Vercel status incidents, and prints the exact command that fixes each problem. It never prompts or logs in, and --json gives structured output, so coding agents can run it before guessing at a fix. Source: https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel CLI"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-e143aa267e",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-tencent-hy4-e143aa",
+   "external_url": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
+   "title": "Tencent Hy4: Tencent's Hy4, the first Hy model with vision and computer use, is on Vercel AI Gateway as tencent/hy4 at 50% off throug…",
+   "content_text": "Tencent's Hy4, the first Hy model with vision and computer use, is on Vercel AI Gateway as tencent/hy4 at 50% off through Dec 31, 2026 (about $0.42 in / $1.25 out per million tokens): 1M-token context, tool calling, structured outputs and image input, and usable from Claude Code, Codex or Cursor via the gateway. Source: https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "Tencent Hy4"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-4204c1b580",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-github-copilot-4204c1",
+   "external_url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/",
+   "title": "GitHub Copilot: GitHub Copilot now works inside JetBrains Air: pick Copilot in Air's agent picker to delegate tasks on your existing Cop…",
+   "content_text": "GitHub Copilot now works inside JetBrains Air: pick Copilot in Air's agent picker to delegate tasks on your existing Copilot subscription, track several agent sessions in parallel and review changes next to your code, or run cloud tasks in isolated containers through Air Teams billed to your Copilot plan rather than JetBrains AI credits. Source: https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "GitHub Copilot"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-3c507f3277",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-replit-agent-3c507f",
+   "external_url": "https://x.com/Replit/status/2117689305019887899",
+   "title": "Replit Agent: Replit Agent now works in Slack: mention @Replit in a channel or DM to build a prototype, work on an existing project, a…",
+   "content_text": "Replit Agent now works in Slack: mention @Replit in a channel or DM to build a prototype, work on an existing project, ask questions about your codebase or pull data from connected tools like Linear and Notion; each thread is its own Replit chat and uses the linked user's own permissions. Source: https://x.com/Replit/status/2117689305019887899",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "App Builders",
+    "Replit Agent"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-03-df99eafb3a",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-03-bolt-df99ea",
+   "external_url": "https://x.com/boltdotnew/status/2117648022737682467",
+   "title": "Bolt: Bolt for Microsoft Teams is live on the Microsoft Marketplace: describe what you want inside Teams or Copilot, get a bui…",
+   "content_text": "Bolt for Microsoft Teams is live on the Microsoft Marketplace: describe what you want inside Teams or Copilot, get a build plan, and ship the app without leaving the chat. Source: https://x.com/boltdotnew/status/2117648022737682467",
+   "date_published": "2026-11-03T12:00:00Z",
+   "tags": [
+    "App Builders",
+    "Bolt"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-02-3b1a4a1fec",
    "url": "https://vibepicks.ai/releases/#r-2026-11-02-claude-code-3b1a4a",
    "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",

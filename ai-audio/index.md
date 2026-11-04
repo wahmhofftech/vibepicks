@@ -2,13 +2,13 @@
 > Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.
 
 Page: https://vibepicks.ai/ai-audio/
-Last updated: 2026-10-31
+Last updated: 2026-11-04
 
 ## #1 Suno
 - Website: https://suno.com
 - Pricing: Freemium
 - Use it for: Songs, jingles and background music from a text description
-- In plain English: Describe the song you want, like "upbeat 10-second podcast intro jingle", and it makes it with music and even vocals. Free to try; downloading and commercial use need the $10/mo plan.
+- In plain English: Describe the song you want, like "upbeat 10-second podcast intro jingle", and it makes it with music and even vocals. Free to try; downloading and commercial use need the Pro plan ($10/mo, or $8/mo billed yearly).
 
 ## #2 ElevenLabs
 - Website: https://elevenlabs.io
@@ -25,7 +25,7 @@ Last updated: 2026-10-31
 ## Quick answers
 
 **What is the best pick in AI Audio & Voice for 2026?**
-Suno is our #1 pick in AI Audio & Voice: songs, jingles and background music from a text description. Describe the song you want, like "upbeat 10-second podcast intro jingle", and it makes it with music and even vocals. Free to try; downloading and commercial use need the $10/mo plan.
+Suno is our #1 pick in AI Audio & Voice: songs, jingles and background music from a text description. Describe the song you want, like "upbeat 10-second podcast intro jingle", and it makes it with music and even vocals. Free to try; downloading and commercial use need the Pro plan ($10/mo, or $8/mo billed yearly).
 
 **Is there a free option in AI Audio & Voice?**
 Yes. Our #1 pick, Suno, is free to start, with paid upgrades.
