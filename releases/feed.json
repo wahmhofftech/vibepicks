@@ -13,6 +13,54 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-04-f92b2d4bb6",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-04-devin-f92b2d",
+   "external_url": "https://cognition.com/blog/swe-2-flash",
+   "title": "Devin: Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active parameters) that runs at about 200 tokens…",
+   "content_text": "Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active parameters) that runs at about 200 tokens a second, 3x faster than SWE-2 at one-fifth the price, and scores 89.9 on SWE-Bench Pro v2 Hard against SWE-2's 90.6. It's available now in Devin Desktop and the Devin CLI; weights aren't public yet, only through a planned partner program. Source: https://cognition.com/blog/swe-2-flash",
+   "date_published": "2026-11-04T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Devin"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-04-5f9ccf699e",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-04-atlassian-code-reviewer-5f9ccf",
+   "external_url": "https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira",
+   "title": "Atlassian Code Reviewer: Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pu…",
+   "content_text": "Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits. Source: https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira",
+   "date_published": "2026-11-04T12:00:00Z",
+   "tags": [
+    "AI Code Review",
+    "Atlassian Code Reviewer"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-04-16211c98bb",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-04-github-copilot-16211c",
+   "external_url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/",
+   "title": "GitHub Copilot: GitHub Copilot now works inside Xcode's built-in coding assistant, in public preview from Xcode 27.3 beta on macOS Tahoe…",
+   "content_text": "GitHub Copilot now works inside Xcode's built-in coding assistant, in public preview from Xcode 27.3 beta on macOS Tahoe 26.6 or later. Turn it on in Xcode > Settings > Intelligence; every Copilot plan is supported, and the separate Copilot for Xcode extension still works. Source: https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/",
+   "date_published": "2026-11-04T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "GitHub Copilot"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-04-2719b5b085",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-04-lovable-2719b5",
+   "external_url": "https://docs.lovable.dev/changelog",
+   "title": "Lovable: Lovable now runs \"Dreaming\" on paid plans: in the background it checks its project memory and your AGENTS.md rules again…",
+   "content_text": "Lovable now runs \"Dreaming\" on paid plans: in the background it checks its project memory and your AGENTS.md rules against your code and chat, then rewrites or removes notes that no longer apply, while keeping rules you asked for. It never touches your app's code, shows AGENTS.md edits in chat and version history, and uses no credits. Source: https://docs.lovable.dev/changelog",
+   "date_published": "2026-11-04T12:00:00Z",
+   "tags": [
+    "App Builders",
+    "Lovable"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-03-d95d5e9c20",
    "url": "https://vibepicks.ai/releases/#r-2026-11-03-claude-code-d95d5e",
    "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",

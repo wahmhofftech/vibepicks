@@ -4,7 +4,27 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-03
+Last updated: 2026-11-04
+
+## 2026-11-04: Devin
+Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active parameters) that runs at about 200 tokens a second, 3x faster than SWE-2 at one-fifth the price, and scores 89.9 on SWE-Bench Pro v2 Hard against SWE-2's 90.6. It's available now in Devin Desktop and the Devin CLI; weights aren't public yet, only through a planned partner program
+- Category: coding-agents
+- Source: https://cognition.com/blog/swe-2-flash
+
+## 2026-11-04: Atlassian Code Reviewer
+Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits
+- Category: code-review
+- Source: https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira
+
+## 2026-11-04: GitHub Copilot
+GitHub Copilot now works inside Xcode's built-in coding assistant, in public preview from Xcode 27.3 beta on macOS Tahoe 26.6 or later. Turn it on in Xcode > Settings > Intelligence; every Copilot plan is supported, and the separate Copilot for Xcode extension still works
+- Category: coding-agents
+- Source: https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/
+
+## 2026-11-04: Lovable
+Lovable now runs "Dreaming" on paid plans: in the background it checks its project memory and your AGENTS.md rules against your code and chat, then rewrites or removes notes that no longer apply, while keeping rules you asked for. It never touches your app's code, shows AGENTS.md edits in chat and version history, and uses no credits
+- Category: app-builders
+- Source: https://docs.lovable.dev/changelog
 
 ## 2026-11-03: Claude Code
 Claude Code 2.1.318 shows when your stored claude.ai sign-in expires (claude auth status and claude -p JSON) and warns in claude -p output 10 days before it ends, lets a mod's side job run at low effort, and fixes --continue losing earlier conversation, macOS sessions stalling with many Bash commands, and keys typed right after sending a message answering permission prompts. It also stops auto-installing the IDE extension from IDE terminals
