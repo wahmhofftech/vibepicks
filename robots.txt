@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# AI search and answer engines are welcome. Plain-text summaries for them: https://vibepicks.ai/llms.txt and https://vibepicks.ai/llms-full.txt. New releases feed: https://vibepicks.ai/releases/feed.xml (JSON Feed: https://vibepicks.ai/releases/feed.json)
+# AI search and answer engines are welcome. Plain-text summaries for them: https://vibepicks.ai/llms.txt (also at https://vibepicks.ai/.well-known/llms.txt) and https://vibepicks.ai/llms-full.txt. New releases feed: https://vibepicks.ai/releases/feed.xml (JSON Feed: https://vibepicks.ai/releases/feed.json)
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
 User-agent: GPTBot

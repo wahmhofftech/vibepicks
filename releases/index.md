@@ -4,7 +4,37 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-04
+Last updated: 2026-11-05
+
+## 2026-11-05: Cursor
+Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app, sets up a Postgres database and auth behind Cursor SSO when needed, runs deterministic and agentic security checks, and deploys to a URL you pick. Available on all paid plans with cloud agents enabled
+- Category: coding-agents
+- Source: https://cursor.com/changelog/build-live-apps
+
+## 2026-11-05: Kiro
+Kiro bots are generally available in Kiro Crew: named, long-running agents with their own memory, notes, tools and permissions that coordinate parallel worker sessions, keep a single ongoing chat for direction and results, and can run on schedules for recurring work like issue triage, build monitoring or release readiness
+- Category: coding-agents
+- Source: https://kiro.dev/blog/crew-bots/
+
+## 2026-11-05: Evergreen
+Carta released Evergreen for other companies: a multiplayer cloud coding platform where teammates and agents share sessions, agents push PRs on their own, and it runs on Claude, Codex, Grok and Muse with isolated sessions, scoped access, audit logs and spending caps. 7-day free trial
+- Category: coding-agents
+- Source: https://evergreen.carta.com/blog/introducing-evergreen
+
+## 2026-11-05: Vercel Schedules
+Vercel Schedules is in public beta on all plans: define recurring or one-time schedules in vercel.json or at runtime that target a private Function, HTTP path or Queue topic, enable/disable/run on demand without redeploying. Successor to Cron Jobs; Hobby includes 5,000 runs/month, Pro/Enterprise from $5 per 1M runs
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta
+
+## 2026-11-05: Gemini Omni 1.2 Flash
+Google's Gemini Omni 1.2 Flash is on Vercel AI Gateway as google/gemini-omni-1.2-flash: generate 3–15 second videos with native audio from text (or edit source clips with up to six reference images) via one API key with no separate Google account, using generateText or streamText in the AI SDK
+- Category: ai-video
+- Source: https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway
+
+## 2026-11-05: Kimi Hosted Agents
+Moonshot AI launched Kimi Hosted Agents, a managed Harness-as-a-Service for long-running and multi-agent workloads: isolated cloud sandboxes, network controls, stoppable sessions, audit logs, 140+ Skills and 30+ plugins, plus finance Agent templates. Sign up at platform.kimi.com; usage-based pricing (sandbox-hours plus model tokens and plugin calls)
+- Category: automations
+- Source: https://www.kimi.com/news/kimi-hosted-agents
 
 ## 2026-11-04: Devin
 Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active parameters) that runs at about 200 tokens a second, 3x faster than SWE-2 at one-fifth the price, and scores 89.9 on SWE-Bench Pro v2 Hard against SWE-2's 90.6. It's available now in Devin Desktop and the Devin CLI; weights aren't public yet, only through a planned partner program

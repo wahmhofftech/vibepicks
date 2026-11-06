@@ -8,6 +8,14 @@
       "continue": true
     },
     {
+      "src": "/\\.well-known/llms\\.txt",
+      "dest": "/llms.txt",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Link": "<https://vibepicks.ai/llms.txt>; rel=\"canonical\""
+      }
+    },
+    {
       "src": "/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)",
       "headers": {
         "X-Robots-Tag": "noindex, nofollow",

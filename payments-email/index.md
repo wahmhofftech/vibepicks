@@ -2,7 +2,7 @@
 > Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.
 
 Page: https://vibepicks.ai/payments-email/
-Last updated: 2026-10-31
+Last updated: 2026-11-06
 
 ## #1 Stripe
 - Website: https://stripe.com
@@ -24,7 +24,7 @@ Last updated: 2026-10-31
 
 ## #4 Polar
 - Website: https://polar.sh
-- Pricing: Paid
+- Pricing: Freemium
 - Use it for: Sell digital products, licenses and subscriptions, tax handled
 - In plain English: Like Paddle but made for developers and indie makers, with clear posted prices. Free to start at 5% + 50¢ per sale, with lower rates on paid plans as you grow.
 

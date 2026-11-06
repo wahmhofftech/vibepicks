@@ -87,7 +87,7 @@ urls.append('/guide/'); PAGES['/guide/']=open('guide/index.html').read()  # hand
 # robots.txt never lists the guide download folder (that would publish its private path; it is noindexed via vercel.json headers instead)
 # robots.txt names the main AI search and answer-engine crawlers explicitly (all allowed) and points them to llms.txt and the releases feed, so AI assistants can find, cite and recommend VibePicks pages
 AIBOTS=['OAI-SearchBot','ChatGPT-User','GPTBot','Claude-SearchBot','Claude-User','ClaudeBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','xAI-Bot','DuckAssistBot','Amazonbot','meta-externalagent','MistralAI-User','meta-externalfetcher','YouBot','CCBot']
-open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml (JSON Feed: {S}/releases/feed.json)\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
+open('robots.txt','w').write(f'User-agent: *\nAllow: /\n\n# AI search and answer engines are welcome. Plain-text summaries for them: {S}/llms.txt (also at {S}/.well-known/llms.txt) and {S}/llms-full.txt. New releases feed: {S}/releases/feed.xml (JSON Feed: {S}/releases/feed.json)\n'+''.join(f'User-agent: {b}\n' for b in AIBOTS)+'Allow: /\n\nSitemap: '+S+'/sitemap.xml\n')
 L=['# VibePicks','> Editorial rankings of the best AI tools for vibe coders and builders shipping apps, grouped by use case. Ranks are editorial picks, not paid placements.','',f'Full version with every tool, pricing label, plain-English reason and release: {S}/llms-full.txt',f'Each category page also has a plain Markdown copy for AI agents, e.g. {S}/coding-agents/index.md',f'New releases as Markdown: {S}/releases/index.md',f'Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" {S}/coding-agents/','Last updated: '+max((r['date'] for r in d['releases']),default=''),f'Official X account: {XURL} ({XH}). VibePicks launched at vibepicks.ai on 2026-10-15.','']  # freshness signal for AI answer engines
 for c in d['categories']:
   L+=[f'## {c["name"]} ({S}/{c["id"]}/)']+[f'{i+1}. [{t["name"]}]({t["url"]}): {t["use"]} ({t["pricing"]})' for i,t in enumerate(c['tools'])]+['']
@@ -160,9 +160,11 @@ MDH={"type":"header","key":"accept","value":".*text/markdown.*"}
 CRE='|'.join([c['id'] for c in d['categories']]+['releases'])  # ids are lowercase letters and hyphens
 MDT='text/markdown; charset=utf-8'
 # Site-wide HTTP Link header (RFC 8288): every response points crawlers and AI agents that read headers (not HTML) to llms.txt, the sitemap and the releases JSON Feed. Routes below that set their own Link (Markdown copies) override it
+# /.well-known/llms.txt: some AI agents look for llms.txt under .well-known; rewrite to the canonical /llms.txt
 LINKH=f'<{S}/llms.txt>; rel="alternate"; type="text/markdown"; title="llms.txt", <{S}/sitemap.xml>; rel="sitemap"; type="application/xml", <{S}/releases/feed.json>; rel="alternate"; type="application/feed+json"'
 VJ={"routes":[
  {"src":"/(.*)","headers":{"Link":LINKH},"continue":True},
+ {"src":"/\\.well-known/llms\\.txt","dest":"/llms.txt","headers":{"Content-Type":MDT,"Link":f'<{S}/llms.txt>; rel="canonical"'}},
  {"src":"/guide/dl-0wrpqqzyzgvpzxiztpsw9a/(.*)","headers":{"X-Robots-Tag":"noindex, nofollow","Cache-Control":"private, no-store"},"continue":True},
  {"src":f"/({CRE})/index\\.md","headers":{"Content-Type":MDT,"Link":f'<{S}/$1/>; rel="canonical"'},"continue":True},
  {"src":f"/({CRE})/?","has":[MDH],"dest":"/$1/index.md","headers":{"Content-Type":MDT,"Vary":"Accept","Link":f'<{S}/$1/>; rel="canonical"'}},

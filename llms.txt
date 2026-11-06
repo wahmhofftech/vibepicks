@@ -5,7 +5,7 @@ Full version with every tool, pricing label, plain-English reason and release: h
 Each category page also has a plain Markdown copy for AI agents, e.g. https://vibepicks.ai/coding-agents/index.md
 New releases as Markdown: https://vibepicks.ai/releases/index.md
 Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" https://vibepicks.ai/coding-agents/
-Last updated: 2026-11-04
+Last updated: 2026-11-05
 Official X account: https://x.com/VibePicksAI (@VibePicksAI). VibePicks launched at vibepicks.ai on 2026-10-15.
 
 ## Coding Agents & AI IDEs (https://vibepicks.ai/coding-agents/)
@@ -42,7 +42,7 @@ Official X account: https://x.com/VibePicksAI (@VibePicksAI). VibePicks launched
 1. [Stripe](https://stripe.com): Accept card payments, subscriptions and checkout links (Paid)
 2. [Resend](https://resend.com): Send emails from your app: receipts, sign-ups, password resets (Freemium)
 3. [Paddle](https://www.paddle.com): Sell software and subscriptions with sales tax handled for you (Paid)
-4. [Polar](https://polar.sh): Sell digital products, licenses and subscriptions, tax handled (Paid)
+4. [Polar](https://polar.sh): Sell digital products, licenses and subscriptions, tax handled (Freemium)
 5. [Postmark](https://postmarkapp.com): Reliable transactional email for important messages (Freemium)
 
 ## Databases & Backend (https://vibepicks.ai/databases/)
@@ -135,6 +135,12 @@ Official X account: https://x.com/VibePicksAI (@VibePicksAI). VibePicks launched
 5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
 
 ## Recent releases
+- 2026-11-05: Cursor — Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app, sets up a Postgres database and auth behind Cursor SSO when needed, runs deterministic and agentic security checks, and deploys to a URL you pick. Available on all paid plans with cloud agents enabled (https://cursor.com/changelog/build-live-apps)
+- 2026-11-05: Kiro — Kiro bots are generally available in Kiro Crew: named, long-running agents with their own memory, notes, tools and permissions that coordinate parallel worker sessions, keep a single ongoing chat for direction and results, and can run on schedules for recurring work like issue triage, build monitoring or release readiness (https://kiro.dev/blog/crew-bots/)
+- 2026-11-05: Evergreen — Carta released Evergreen for other companies: a multiplayer cloud coding platform where teammates and agents share sessions, agents push PRs on their own, and it runs on Claude, Codex, Grok and Muse with isolated sessions, scoped access, audit logs and spending caps. 7-day free trial (https://evergreen.carta.com/blog/introducing-evergreen)
+- 2026-11-05: Vercel Schedules — Vercel Schedules is in public beta on all plans: define recurring or one-time schedules in vercel.json or at runtime that target a private Function, HTTP path or Queue topic, enable/disable/run on demand without redeploying. Successor to Cron Jobs; Hobby includes 5,000 runs/month, Pro/Enterprise from $5 per 1M runs (https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta)
+- 2026-11-05: Gemini Omni 1.2 Flash — Google's Gemini Omni 1.2 Flash is on Vercel AI Gateway as google/gemini-omni-1.2-flash: generate 3–15 second videos with native audio from text (or edit source clips with up to six reference images) via one API key with no separate Google account, using generateText or streamText in the AI SDK (https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway)
+- 2026-11-05: Kimi Hosted Agents — Moonshot AI launched Kimi Hosted Agents, a managed Harness-as-a-Service for long-running and multi-agent workloads: isolated cloud sandboxes, network controls, stoppable sessions, audit logs, 140+ Skills and 30+ plugins, plus finance Agent templates. Sign up at platform.kimi.com; usage-based pricing (sandbox-hours plus model tokens and plugin calls) (https://www.kimi.com/news/kimi-hosted-agents)
 - 2026-11-04: Devin — Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active parameters) that runs at about 200 tokens a second, 3x faster than SWE-2 at one-fifth the price, and scores 89.9 on SWE-Bench Pro v2 Hard against SWE-2's 90.6. It's available now in Devin Desktop and the Devin CLI; weights aren't public yet, only through a planned partner program (https://cognition.com/blog/swe-2-flash)
 - 2026-11-04: Atlassian Code Reviewer — Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits (https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira)
 - 2026-11-04: GitHub Copilot — GitHub Copilot now works inside Xcode's built-in coding assistant, in public preview from Xcode 27.3 beta on macOS Tahoe 26.6 or later. Turn it on in Xcode > Settings > Intelligence; every Copilot plan is supported, and the separate Copilot for Xcode extension still works (https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/)

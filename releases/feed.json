@@ -13,6 +13,78 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-05-5a911b835f",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-cursor-5a911b",
+   "external_url": "https://cursor.com/changelog/build-live-apps",
+   "title": "Cursor: Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app,…",
+   "content_text": "Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app, sets up a Postgres database and auth behind Cursor SSO when needed, runs deterministic and agentic security checks, and deploys to a URL you pick. Available on all paid plans with cloud agents enabled. Source: https://cursor.com/changelog/build-live-apps",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Cursor"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-479fb4c028",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-kiro-479fb4",
+   "external_url": "https://kiro.dev/blog/crew-bots/",
+   "title": "Kiro: Kiro bots are generally available in Kiro Crew: named, long-running agents with their own memory, notes, tools and permi…",
+   "content_text": "Kiro bots are generally available in Kiro Crew: named, long-running agents with their own memory, notes, tools and permissions that coordinate parallel worker sessions, keep a single ongoing chat for direction and results, and can run on schedules for recurring work like issue triage, build monitoring or release readiness. Source: https://kiro.dev/blog/crew-bots/",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Kiro"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-e0aa496aff",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-evergreen-e0aa49",
+   "external_url": "https://evergreen.carta.com/blog/introducing-evergreen",
+   "title": "Evergreen: Carta released Evergreen for other companies: a multiplayer cloud coding platform where teammates and agents share sessi…",
+   "content_text": "Carta released Evergreen for other companies: a multiplayer cloud coding platform where teammates and agents share sessions, agents push PRs on their own, and it runs on Claude, Codex, Grok and Muse with isolated sessions, scoped access, audit logs and spending caps. 7-day free trial. Source: https://evergreen.carta.com/blog/introducing-evergreen",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Evergreen"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-b84eb9f449",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-vercel-schedules-b84eb9",
+   "external_url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+   "title": "Vercel Schedules: Vercel Schedules is in public beta on all plans: define recurring or one-time schedules in vercel.json or at runtime tha…",
+   "content_text": "Vercel Schedules is in public beta on all plans: define recurring or one-time schedules in vercel.json or at runtime that target a private Function, HTTP path or Queue topic, enable/disable/run on demand without redeploying. Successor to Cron Jobs; Hobby includes 5,000 runs/month, Pro/Enterprise from $5 per 1M runs. Source: https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel Schedules"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-ac7108618e",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-gemini-omni-1-2-flash-ac7108",
+   "external_url": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+   "title": "Gemini Omni 1.2 Flash: Google's Gemini Omni 1.2 Flash is on Vercel AI Gateway as google/gemini-omni-1.2-flash: generate 3–15 second videos with…",
+   "content_text": "Google's Gemini Omni 1.2 Flash is on Vercel AI Gateway as google/gemini-omni-1.2-flash: generate 3–15 second videos with native audio from text (or edit source clips with up to six reference images) via one API key with no separate Google account, using generateText or streamText in the AI SDK. Source: https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "AI Video & Clips",
+    "Gemini Omni 1.2 Flash"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-f553f8bf2d",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-kimi-hosted-agents-f553f8",
+   "external_url": "https://www.kimi.com/news/kimi-hosted-agents",
+   "title": "Kimi Hosted Agents: Moonshot AI launched Kimi Hosted Agents, a managed Harness-as-a-Service for long-running and multi-agent workloads: isol…",
+   "content_text": "Moonshot AI launched Kimi Hosted Agents, a managed Harness-as-a-Service for long-running and multi-agent workloads: isolated cloud sandboxes, network controls, stoppable sessions, audit logs, 140+ Skills and 30+ plugins, plus finance Agent templates. Sign up at platform.kimi.com; usage-based pricing (sandbox-hours plus model tokens and plugin calls). Source: https://www.kimi.com/news/kimi-hosted-agents",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Automations & Agents",
+    "Kimi Hosted Agents"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-04-f92b2d4bb6",
    "url": "https://vibepicks.ai/releases/#r-2026-11-04-devin-f92b2d",
    "external_url": "https://cognition.com/blog/swe-2-flash",

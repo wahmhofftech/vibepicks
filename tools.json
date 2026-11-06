@@ -216,7 +216,7 @@
     {
      "name": "Polar",
      "use": "Sell digital products, licenses and subscriptions, tax handled",
-     "pricing": "Paid",
+     "pricing": "Freemium",
      "url": "https://polar.sh",
      "why": "Like Paddle but made for developers and indie makers, with clear posted prices. Free to start at 5% + 50¢ per sale, with lower rates on paid plans as you grow."
     },
@@ -779,6 +779,48 @@
   }
  ],
  "releases": [
+  {
+   "category": "coding-agents",
+   "date": "2026-11-05",
+   "source": "https://cursor.com/changelog/build-live-apps",
+   "tool": "Cursor",
+   "title": "Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app, sets up a Postgres database and auth behind Cursor SSO when needed, runs deterministic and agentic security checks, and deploys to a URL you pick. Available on all paid plans with cloud agents enabled"
+  },
+  {
+   "category": "coding-agents",
+   "date": "2026-11-05",
+   "source": "https://kiro.dev/blog/crew-bots/",
+   "tool": "Kiro",
+   "title": "Kiro bots are generally available in Kiro Crew: named, long-running agents with their own memory, notes, tools and permissions that coordinate parallel worker sessions, keep a single ongoing chat for direction and results, and can run on schedules for recurring work like issue triage, build monitoring or release readiness"
+  },
+  {
+   "category": "coding-agents",
+   "date": "2026-11-05",
+   "source": "https://evergreen.carta.com/blog/introducing-evergreen",
+   "tool": "Evergreen",
+   "title": "Carta released Evergreen for other companies: a multiplayer cloud coding platform where teammates and agents share sessions, agents push PRs on their own, and it runs on Claude, Codex, Grok and Muse with isolated sessions, scoped access, audit logs and spending caps. 7-day free trial"
+  },
+  {
+   "category": "hosting",
+   "date": "2026-11-05",
+   "source": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+   "tool": "Vercel Schedules",
+   "title": "Vercel Schedules is in public beta on all plans: define recurring or one-time schedules in vercel.json or at runtime that target a private Function, HTTP path or Queue topic, enable/disable/run on demand without redeploying. Successor to Cron Jobs; Hobby includes 5,000 runs/month, Pro/Enterprise from $5 per 1M runs"
+  },
+  {
+   "category": "ai-video",
+   "date": "2026-11-05",
+   "source": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+   "tool": "Gemini Omni 1.2 Flash",
+   "title": "Google's Gemini Omni 1.2 Flash is on Vercel AI Gateway as google/gemini-omni-1.2-flash: generate 3–15 second videos with native audio from text (or edit source clips with up to six reference images) via one API key with no separate Google account, using generateText or streamText in the AI SDK"
+  },
+  {
+   "category": "automations",
+   "date": "2026-11-05",
+   "source": "https://www.kimi.com/news/kimi-hosted-agents",
+   "tool": "Kimi Hosted Agents",
+   "title": "Moonshot AI launched Kimi Hosted Agents, a managed Harness-as-a-Service for long-running and multi-agent workloads: isolated cloud sandboxes, network controls, stoppable sessions, audit logs, 140+ Skills and 30+ plugins, plus finance Agent templates. Sign up at platform.kimi.com; usage-based pricing (sandbox-hours plus model tokens and plugin calls)"
+  },
   {
    "category": "coding-agents",
    "date": "2026-11-04",
