@@ -13,6 +13,66 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-06-7d74b32715",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-openrouter-7d74b3",
+   "external_url": "https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/",
+   "title": "OpenRouter: OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that …",
+   "content_text": "OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that picks a model per request; OpenRouter says it scores in line with Claude Opus 5.5 at 74% lower cost per task. Source: https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "OpenRouter"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-0c711d740d",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-github-copilot-0c711d",
+   "external_url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/",
+   "title": "GitHub Copilot: @GitHub in Slack and Microsoft Teams is generally available: investigate bugs, create issues and open pull requests from…",
+   "content_text": "@GitHub in Slack and Microsoft Teams is generally available: investigate bugs, create issues and open pull requests from a chat, with Canvas in Teams for reviewing plans, diffs and previews alongside the conversation. Source: https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "GitHub Copilot"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-a18dcedf4e",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-vercel-tracing-a18dce",
+   "external_url": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+   "title": "Vercel Tracing: Vercel Tracing is generally available on all plans: a new Traces page with KQL search, vercel traces search in the CLI, …",
+   "content_text": "Vercel Tracing is generally available on all plans: a new Traces page with KQL search, vercel traces search in the CLI, tracing on by default for new Next.js 16.5 projects, and longer retention (3 days Hobby, 14 days Pro). Source: https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel Tracing"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-cb1347fd00",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-replit-agent-cb1347",
+   "external_url": "https://docs.replit.com/updates",
+   "title": "Replit Agent: Replit Agent can now troubleshoot platform problems in chat by checking incidents, docs and known issues, and on Pro it …",
+   "content_text": "Replit Agent can now troubleshoot platform problems in chat by checking incidents, docs and known issues, and on Pro it files the support ticket for you with debugging details attached. Source: https://docs.replit.com/updates",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "App Builders",
+    "Replit Agent"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-05-9dbd899553",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-05-codex-cli-openai-9dbd89",
+   "external_url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+   "title": "Codex CLI (OpenAI): Codex CLI 0.167.0 opens an agent command center with codex agents --no-daemon, marks unread results, lets you switch bac…",
+   "content_text": "Codex CLI 0.167.0 opens an agent command center with codex agents --no-daemon, marks unread results, lets you switch backends without losing drafts, and adds a Google Cloud Vertex AI setup wizard. Source: https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+   "date_published": "2026-11-05T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Codex CLI (OpenAI)"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-05-5a911b835f",
    "url": "https://vibepicks.ai/releases/#r-2026-11-05-cursor-5a911b",
    "external_url": "https://cursor.com/changelog/build-live-apps",
@@ -99,9 +159,9 @@
   {
    "id": "vibepicks-release-2026-11-04-5f9ccf699e",
    "url": "https://vibepicks.ai/releases/#r-2026-11-04-atlassian-code-reviewer-5f9ccf",
-   "external_url": "https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira",
+   "external_url": "https://www.atlassian.com/blog/development/code-reviewer",
    "title": "Atlassian Code Reviewer: Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pu…",
-   "content_text": "Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits. Source: https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira",
+   "content_text": "Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits. Source: https://www.atlassian.com/blog/development/code-reviewer",
    "date_published": "2026-11-04T12:00:00Z",
    "tags": [
     "AI Code Review",

@@ -4,7 +4,32 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-05
+Last updated: 2026-11-06
+
+## 2026-11-06: OpenRouter
+OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that picks a model per request; OpenRouter says it scores in line with Claude Opus 5.5 at 74% lower cost per task
+- Category: llm-apis
+- Source: https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/
+
+## 2026-11-06: GitHub Copilot
+@GitHub in Slack and Microsoft Teams is generally available: investigate bugs, create issues and open pull requests from a chat, with Canvas in Teams for reviewing plans, diffs and previews alongside the conversation
+- Category: coding-agents
+- Source: https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/
+
+## 2026-11-06: Vercel Tracing
+Vercel Tracing is generally available on all plans: a new Traces page with KQL search, vercel traces search in the CLI, tracing on by default for new Next.js 16.5 projects, and longer retention (3 days Hobby, 14 days Pro)
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-tracing-is-now-generally-available
+
+## 2026-11-06: Replit Agent
+Replit Agent can now troubleshoot platform problems in chat by checking incidents, docs and known issues, and on Pro it files the support ticket for you with debugging details attached
+- Category: app-builders
+- Source: https://docs.replit.com/updates
+
+## 2026-11-05: Codex CLI (OpenAI)
+Codex CLI 0.167.0 opens an agent command center with codex agents --no-daemon, marks unread results, lets you switch backends without losing drafts, and adds a Google Cloud Vertex AI setup wizard
+- Category: coding-agents
+- Source: https://github.com/openai/codex/releases/tag/rust-v0.167.0
 
 ## 2026-11-05: Cursor
 Cursor can now build live apps and share them with a link: describe the tool you want, and Cursor scaffolds the web app, sets up a Postgres database and auth behind Cursor SSO when needed, runs deterministic and agentic security checks, and deploys to a URL you pick. Available on all paid plans with cloud agents enabled
@@ -44,7 +69,7 @@ Cognition released SWE-2 Flash, a smaller coding model (276B total, 12B active p
 ## 2026-11-04: Atlassian Code Reviewer
 Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits
 - Category: code-review
-- Source: https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira
+- Source: https://www.atlassian.com/blog/development/code-reviewer
 
 ## 2026-11-04: GitHub Copilot
 GitHub Copilot now works inside Xcode's built-in coding assistant, in public preview from Xcode 27.3 beta on macOS Tahoe 26.6 or later. Turn it on in Xcode > Settings > Intelligence; every Copilot plan is supported, and the separate Copilot for Xcode extension still works

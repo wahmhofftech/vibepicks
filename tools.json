@@ -780,6 +780,41 @@
  ],
  "releases": [
   {
+   "category": "llm-apis",
+   "date": "2026-11-06",
+   "source": "https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/",
+   "tool": "OpenRouter",
+   "title": "OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that picks a model per request; OpenRouter says it scores in line with Claude Opus 5.5 at 74% lower cost per task"
+  },
+  {
+   "category": "coding-agents",
+   "date": "2026-11-06",
+   "source": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/",
+   "tool": "GitHub Copilot",
+   "title": "@GitHub in Slack and Microsoft Teams is generally available: investigate bugs, create issues and open pull requests from a chat, with Canvas in Teams for reviewing plans, diffs and previews alongside the conversation"
+  },
+  {
+   "category": "hosting",
+   "date": "2026-11-06",
+   "source": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+   "tool": "Vercel Tracing",
+   "title": "Vercel Tracing is generally available on all plans: a new Traces page with KQL search, vercel traces search in the CLI, tracing on by default for new Next.js 16.5 projects, and longer retention (3 days Hobby, 14 days Pro)"
+  },
+  {
+   "category": "app-builders",
+   "date": "2026-11-06",
+   "source": "https://docs.replit.com/updates",
+   "tool": "Replit Agent",
+   "title": "Replit Agent can now troubleshoot platform problems in chat by checking incidents, docs and known issues, and on Pro it files the support ticket for you with debugging details attached"
+  },
+  {
+   "category": "coding-agents",
+   "date": "2026-11-05",
+   "source": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+   "tool": "Codex CLI (OpenAI)",
+   "title": "Codex CLI 0.167.0 opens an agent command center with codex agents --no-daemon, marks unread results, lets you switch backends without losing drafts, and adds a Google Cloud Vertex AI setup wizard"
+  },
+  {
    "category": "coding-agents",
    "date": "2026-11-05",
    "source": "https://cursor.com/changelog/build-live-apps",
@@ -831,7 +866,7 @@
   {
    "category": "code-review",
    "date": "2026-11-04",
-   "source": "https://www.atlassian.com/blog/development/meet-code-reviewer-now-available-with-jira",
+   "source": "https://www.atlassian.com/blog/development/code-reviewer",
    "tool": "Atlassian Code Reviewer",
    "title": "Atlassian Code Reviewer is generally available with paid Jira and Teamwork Collection plans: an AI agent that reviews pull requests in Bitbucket Cloud and GitHub (GitLab coming), leaves inline comments with fixes you can apply, and checks each PR against the acceptance criteria in its linked Jira work item. It starts in manual mode (reviews only when the author asks) and uses Rovo credits"
   },
