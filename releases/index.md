@@ -4,7 +4,37 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-06
+Last updated: 2026-11-07
+
+## 2026-11-07: OpenCode Browse
+OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including signed-in tabs and extensions — in background tabs, then hands the tab back to you for a login, 2FA prompt or payment
+- Category: coding-agents
+- Source: https://opencode.ai/product/browse
+
+## 2026-11-06: Claude Code
+Claude Code 2.1.319 backgrounds MCP tool calls that run as tasks instead of waiting inside the turn, adds permissions.denyInsteadOfPrompting so unattended runs deny a permission prompt and continue, and adds /claude-api latency-optimize
+- Category: coding-agents
+- Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.319
+
+## 2026-11-06: Cursor
+Cursor now lets you talk with your agents in a realtime voice call, in the Agents Window, the IDE, on web and in Cursor for iOS: describe a change out loud, the voice agent hands coding work to the agent in your chat, and it speaks short progress notes while it works. Powered by Grok Voice, and separate from dictation
+- Category: coding-agents
+- Source: https://cursor.com/changelog/voice-chat
+
+## 2026-11-06: Vercel AI Gateway
+Vercel AI Gateway now offers DeepSeek Search (page titles, URLs and summaries) and DeepSeek Fetch (page content as Markdown) for any tool-calling model behind one AI Gateway API key, with no separate DeepSeek account. Each costs $0.75 per 1,000 billable requests; failed, timed-out and empty results have no tool charge
+- Category: llm-apis
+- Source: https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools
+
+## 2026-11-06: GitHub Copilot
+You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories, and Copilot's review overview comment is more compact. Available on Copilot Pro, Pro+, Max, Business and Enterprise
+- Category: code-review
+- Source: https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/
+
+## 2026-11-06: OpenCode
+OpenCode v2.2.6 lets MCP servers share one connection across projects with pool: true, adds opencode run -w to start a session in a new git worktree, and --archived so scripted and CI sessions stay out of your inbox
+- Category: coding-agents
+- Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.6
 
 ## 2026-11-06: OpenRouter
 OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that picks a model per request; OpenRouter says it scores in line with Claude Opus 5.5 at 74% lower cost per task

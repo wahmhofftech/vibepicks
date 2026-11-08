@@ -13,6 +13,78 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-07-3c3252995c",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-07-opencode-browse-3c3252",
+   "external_url": "https://opencode.ai/product/browse",
+   "title": "OpenCode Browse: OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including sign…",
+   "content_text": "OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including signed-in tabs and extensions — in background tabs, then hands the tab back to you for a login, 2FA prompt or payment. Source: https://opencode.ai/product/browse",
+   "date_published": "2026-11-07T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "OpenCode Browse"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-34289c4c32",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-claude-code-34289c",
+   "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "title": "Claude Code: Claude Code 2.1.319 backgrounds MCP tool calls that run as tasks instead of waiting inside the turn, adds permissions.de…",
+   "content_text": "Claude Code 2.1.319 backgrounds MCP tool calls that run as tasks instead of waiting inside the turn, adds permissions.denyInsteadOfPrompting so unattended runs deny a permission prompt and continue, and adds /claude-api latency-optimize. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Claude Code"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-0dc26b68b0",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-cursor-0dc26b",
+   "external_url": "https://cursor.com/changelog/voice-chat",
+   "title": "Cursor: Cursor now lets you talk with your agents in a realtime voice call, in the Agents Window, the IDE, on web and in Cursor …",
+   "content_text": "Cursor now lets you talk with your agents in a realtime voice call, in the Agents Window, the IDE, on web and in Cursor for iOS: describe a change out loud, the voice agent hands coding work to the agent in your chat, and it speaks short progress notes while it works. Powered by Grok Voice, and separate from dictation. Source: https://cursor.com/changelog/voice-chat",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Cursor"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-34c15a7cf6",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-vercel-ai-gateway-34c15a",
+   "external_url": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+   "title": "Vercel AI Gateway: Vercel AI Gateway now offers DeepSeek Search (page titles, URLs and summaries) and DeepSeek Fetch (page content as Markd…",
+   "content_text": "Vercel AI Gateway now offers DeepSeek Search (page titles, URLs and summaries) and DeepSeek Fetch (page content as Markdown) for any tool-calling model behind one AI Gateway API key, with no separate DeepSeek account. Each costs $0.75 per 1,000 billable requests; failed, timed-out and empty results have no tool charge. Source: https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "Vercel AI Gateway"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-e098145116",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-github-copilot-e09814",
+   "external_url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+   "title": "GitHub Copilot: You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to…",
+   "content_text": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories, and Copilot's review overview comment is more compact. Available on Copilot Pro, Pro+, Max, Business and Enterprise. Source: https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "AI Code Review",
+    "GitHub Copilot"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-06-2138c4a953",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-06-opencode-2138c4",
+   "external_url": "https://github.com/anomalyco/opencode/releases/tag/v2.2.6",
+   "title": "OpenCode: OpenCode v2.2.6 lets MCP servers share one connection across projects with pool: true, adds opencode run -w to start a s…",
+   "content_text": "OpenCode v2.2.6 lets MCP servers share one connection across projects with pool: true, adds opencode run -w to start a session in a new git worktree, and --archived so scripted and CI sessions stay out of your inbox. Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.6",
+   "date_published": "2026-11-06T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "OpenCode"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-06-7d74b32715",
    "url": "https://vibepicks.ai/releases/#r-2026-11-06-openrouter-7d74b3",
    "external_url": "https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/",

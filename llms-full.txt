@@ -2,7 +2,7 @@
 > Every VibePicks ranking, tool, plain-English reason, pricing label and verified release in one file. Short index: https://vibepicks.ai/llms.txt
 
 Site: https://vibepicks.ai/
-Last updated: 2026-11-06
+Last updated: 2026-11-07
 About: VibePicks ranks AI tools for vibe coders, builders and non-coders by use case. #1 is our top pick in each category.
 Pricing labels: Free = no paid tier needed; Freemium = usable free plan plus paid upgrades; Paid = paid plan or trial that converts to paid.
 Rankings are editorial picks and are never sold. Sponsored placements are always labeled Sponsored.
@@ -606,6 +606,12 @@ Page: https://vibepicks.ai/releases/
 RSS feed: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
 
+- 2026-11-07 | OpenCode Browse (Coding Agents & AI IDEs): OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including signed-in tabs and extensions — in background tabs, then hands the tab back to you for a login, 2FA prompt or payment. Source: https://opencode.ai/product/browse
+- 2026-11-06 | Claude Code (Coding Agents & AI IDEs): Claude Code 2.1.319 backgrounds MCP tool calls that run as tasks instead of waiting inside the turn, adds permissions.denyInsteadOfPrompting so unattended runs deny a permission prompt and continue, and adds /claude-api latency-optimize. Source: https://github.com/anthropics/claude-code/releases/tag/v2.1.319
+- 2026-11-06 | Cursor (Coding Agents & AI IDEs): Cursor now lets you talk with your agents in a realtime voice call, in the Agents Window, the IDE, on web and in Cursor for iOS: describe a change out loud, the voice agent hands coding work to the agent in your chat, and it speaks short progress notes while it works. Powered by Grok Voice, and separate from dictation. Source: https://cursor.com/changelog/voice-chat
+- 2026-11-06 | Vercel AI Gateway (LLM APIs): Vercel AI Gateway now offers DeepSeek Search (page titles, URLs and summaries) and DeepSeek Fetch (page content as Markdown) for any tool-calling model behind one AI Gateway API key, with no separate DeepSeek account. Each costs $0.75 per 1,000 billable requests; failed, timed-out and empty results have no tool charge. Source: https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools
+- 2026-11-06 | GitHub Copilot (AI Code Review): You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories, and Copilot's review overview comment is more compact. Available on Copilot Pro, Pro+, Max, Business and Enterprise. Source: https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/
+- 2026-11-06 | OpenCode (Coding Agents & AI IDEs): OpenCode v2.2.6 lets MCP servers share one connection across projects with pool: true, adds opencode run -w to start a session in a new git worktree, and --archived so scripted and CI sessions stay out of your inbox. Source: https://github.com/anomalyco/opencode/releases/tag/v2.2.6
 - 2026-11-06 | OpenRouter (LLM APIs): OpenRouter rebuilt its Auto Router and added Auto Code (openrouter/auto-code), a router tuned for coding harnesses that picks a model per request; OpenRouter says it scores in line with Claude Opus 5.5 at 74% lower cost per task. Source: https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/
 - 2026-11-06 | GitHub Copilot (Coding Agents & AI IDEs): @GitHub in Slack and Microsoft Teams is generally available: investigate bugs, create issues and open pull requests from a chat, with Canvas in Teams for reviewing plans, diffs and previews alongside the conversation. Source: https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/
 - 2026-11-06 | Vercel Tracing (Deploy & Hosting): Vercel Tracing is generally available on all plans: a new Traces page with KQL search, vercel traces search in the CLI, tracing on by default for new Next.js 16.5 projects, and longer retention (3 days Hobby, 14 days Pro). Source: https://vercel.com/changelog/vercel-tracing-is-now-generally-available
