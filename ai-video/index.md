@@ -2,7 +2,7 @@
 > Ranked editorial picks from VibePicks. #1 is our top pick. Rankings are never sold; sponsored spots are always labeled.
 
 Page: https://vibepicks.ai/ai-video/
-Last updated: 2026-10-31
+Last updated: 2026-11-09
 
 ## #1 CapCut
 - Website: https://www.capcut.com

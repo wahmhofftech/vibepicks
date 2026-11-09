@@ -4,7 +4,27 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-07
+Last updated: 2026-11-09
+
+## 2026-11-09: Cloudflare Agents SDK
+Cloudflare published an experimental Agents SDK example that runs the Codex agent loop inside a Durable Object on Workers, with conversations, files and completed model and tool results persisting across restarts so the agent recovers after interruptions
+- Category: hosting
+- Source: https://developers.cloudflare.com/changelog/post/2026-11-09-codex-harness/
+
+## 2026-11-09: K-EXAONE 2.5
+LG AI Research unveiled K-EXAONE 2.5, an agentic model it says scores 59.2 on SWE-Bench Pro, and opened its API free of charge to developers and startups from Nov 9 through LG's own platform
+- Category: llm-apis
+- Source: https://www.asiae.co.kr/en/article/2026110908593029581
+
+## 2026-11-08: Lovable
+Lovable apps can now connect to PayPal to create checkouts, capture payment after the buyer approves, issue refunds and read order details in an existing PayPal account, from Connectors or by asking Lovable in a project
+- Category: app-builders
+- Source: https://docs.lovable.dev/changelog
+
+## 2026-11-07: Vercel AI Gateway
+DeepSeek V4.1 Flash 1017 Ultrafast is now on AI Gateway through Fireworks, generating over 1,000 tokens per second with a 1M-token context window, in public preview with no waitroom (model id deepseek/deepseek-v4.1-flash-1017-ultrafast)
+- Category: llm-apis
+- Source: https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway
 
 ## 2026-11-07: OpenCode Browse
 OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including signed-in tabs and extensions — in background tabs, then hands the tab back to you for a login, 2FA prompt or payment

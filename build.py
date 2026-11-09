@@ -14,7 +14,7 @@ CATIDS={c['id'] for c in d['categories']}
 def MDALT(path): return f'<link rel="alternate" type="text/markdown" title="{"New releases" if path=="releases" else "This ranking"} as Markdown" href="/{path}/index.md">' if path in CATIDS or path=='releases' else ''
 def page(path,title,desc,body,ld):
   os.makedirs(path or '.',exist_ok=True); url=f"{S}/{path+'/' if path else ''}"
-  h=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  h=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">{ICON}
 <meta property="og:type" content="website"><meta property="og:site_name" content="VibePicks"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="{XH}">
 <link rel="stylesheet" href="/style.css">{MDALT(path)}<link rel="alternate" type="application/rss+xml" title="VibePicks: new AI tool releases" href="/releases/feed.xml"><link rel="alternate" type="application/feed+json" title="VibePicks: new AI tool releases (JSON Feed)" href="/releases/feed.json"><script type="application/ld+json">{json.dumps(ld)}</script><script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script><script defer src="/_vercel/insights/script.js"></script></head><body>

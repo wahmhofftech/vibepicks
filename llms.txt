@@ -6,7 +6,7 @@ Each category page also has a plain Markdown copy for AI agents, e.g. https://vi
 New releases as Markdown: https://vibepicks.ai/releases/index.md
 Agents can also ask for Markdown directly: request any category page (or the homepage) with the header Accept: text/markdown, e.g. curl -H "Accept: text/markdown" https://vibepicks.ai/coding-agents/
 To get ranked picks for a described project, open https://vibepicks.ai/?q= plus a URL-encoded description (example: https://vibepicks.ai/?q=a+website+for+my+bakery).
-Last updated: 2026-11-07
+Last updated: 2026-11-09
 Official X account: https://x.com/VibePicksAI (@VibePicksAI). VibePicks launched at vibepicks.ai on 2026-10-15.
 
 ## Coding Agents & AI IDEs (https://vibepicks.ai/coding-agents/)
@@ -136,6 +136,10 @@ Official X account: https://x.com/VibePicksAI (@VibePicksAI). VibePicks launched
 5. [ChatGPT](https://chatgpt.com): Explain and draft G-code, feeds and speeds (Freemium)
 
 ## Recent releases
+- 2026-11-09: Cloudflare Agents SDK — Cloudflare published an experimental Agents SDK example that runs the Codex agent loop inside a Durable Object on Workers, with conversations, files and completed model and tool results persisting across restarts so the agent recovers after interruptions (source: https://developers.cloudflare.com/changelog/post/2026-11-09-codex-harness/; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-09-cloudflare-agents-sdk-754b72)
+- 2026-11-09: K-EXAONE 2.5 — LG AI Research unveiled K-EXAONE 2.5, an agentic model it says scores 59.2 on SWE-Bench Pro, and opened its API free of charge to developers and startups from Nov 9 through LG's own platform (source: https://www.asiae.co.kr/en/article/2026110908593029581; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-09-k-exaone-2-5-546c6d)
+- 2026-11-08: Lovable — Lovable apps can now connect to PayPal to create checkouts, capture payment after the buyer approves, issue refunds and read order details in an existing PayPal account, from Connectors or by asking Lovable in a project (source: https://docs.lovable.dev/changelog; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-08-lovable-a75b7a)
+- 2026-11-07: Vercel AI Gateway — DeepSeek V4.1 Flash 1017 Ultrafast is now on AI Gateway through Fireworks, generating over 1,000 tokens per second with a 1M-token context window, in public preview with no waitroom (model id deepseek/deepseek-v4.1-flash-1017-ultrafast) (source: https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-07-vercel-ai-gateway-8d13bf)
 - 2026-11-07: OpenCode Browse — OpenCode Browse is an MCP server and Chromium extension that lets coding agents drive your real browser — including signed-in tabs and extensions — in background tabs, then hands the tab back to you for a login, 2FA prompt or payment (source: https://opencode.ai/product/browse; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-07-opencode-browse-3c3252)
 - 2026-11-06: Claude Code — Claude Code 2.1.319 backgrounds MCP tool calls that run as tasks instead of waiting inside the turn, adds permissions.denyInsteadOfPrompting so unattended runs deny a permission prompt and continue, and adds /claude-api latency-optimize (source: https://github.com/anthropics/claude-code/releases/tag/v2.1.319; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-06-claude-code-34289c)
 - 2026-11-06: Cursor — Cursor now lets you talk with your agents in a realtime voice call, in the Agents Window, the IDE, on web and in Cursor for iOS: describe a change out loud, the voice agent hands coding work to the agent in your chat, and it speaks short progress notes while it works. Powered by Grok Voice, and separate from dictation (source: https://cursor.com/changelog/voice-chat; VibePicks entry: https://vibepicks.ai/releases/#r-2026-11-06-cursor-0dc26b)
