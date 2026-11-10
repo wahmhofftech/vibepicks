@@ -6,6 +6,31 @@ RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
 Last updated: 2026-11-09
 
+## 2026-11-09: Claude Fable 5.2
+Anthropic released Claude Fable 5.2 (claude-fable-5-2), its top model for long-running coding and agent work, with a 1M-token context window, up to 30% faster output and a lower price of $8/$40 per million input/output tokens; it is now the default Fable model in Claude Code 2.1.321
+- Category: llm-apis
+- Source: https://www.anthropic.com/claude-fable-and-mythos-5-2
+
+## 2026-11-09: Muse Ember
+Meta released Muse Ember (muse-ember-1.0), its smallest and cheapest model, built for the repetitive parts of agent runs like tool calls and coding sub-tasks, with a 1M-token context window at $0.10/$0.50 per million input/output tokens on the Meta Model API and Muse Code
+- Category: llm-apis
+- Source: https://research.meta.ai/blog/muse-ember
+
+## 2026-11-09: Spacefast
+Automattic launched Spacefast, a hosting service that lets ChatGPT, Claude, Cursor, Codex and other agents publish the sites and apps they build to a private share link, with a custom domain and database included and a free plan to start
+- Category: hosting
+- Source: https://www.prnewswire.com/news-releases/automattic-launches-spacefast-a-new-company-that-gets-apps-and-websites-live-in-seconds-302933038.html
+
+## 2026-11-09: Boxes.dev
+Boxes.dev launched on YC, letting you run Claude Code and Codex on parallel cloud machines with your existing subscriptions, starting agents from a desktop app, your phone, Slack or Linear, and each agent testing its own work in a copy of your dev environment
+- Category: coding-agents
+- Source: https://www.ycombinator.com/launches/Wp5-boxes-dev-move-your-ai-coding-to-the-cloud
+
+## 2026-11-09: AgentMon Live
+Codenotary released AgentMon Live, a free, open-source Claude Code plugin with a live dashboard of agent activity and a Done Gate that checks for failed tests or unfinished tasks before the agent says it is finished
+- Category: code-review
+- Source: https://www.businesswire.com/news/home/20261109569795/en/Codenotary-Releases-AgentMon-Live-Free-Open-Source-Software-to-Improve-AI-Coding-Productivity
+
 ## 2026-11-09: Cloudflare Agents SDK
 Cloudflare published an experimental Agents SDK example that runs the Codex agent loop inside a Durable Object on Workers, with conversations, files and completed model and tool results persisting across restarts so the agent recovers after interruptions
 - Category: hosting
