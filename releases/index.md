@@ -4,7 +4,32 @@
 Page: https://vibepicks.ai/releases/
 RSS: https://vibepicks.ai/releases/feed.xml
 JSON Feed: https://vibepicks.ai/releases/feed.json
-Last updated: 2026-11-09
+Last updated: 2026-11-11
+
+## 2026-11-11: Qwen4-Max-Preview
+Alibaba opened a preview of Qwen4-Max (qwen4-max-preview), its next flagship Qwen model for coding, front-end design and agent work, with image and video input, tool calling and OpenAI- and Anthropic-compatible APIs; for now it is available only through Alibaba's Token Plan and in apps like the Qoder coding agent, and the preview runs through Nov 25
+- Category: llm-apis
+- Source: https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview
+
+## 2026-11-10: Gemini 4 Carbon
+Google released Gemini 4 Carbon, its strongest model for long, multi-step coding, debugging and agent work, on the paid Gemini API in AI Studio at an introductory $2/$10 per million input/output tokens through Nov 30 ($4/$20 after); it also landed the same day in GitHub Copilot (Pro+ and up) and on Vercel AI Gateway, and Google is previewing a /swarm multi-agent mode in Antigravity
+- Category: llm-apis
+- Source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+
+## 2026-11-10: Cursor
+Cursor Projects is now multiplayer: invite teammates into a Project to plan, build and ship alongside everyone's agents, with a shared task board, shared context (specs, docs, mockups) and agents that coordinate with each other to avoid overlapping work; rolling out in beta to all users
+- Category: coding-agents
+- Source: https://cursor.com/blog/projects-multiplayer
+
+## 2026-11-10: Runpod for Agents
+Runpod expanded Runpod for Agents, a hosted MCP server plus a library of tested skills that lets coding agents like Claude Code, Codex and Cursor pick GPUs, deploy Pods or Serverless endpoints, fix failures and shut down unused resources, with confirmation required before destructive actions; setup starts at agents.runpod.io
+- Category: hosting
+- Source: https://www.prnewswire.com/news-releases/runpod-for-agents-lets-developers-hand-infrastructure-work-to-their-coding-agents-302934084.html
+
+## 2026-11-09: Vercel Sandbox
+Vercel Sandbox now creates snapshots up to 10x faster (median under 0.4 seconds, down from 4.4) and restores them twice as fast, so persistent sandboxes for coding agents pause and resume almost instantly, with nothing to configure
+- Category: hosting
+- Source: https://vercel.com/changelog/vercel-sandbox-snapshot-creation-is-now-up-to-10x-faster
 
 ## 2026-11-09: Claude Fable 5.2
 Anthropic released Claude Fable 5.2 (claude-fable-5-2), its top model for long-running coding and agent work, with a 1M-token context window, up to 30% faster output and a lower price of $8/$40 per million input/output tokens; it is now the default Fable model in Claude Code 2.1.321

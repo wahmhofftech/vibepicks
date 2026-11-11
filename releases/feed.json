@@ -13,6 +13,66 @@
  ],
  "items": [
   {
+   "id": "vibepicks-release-2026-11-11-2e25e0bc22",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-11-qwen4-max-preview-2e25e0",
+   "external_url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+   "title": "Qwen4-Max-Preview: Alibaba opened a preview of Qwen4-Max (qwen4-max-preview), its next flagship Qwen model for coding, front-end design and…",
+   "content_text": "Alibaba opened a preview of Qwen4-Max (qwen4-max-preview), its next flagship Qwen model for coding, front-end design and agent work, with image and video input, tool calling and OpenAI- and Anthropic-compatible APIs; for now it is available only through Alibaba's Token Plan and in apps like the Qoder coding agent, and the preview runs through Nov 25. Source: https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+   "date_published": "2026-11-11T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "Qwen4-Max-Preview"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-10-2f8833e300",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-10-gemini-4-carbon-2f8833",
+   "external_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "title": "Gemini 4 Carbon: Google released Gemini 4 Carbon, its strongest model for long, multi-step coding, debugging and agent work, on the paid …",
+   "content_text": "Google released Gemini 4 Carbon, its strongest model for long, multi-step coding, debugging and agent work, on the paid Gemini API in AI Studio at an introductory $2/$10 per million input/output tokens through Nov 30 ($4/$20 after); it also landed the same day in GitHub Copilot (Pro+ and up) and on Vercel AI Gateway, and Google is previewing a /swarm multi-agent mode in Antigravity. Source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "date_published": "2026-11-10T12:00:00Z",
+   "tags": [
+    "LLM APIs",
+    "Gemini 4 Carbon"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-10-73adedda7a",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-10-cursor-73aded",
+   "external_url": "https://cursor.com/blog/projects-multiplayer",
+   "title": "Cursor: Cursor Projects is now multiplayer: invite teammates into a Project to plan, build and ship alongside everyone's agents,…",
+   "content_text": "Cursor Projects is now multiplayer: invite teammates into a Project to plan, build and ship alongside everyone's agents, with a shared task board, shared context (specs, docs, mockups) and agents that coordinate with each other to avoid overlapping work; rolling out in beta to all users. Source: https://cursor.com/blog/projects-multiplayer",
+   "date_published": "2026-11-10T12:00:00Z",
+   "tags": [
+    "Coding Agents & AI IDEs",
+    "Cursor"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-10-049257ec94",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-10-runpod-for-agents-049257",
+   "external_url": "https://www.prnewswire.com/news-releases/runpod-for-agents-lets-developers-hand-infrastructure-work-to-their-coding-agents-302934084.html",
+   "title": "Runpod for Agents: Runpod expanded Runpod for Agents, a hosted MCP server plus a library of tested skills that lets coding agents like Clau…",
+   "content_text": "Runpod expanded Runpod for Agents, a hosted MCP server plus a library of tested skills that lets coding agents like Claude Code, Codex and Cursor pick GPUs, deploy Pods or Serverless endpoints, fix failures and shut down unused resources, with confirmation required before destructive actions; setup starts at agents.runpod.io. Source: https://www.prnewswire.com/news-releases/runpod-for-agents-lets-developers-hand-infrastructure-work-to-their-coding-agents-302934084.html",
+   "date_published": "2026-11-10T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Runpod for Agents"
+   ]
+  },
+  {
+   "id": "vibepicks-release-2026-11-09-c60598dc39",
+   "url": "https://vibepicks.ai/releases/#r-2026-11-09-vercel-sandbox-c60598",
+   "external_url": "https://vercel.com/changelog/vercel-sandbox-snapshot-creation-is-now-up-to-10x-faster",
+   "title": "Vercel Sandbox: Vercel Sandbox now creates snapshots up to 10x faster (median under 0.4 seconds, down from 4.4) and restores them twice …",
+   "content_text": "Vercel Sandbox now creates snapshots up to 10x faster (median under 0.4 seconds, down from 4.4) and restores them twice as fast, so persistent sandboxes for coding agents pause and resume almost instantly, with nothing to configure. Source: https://vercel.com/changelog/vercel-sandbox-snapshot-creation-is-now-up-to-10x-faster",
+   "date_published": "2026-11-09T12:00:00Z",
+   "tags": [
+    "Deploy & Hosting",
+    "Vercel Sandbox"
+   ]
+  },
+  {
    "id": "vibepicks-release-2026-11-09-15c62f1b28",
    "url": "https://vibepicks.ai/releases/#r-2026-11-09-claude-fable-5-2-15c62f",
    "external_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
